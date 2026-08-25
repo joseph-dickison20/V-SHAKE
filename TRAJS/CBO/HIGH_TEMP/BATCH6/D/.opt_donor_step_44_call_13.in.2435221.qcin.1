@@ -1,0 +1,88 @@
+$molecule
+-1 1
+H     0.2518255502  -0.2322136197   1.5935891050
+C    -0.1445522317   0.0905077998  -0.3218548389
+O     0.3193002294  -0.0007622412   2.5538910101
+C    -0.5052775382   1.1162816188   2.8284448945
+C    -0.5733437970   1.9466989195   1.4622063588
+H     0.5529819380   2.2114893619   1.3297379455
+H    -0.9703772657   2.9369873153   1.6576119987
+C    -1.1309934882   1.0360591967   0.2701907447
+H    -1.6986528608   1.6303366380  -0.5906045799
+H    -1.9693949775   0.4754990151   0.6453628369
+C    -0.5647392310  -1.0081671397  -0.8987420937
+N    -1.0501967684  -1.9159929018  -1.6613552598
+H     0.9698450310   0.5091100742  -0.6154680800
+H    -1.3738933892   0.7130194061   3.1141390956
+H    -0.1031110744   1.6777595784   3.5633485081
+$end
+
+$rem
+JOBTYPE                     OPT
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+NEO                         TRUE
+NEO_ISOTOPE                 2
+NEO_EPC                     EPC172
+SCF_ALGORITHM               GDM
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+MAX_SCF_CYCLES              1000
+NEO_PURECART                1111
+NEO_SIMULTANEOUS_SCF        TRUE
+NEO_N_HARTREE_PROD          TRUE
+NEO_VPP                     FALSE
+THRESH                      14
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+GEOM_OPT_MAX_CYCLES         30
+$end
+
+$neo_msdft
+SAVE_DENS 1
+$end
+
+$OPT
+FIXED 
+2 XYZ
+3 XYZ
+4 XYZ
+5 XYZ
+6 XYZ
+7 XYZ
+8 XYZ
+9 XYZ
+10 XYZ
+11 XYZ
+12 XYZ
+13 XYZ
+14 XYZ
+15 XYZ
+ENDFIXED
+$END
+
+$neo_basis
+H    1
+S   1   1.00
+     45.251                  1.0
+S   1   1.00
+     22.642                  1.0
+S   1   1.00
+      12.352                 1.0
+S   1   1.00
+      2.768                  1.0
+P   1   1.00
+     33.981                  1.0
+P   1   1.00
+     19.509                  1.0
+P   1   1.00
+      13.347                 1.0
+D   1   1.00
+     26.893                  1.0
+D   1   1.00
+     14.883                  1.0
+****
+$end

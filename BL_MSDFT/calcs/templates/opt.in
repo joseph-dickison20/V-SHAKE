@@ -1,0 +1,59 @@
+$molecule
+-1 1
+H  0.0000000000  0.0000000000 -0.5000000000
+F  0.0000000000  0.0000000000 -dist_here
+F  0.0000000000  0.0000000000  dist_here
+$end
+
+$rem
+JOBTYPE                     OPT
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       mixed
+NEO                         TRUE
+NEO_ISOTOPE                 1_for_H_2_for_D
+NEO_EPC                     EPC172
+SCF_ALGORITHM               DIIS
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+MAX_SCF_CYCLES              1000
+NEO_PURECART                1111
+NEO_SIMULTANEOUS_SCF        TRUE
+NEO_N_HARTREE_PROD          TRUE
+NEO_VPP                     FALSE
+THRESH                      14
+MEM_TOTAL                   5000
+GEOM_OPT_TOL_GRADIENT       100
+XC_GRID                     000099000590
+$end
+
+$basis
+H  1
+aug-cc-pV5Z
+****
+F  2
+aug-cc-pVDZ
+****
+F  3
+aug-cc-pVDZ
+****
+$end
+
+$neo_msdft
+SAVE_DENS ${IDX}
+$end
+
+$OPT
+FIXED 
+2 XYZ
+3 XYZ
+ENDFIXED
+$END
+
+$neo_basis
+H    1
+appropriate_basis_here
+****
+$end

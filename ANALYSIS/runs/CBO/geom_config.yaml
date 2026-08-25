@@ -1,0 +1,63 @@
+observables:
+- id: RCO
+  type: bond
+  indices:
+  - 1
+  - 2
+  label: $R_{\mathrm{CO}}$
+- id: cn_bend
+  type: angle
+  indices:
+  - 1
+  - 10
+  - 11
+  label: CN Bend
+plots:
+- x_id: RCO
+  y_field: vibronic_coupling
+  label: $V$
+  output: V_vs_RCO.png
+  xlim:
+  - 2.6
+  - 3.0
+  ylim:
+  - 1
+  - 300
+- x_id: RCO
+  y_field: delta_E_kcal
+  label: $\Delta E_{\mathrm{seam}}$
+  output: deltaE_vs_RCO.png
+  xlim:
+  - 2.6
+  - 3.0
+  ylim:
+  - 0
+  - 60
+- x_id: cn_bend
+  y_field: vibronic_coupling
+  label: $V$
+  output: V_vs_cn_bend.png
+  xlim:
+  - 140
+  - 180
+  ylim: null
+- x_id: RCO
+  y_id: cn_bend
+  color: vibronic_coupling
+  label: $V$
+  output: coupling_map_RCO_vs_cn_bend.png
+  xlim:
+  - 2.6
+  - 3.0
+  ylim:
+  - 140
+  - 180
+  clim: null
+write_table: false
+table_path: geom_scatter_table.txt
+plot_1d_hist_splines: false
+plot_defaults:
+  xlim: null
+  ylim: null
+  clim: null
+  yscale: log

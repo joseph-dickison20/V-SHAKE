@@ -1,0 +1,34 @@
+observables:
+- id: ROO
+  type: bond
+  indices:
+  - 1
+  - 2
+  label: $R_{\mathrm{OO}}$
+plots:
+- x_id: ROO
+  y_field: vibronic_coupling
+  label: $V$
+  output: V_vs_ROO.png
+  xlim:
+  - 2.35
+  - 2.75
+  ylim:
+  - 10
+  - 1400
+- x_id: ROO
+  y_field: delta_E_kcal
+  label: $\Delta E_{\mathrm{seam}}$
+  output: deltaE_vs_ROO.png
+  xlim:
+  - 2.35
+  - 2.75
+  ylim: null
+write_table: false
+table_path: geom_scatter_table.txt
+plot_1d_hist_splines: false
+plot_defaults:
+  xlim: null
+  ylim: null
+  clim: null
+  yscale: log

@@ -1,0 +1,82 @@
+$molecule
+0 1
+H     0.3709716000   1.3842775469   0.0731756414
+O     1.2276698647   1.0499744682   0.0157274092
+O    -1.1895796262   0.6586543714   0.0459149543
+C     1.0302483159  -0.8276014942  -0.0592081614
+C    -1.3566074322  -0.0004440290  -0.0022894585
+C     0.2139880729  -1.1604232014   0.0204785042
+H     0.1624546245  -2.2156042986   0.0915094131
+H     1.9523445382  -0.3876411836  -0.0399105529
+C    -2.5445104412  -1.2277882413  -0.0182443081
+H    -2.8139921380  -1.2676449409  -1.0803922932
+H    -2.4316544478  -2.3089992004   0.3050908593
+H    -3.3486810220  -0.7335251905   0.4769019743
+$end
+
+$rem
+JOBTYPE                     OPT
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+NEO                         TRUE
+NEO_ISOTOPE                 2
+NEO_EPC                     EPC172
+SCF_ALGORITHM               GDM
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+MAX_SCF_CYCLES              1000
+NEO_PURECART                1111
+NEO_SIMULTANEOUS_SCF        TRUE
+NEO_N_HARTREE_PROD          TRUE
+NEO_VPP                     FALSE
+THRESH                      14
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+GEOM_OPT_MAX_CYCLES         30
+$end
+
+$neo_msdft
+SAVE_DENS 1
+$end
+
+$OPT
+FIXED 
+2 XYZ
+3 XYZ
+4 XYZ
+5 XYZ
+6 XYZ
+7 XYZ
+8 XYZ
+9 XYZ
+10 XYZ
+11 XYZ
+12 XYZ
+ENDFIXED
+$END
+
+$neo_basis
+H    1
+S   1   1.00
+     45.251                  1.0
+S   1   1.00
+     22.642                  1.0
+S   1   1.00
+      12.352                 1.0
+S   1   1.00
+      2.768                  1.0
+P   1   1.00
+     33.981                  1.0
+P   1   1.00
+     19.509                  1.0
+P   1   1.00
+      13.347                 1.0
+D   1   1.00
+     26.893                  1.0
+D   1   1.00
+     14.883                  1.0
+****
+$end

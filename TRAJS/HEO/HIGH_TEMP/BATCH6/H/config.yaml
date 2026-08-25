@@ -1,0 +1,58 @@
+# =============================================================================
+# V-SHAKE Configuration File
+# NEO-MSDFT Constrained Seam Sampling
+# =============================================================================
+
+# --- Initial geometry (heavy atoms only, no quantum proton) ---
+initial_geometry: "mecp.xyz"
+
+# Optional masses in AMU, same order as atoms in the XYZ file.
+# If set to null, masses are inferred from XYZ element symbols using most common isotope masses 
+masses_amu: null 
+
+# --- Quantum proton basis center initial guesses (Angstrom) ---
+# These are starting positions for the protonic basis center optimization.
+# Donor: proton localized near the first oxygen
+# Acceptor: proton localized near the second oxygen
+proton_center_donor:    [-0.0759427294,1.0929120598, -0.0000000060]
+proton_center_acceptor: [0.1016372367, 1.0862772158, -0.0000000085]
+
+# --- Q-Chem interface ---
+opt_template: "opt.in"
+msdft_template: "msdft.in"
+qchem_nprocs: 24
+proton_center_indices: [1, 2]   # 1-based Q-Chem atom indices of H and @H in MSDFT job 3
+
+# --- Dynamics parameters ---
+target_temperature: 1000.0        # Kelvin
+# Initial velocities: "mb" (default), "file" (initial_velocity_path), or "nacv" (seam-tangent NACV)
+initial_velocity_mode: "mb"
+initial_velocity_path: null     # optional XYZ-like velocity file, units: Bohr / atomic unit of time
+dt_fs: 1.0                      # time step in femtoseconds
+constraint_threshold: 1.0e-6    # |sigma| threshold in Hartree 
+max_shake_iter: 30              # max SHAKE bisection iterations
+
+# Minimum donor/acceptor proton basis-center distance after diabat (SHAKE) search.
+# Below this threshold triggers Maxwell-Boltzmann velocity resample recovery. Set to null to disable.
+min_proton_center_separation_angstrom: 0.15
+
+# After a failed SHAKE step, stay at the current geometry and draw new seam-projected
+# Maxwell-Boltzmann velocities (rescaled to preserve instantaneous temperature) up to
+# this many times before terminating the trajectory.
+max_mb_resamples: 20
+
+thermostat: "berendsen"         # "berendsen" or "none"
+thermostat_tau_fs: 10.0         # Berendsen time constant in fs
+
+# --- Simulation length ---
+n_steps: 1000                   # number of V-SHAKE steps (set low for testing)
+save_interval: 1                # save trajectory frame every N steps
+
+# --- Output ---
+trajectory_path: "trajectory.npz"
+seam_xyz_path: "seam_geometries.xyz"
+save_qchem_outputs: true
+output_dir: "output"
+log_filename: "output.log"
+msdft_subdir: "msdft"
+opt_subdir: "opt"

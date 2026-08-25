@@ -1,0 +1,144 @@
+run_name: HEO
+trajectory_root: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO
+temps:
+- HIGH_TEMP
+- LOW_TEMP
+isotopes:
+- H
+- D
+batches: null
+seam_geometries:
+  H:
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH1/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH2/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH3/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH4/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH5/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH6/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH1/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH2/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH3/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH4/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH5/H/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH6/H/seam_geometries.xyz
+  D:
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH1/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH2/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH3/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH4/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH5/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH6/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH1/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH2/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH3/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH4/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH5/D/seam_geometries.xyz
+  - /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/LOW_TEMP/BATCH6/D/seam_geometries.xyz
+qchem_mecp_paths:
+  H: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH1/H/output/msdft/msdft_0.out
+  D: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/HEO/HIGH_TEMP/BATCH1/D/output/msdft/msdft_0.out
+density_cube_paths:
+  H: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/xDENPLT/OUTPUT/HEO_H.cube
+  D: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/projects/VSHAKE/TRAJS/xDENPLT/OUTPUT/HEO_D.cube
+master_xyz:
+  x_lim:
+  - 0.0
+  - 60.0
+  y_lim:
+  - 10.0
+  - 1400.0
+  log_minor_ticks: true
+  yscale: log
+sir:
+  nslices: 10
+  var: 0.99
+  n_eigenvalues_plot: 10
+  n_eigenvectors_viz: 3
+sir_viz:
+  arrow_scale: 3.0
+  arrow_color:
+    H: '#d62728'
+    D: '#1f77b4'
+  gperp_color: '#2ca02c'
+  gradv_color: '#ff7f0e'
+  arrow_mol_transparency: 0.2
+  amplitude: 0.5
+  n_frames: 24
+  zoom_center: 3.0
+  turn_x: 0.0
+  turn_y: 0.0
+  turn_z: 0.0
+  png_width: 2000
+  png_height: 1400
+  png_dpi: 600
+  ray: 1
+  gif_delay: 5
+  gif_loop: 0
+  gif_extra_args: ''
+  density:
+    root: TRAJS/xDENPLT/OUTPUT
+    isovalue: 0.04
+    color:
+    - 128
+    - 229
+    - 255
+    paths: {}
+  cos_barchart_xlim:
+  - -0.5
+  - 10.5
+  cos_barchart_ylim: null
+  per_isotope:
+    H:
+      turn_x: 0.0
+      turn_y: 0.0
+      turn_z: 0.0
+    D:
+      turn_x: 0.0
+      turn_y: 180.0
+      turn_z: 0.0
+  per_vector:
+    sir:
+      amplitude: 0.5
+    gperp:
+      amplitude: 0.2
+    gradv:
+      amplitude: 0.2
+qchem_mecp:
+  temp: HIGH_TEMP
+  batch: BATCH1
+n_skip_rows: 2
+geom:
+  observables:
+  - id: ROO
+    type: bond
+    indices:
+    - 1
+    - 2
+    label: $R_{\mathrm{OO}}$
+  plots:
+  - x_id: ROO
+    y_field: vibronic_coupling
+    label: $V$
+    output: V_vs_ROO.png
+    xlim:
+    - 2.35
+    - 2.75
+    ylim:
+    - 10
+    - 1400
+  - x_id: ROO
+    y_field: delta_E_kcal
+    label: $\Delta E_{\mathrm{seam}}$
+    output: deltaE_vs_ROO.png
+    xlim:
+    - 2.35
+    - 2.75
+    ylim: null
+  plot_defaults:
+    xlim: null
+    ylim: null
+    clim: null
+    yscale: log
+  write_table: false
+  table_path: geom_scatter_table.txt
+  plot_1d_hist_splines: false
