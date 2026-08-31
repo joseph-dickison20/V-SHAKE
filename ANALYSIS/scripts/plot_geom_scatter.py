@@ -42,8 +42,11 @@ from hd_plot_colors import (
 
 plt.rcParams.update(
     {
-        "font.size": 12,
+        "font.size": 14,
         "axes.labelsize": 14,
+        "xtick.labelsize": 14,
+        "ytick.labelsize": 14,
+        "legend.fontsize": 14,
         "font.family": "sans-serif",
         "font.sans-serif": [
             "Arial",
@@ -877,7 +880,7 @@ def _add_mecp_figure_legend(fig: plt.Figure, *, color: str) -> None:
         labels=["MECP"],
         loc="lower right",
         bbox_to_anchor=(0.99, 0.02),
-        fontsize=12,
+        fontsize=14,
         frameon=True,
         framealpha=1.0,
         borderpad=0.35,
@@ -1088,7 +1091,7 @@ def make_scatter_plot_1d_hd(
         )
     _add_mecp_vline(ax, x_mecp_h, color=COLOR_H_MECP)
     _add_mecp_vline(ax, x_mecp_d, color=COLOR_D_MECP)
-    ax.legend(loc="best", fontsize=9, frameon=True, markerscale=2)
+    ax.legend(loc="best", fontsize=14, frameon=True, markerscale=2)
     fig.tight_layout()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_path, bbox_inches="tight")
@@ -1284,7 +1287,7 @@ def make_hist_pdf_1d_hd(
     _apply_one_axis_limit(ax, "y", ylim, 0.0, max(y_max * 1.08, 1e-12))
     _add_mecp_vline(ax, x_mecp_h, color=COLOR_H_MECP)
     _add_mecp_vline(ax, x_mecp_d, color=COLOR_D_MECP)
-    ax.legend(loc="best", fontsize=9, frameon=True)
+    ax.legend(loc="best", fontsize=14, frameon=True)
     fig.tight_layout()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_path, bbox_inches="tight")

@@ -17,6 +17,8 @@ TRAJS/
 │   ├── sbatch.sh
 │   ├── HIGH_TEMP/BATCH{1–6}/{H,D}/
 │   └── LOW_TEMP/BATCH{1–6}/{H,D}/
+├── xMECP_OPT/
+│   └── {CBO,HEO}_{H,D}_MECP.out
 └── xDENPLT/
     └── OUTPUT/{CBO,HEO}_{H,D}.cube
 ```
@@ -58,6 +60,11 @@ density cubes under `xDENPLT/OUTPUT/`.
 
 The driver can also write `trajectory.npz` (`trajectory_path` in `config.yaml`).
 ANALYSIS does not use that archive.
+
+## NEO-MECP optimization outputs
+
+`xMECP_OPT/` holds the Q-Chem output files from the NEO-MECP optimization job
+for each system (`{CBO,HEO}_{H,D}_MECP.out`).
 
 ## Nuclear density cubes
 

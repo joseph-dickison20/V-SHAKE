@@ -1,3 +1,6 @@
+import struct
+import zlib
+
 import numpy as np
 import plotly.graph_objects as go
 
@@ -31,7 +34,7 @@ SURFACE_MESH      = True      # draw wireframe grid lines on the surfaces
 MESH_COLOR        = '#000000' # color of the surface mesh lines
 MESH_WIDTH        = 1         # thickness of surface mesh lines
 MESH_EVERY        = 0.35      # spacing between mesh lines (data units; smaller = denser)
-SEAM_WIDTH        = 9         # thickness of crossing seam lines
+SEAM_WIDTH        = 14        # thickness of crossing seam lines
 
 BACKGROUND_STYLE  = 'linegrid'  # 'linegrid' | 'plotly' | 'none'
 #   'linegrid' -> white panes with faint gray gridlines (clean, journal-style)
@@ -230,12 +233,35 @@ fig.add_shape(type='circle', xref='paper', yref='paper',
 
 # upright axis labels (positions manually set; DO NOT CHANGE)
 fig.add_annotation(text='<i>E</i>', x=0.1, y=0.45, xref='paper', yref='paper',
-    showarrow=False, font=dict(size=25, color=AXIS_LABEL_COLOR))
-fig.add_annotation(text='<i>Q\u2081</i>', x=0.40, y=0.12, xref='paper', yref='paper',
-    showarrow=False, font=dict(size=25, color=AXIS_LABEL_COLOR))
-fig.add_annotation(text='<i>Q\u2082</i>', x=0.78, y=0.26, xref='paper', yref='paper',
-    showarrow=False, font=dict(size=25, color=AXIS_LABEL_COLOR))
+    showarrow=False, font=dict(size=30, color=AXIS_LABEL_COLOR))
+fig.add_annotation(text='<i>Q</i>\u2081', x=0.40, y=0.12, xref='paper', yref='paper',
+    showarrow=False, font=dict(size=30, color=AXIS_LABEL_COLOR))
+fig.add_annotation(text='<i>Q</i>\u2082', x=0.78, y=0.26, xref='paper', yref='paper',
+    showarrow=False, font=dict(size=30, color=AXIS_LABEL_COLOR))
+
+def tag_png_dpi(path, dpi):
+    """Stamp a pHYs resolution chunk so viewers report `dpi`. Pixels are untouched:
+    a 2850x2250 render tagged at 600 dpi is a 4.75 x 3.75 in figure."""
+    ppm = int(round(dpi / 0.0254))          # pHYs stores pixels per meter
+    body = struct.pack('>IIB', ppm, ppm, 1)  # unit 1 = meters
+    phys = (struct.pack('>I', len(body)) + b'pHYs' + body +
+            struct.pack('>I', zlib.crc32(b'pHYs' + body) & 0xffffffff))
+    with open(path, 'rb') as f:
+        data = f.read()
+    out, pos = [data[:8]], 8
+    while pos < len(data):
+        length = struct.unpack('>I', data[pos:pos + 4])[0]
+        ctype = data[pos + 4:pos + 8]
+        end = pos + 12 + length
+        if ctype != b'pHYs':
+            out.append(data[pos:end])
+        if ctype == b'IHDR':
+            out.append(phys)
+        pos = end
+    with open(path, 'wb') as f:
+        f.write(b''.join(out))
 
 fig.write_image('seam_schematic.png', scale=3)
+tag_png_dpi('seam_schematic.png', 600)
 print('saved seam_schematic.png ZMAX=%.2f MECP_y=%.2f' % (ZMAX, p_mecp[1]))
 print('MECP overlay paper coords: (%.3f, %.3f) -- nudge with MECP_OVERLAY_DX/DY if off' % (mx, my))

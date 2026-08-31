@@ -1,0 +1,1965 @@
+This is a multi-thread run using 12 threads
+/scratch/gpfs/SHS/ep4118/qchem_dev/neo_mecp_jy/exe/qcprog.exe .acac_H_mecp_opt.inp.793648.qcin.1 /scratch/gpfs/SHS/ep4118/qc_scratch/qchem793648/
+
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 6.2 (devel), Q-Chem, Inc., Pleasanton, CA (2024)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. D. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  Huseyin Aksu,  B. Alam,  
+ B. Albrecht,  A. Aldossary,  E. Alguire,  J. H. Andersen,  
+ J. E. Arias-Martinez,  V. Athavale,  D. Barton,  K. Begam,  A. Behn,  
+ N. Bellonzi,  Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  
+ K. Carter-Fenk,  Mathew Chow,  Romit Chakraborty,  Chandrima Chakravarty,  
+ Junhan Chen,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  L. Cunha,  
+ S. Dasgupta,  Jia Deng,  Joseph Dickinson,  M. de Wergifosse,  
+ M. Diedenhofen,  Hainam Do,  Wenjie Dou,  S. Ehlert,  Po-Tung Fang,  
+ S. Fatehi,  Qingguo Feng,  Jonathan Fetherolf,  T. Friedhoff,  
+ Thomas Froitzheim,  Sarai Folkestad,  B. Ganoe,  J. Gayvert,  Qinghui Ge,  
+ G. Gidofalvi,  M. Gimferrer,  M. Goldey,  Montgomery Gray,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  J. A. Gyamfi,  
+ M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  
+ M. Hernandez Vera,  M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  
+ Kerwin Hui,  B. C. Huynh,  K. Ikeda,  M. Ivanov,  Nayanthara K. Jayadev,  
+ Hyunjun Ji,  Zuxin Jin,  Hanjie Jiang,  Subrata Jana,  B. Kaduk,  
+ S. Kaehler,  R. Kang,  K. Khistyaev,  Jaehoon Kim,  Yongbin Kim,  
+ P. Klunzinger,  Z. Koczor-Benda,  Joong Hoon Koh,  D. Kosenkov,  
+ Saikiran Kotaru,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  K. Kue,  
+ A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  S. Lehtola,  
+ Rain Li,  Shaozhi Li,  Tao E. Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  Xiao Liu,  
+ M. Loipersberger,  A. Luenser,  C. Malbon,  Aniket Mandal,  Manisha,  
+ A. Manjanath,  P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  
+ A. V. Marenich,  T. Markovich,  S. Mason,  F. Matz,  S. A. Maurer,  
+ Samuel May,  Alexandra McIsaac,  P. F. McLaughlin,  M. F. S. J. Menger,  
+ J.-M. Mewes,  S. A. Mewes,  P. Morgante,  Mohammad Mostafanejad,  
+ Madhubani Mukherjee,  J. W. Mullinax,  Quyen Nguyen,  Avik Kumar Ojha,  
+ K. J. Oosterbaan,  Eno Paenurk,  Xiaoliang Pan,  G. Paran,  V. Parravicini,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ P. E. Schneider,  Tim K. Schramm,  N. Sergueev,  S. M. Sharada,  
+ Hengyuan Shen,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Alistair J. Sterling,  Yingli Su,  Yu-Chuan Su,  E. J. Sundstrom,  
+ J. Talbot,  Zhen Tao,  J. Thirman,  Hung-Yi Tsai,  T. Tsuchimochi,  
+ N. M. Tubman,  C. Utku,  S. P. Veccham,  O. Vydrov,  Rahel Weiss,  
+ J. Wenzel,  Jonathan Wong,  J. Witte,  H. Wu,  Yanze Wu,  A. Yamada,  
+ Chou-Hsun Yang,  Kun Yao,  S. Yeganeh,  S. R. Yost,  Qi Yu,  A. Zech,  
+ F. Zeller,  Chongxiao Zhao,  Igor Ying Zhang,  Xing Zhang,  Yu Zhang,  
+ D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  K. B. Bravaya,  
+ B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  Hsing-Ta Chen,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ Xiangyuan Li,  WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  
+ T. Neudecker,  C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  
+ V. A. Rassolov,  Haisheng Ren,  Yihan Shao,  L. V. Slipchenko,  
+ R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  A. Tkatchenko,  
+ D. G. Truhlar,  T. Van Voorhis,  Fan Wang,  T. A. Wesolowski,  K. B. Whaley,  
+ H. L. Woodcock III,  P. M. Zimmerman,  S. Faraji,  P. M. W. Gill,  
+ M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 6.2.2 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 12.8.2 (Cortisol Injector).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Tue May 12 18:51:16 2026  
+
+ Host: della-h17n6
+0
+
+     Scratch files written to /scratch/gpfs/SHS/ep4118/qc_scratch/qchem793648//
+ Processing $rem in /scratch/gpfs/SHS/ep4118/qchem_dev/neo_mecp_jy/config/preferences:
+ Processing $rem in /home/ep4118/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 1
+H      -0.0759410103     1.0929091483    -0.0000000060
+@H      0.1016395184     1.0862798568    -0.0000000084
+O      -1.1910336399     0.8506856755     0.0000000110
+O       1.2124077388     0.8152631461    -0.0000000293
+C      -1.1879679806    -0.4350550828     0.0000000082
+C       1.2170408577    -0.4704019021    -0.0000000343
+C      -0.0050212899    -1.1802138898    -0.0000000097
+H      -0.0317392715    -2.2661848786    -0.0000000091
+H      -2.1684073525    -0.9323947362     0.0000000203
+C       2.5525372154    -1.1567942396    -0.0000000910
+H       3.1230922630    -0.8411430380     0.8847747195
+H       2.4507182315    -2.2475608582     0.0000001378
+H       3.1230919838    -0.8411434074    -0.8847752170
+$end
+
+$rem
+jobtype      opt
+input_bohr   false
+sym_ignore   true
+method       b3lyp
+basis        aug-cc-pvdz
+neo          true
+neo_epc      epc172
+neo_vpp      false
+neo_isotope  1
+neo_mecp     true
+neo_mecp_alpha  500
+XC_GRID               000099000590
+SCF_ALGORITHM         GDM
+SCF_MAX_CYCLES        200
+NEO_SIMULTANEOUS_SCF  TRUE 
+NEO_STEPWISE_SCF_STEPS   1
+NEO_PURECART          1111
+NEO_N_MAX_SCF_CYCLES  30
+NEO_E_MAX_SCF_CYCLES  30
+SCF_CONVERGENCE       10
+NEO_N_SCF_CONVERGENCE 10
+THRESH                14
+geom_opt_max_cycles   100
+GEOM_OPT_TOL_GRADIENT 10
+GEOM_OPT_DMAX         100
+GEOM_OPT_COORDS       0
+$end
+
+$neo_basis
+H 1
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+H 2
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H      -0.0759410103     1.0929091483    -0.0000000060
+    2      GH      0.1016395184     1.0862798568    -0.0000000084
+    3      O      -1.1910336399     0.8506856755     0.0000000110
+    4      O       1.2124077388     0.8152631461    -0.0000000293
+    5      C      -1.1879679806    -0.4350550828     0.0000000082
+    6      C       1.2170408577    -0.4704019021    -0.0000000343
+    7      C      -0.0050212899    -1.1802138898    -0.0000000097
+    8      H      -0.0317392715    -2.2661848786    -0.0000000091
+    9      H      -2.1684073525    -0.9323947362     0.0000000203
+   10      C       2.5525372154    -1.1567942396    -0.0000000910
+   11      H       3.1230922630    -0.8411430380     0.8847747195
+   12      H       2.4507182315    -2.2475608582     0.0000001378
+   13      H       3.1230919838    -0.8411434074    -0.8847752170
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =         230.08071860 hartrees
+ There are       23 alpha and       23 beta electrons
+ Requested basis set is aug-cc-pVDZ
+ There are 89 shells and 201 basis functions
+
+ Total QAlloc Memory Limit   2000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+ -----------------------------------------------------------------------
+                STARTING GEOMETRY OPTIMIZER USING LIBOPT3
+                by Peter F. McLaughlin, Yu Zhang, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+
+              Initial Energy and Gradient Calculation
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H      -0.0759410103     1.0929091483    -0.0000000060
+    2      GH      0.1016395184     1.0862798568    -0.0000000084
+    3      O      -1.1910336399     0.8506856755     0.0000000110
+    4      O       1.2124077388     0.8152631461    -0.0000000293
+    5      C      -1.1879679806    -0.4350550828     0.0000000082
+    6      C       1.2170408577    -0.4704019021    -0.0000000343
+    7      C      -0.0050212899    -1.1802138898    -0.0000000097
+    8      H      -0.0317392715    -2.2661848786    -0.0000000091
+    9      H      -2.1684073525    -0.9323947362     0.0000000203
+   10      C       2.5525372154    -1.1567942396    -0.0000000910
+   11      H       3.1230922630    -0.8411430380     0.8847747195
+   12      H       2.4507182315    -2.2475608582     0.0000001378
+   13      H       3.1230919838    -0.8411434074    -0.8847752170
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =         230.08071860 hartrees
+ There are       23 alpha and       23 beta electrons
+
+                       Distance Matrix (Angstroms)
+             H (  1)   GH(  2)   O (  3)   O (  4)   C (  5)   C (  6)
+   GH(  2)  0.177704
+   O (  3)  1.141098  1.313967
+   O (  4)  1.317926  1.143353  2.403702
+   C (  5)  1.889783  1.994379  1.285744  2.706492
+   C (  6)  2.028730  1.915040  2.746652  1.285673  2.405269
+   C (  7)  2.274229  2.269002  2.351846  2.337533  1.398079  1.413248
+   H (  8)  3.359385  3.355117  3.325484  3.323135  2.165618  2.187302
+   H (  9)  2.912091  3.037789  2.033380  3.805814  1.099367  3.416826
+   C ( 10)  3.459778  3.322391  4.247858  2.384315  3.809500  1.501561
+   H ( 11)  3.841510  3.691472  4.717711  2.679034  4.419612  2.133848
+   H ( 12)  4.188406  4.078316  4.781369  3.303680  4.065122  2.163389
+   H ( 13)  3.841510  3.691472  4.717711  2.679034  4.419612  2.133848
+             C (  7)   H (  8)   H (  9)   C ( 10)   H ( 11)   H ( 12)
+   H (  8)  1.086300
+   H (  9)  2.177534  2.518799
+   C ( 10)  2.557666  2.812336  4.726275
+   H ( 11)  3.268469  3.573028  5.365736  1.099088
+   H ( 12)  2.677664  2.482527  4.802706  1.095509  1.792463
+   H ( 13)  3.268469  3.573028  5.365736  1.099088  1.769550  1.792463
+
+ 
+ Requested basis set is aug-cc-pVDZ
+ There are 89 shells and 201 basis functions
+ A cutoff of  1.0D-14 yielded   3991 shell pairs
+ There are     20409 function pairs (     22950 Cartesian)
+ Requested basis set is non-standard
+ There are 18 shells and 46 basis functions
+ Smallest overlap matrix eigenvalue = 3.19E-07
+ Linear dependence detected in AO basis
+ Tighter screening thresholds may be required for diffuse basis sets
+ Use S2THRESH > 14 and THRESH = 14 in case of SCF convergence issues
+ Number of orthogonalized atomic orbitals = 200
+ Maximum deviation from orthogonality = 1.331E-11
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000069 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 46.000000 electrons
+ Constructing Nucl. Initial Guess for NEO Calculation: CORE
+ NEO centers: 1 2 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ using 12 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using Roothaan-Hall, GDM
+ SCF converges when RMS gradient is below 1.0e-10
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1    -307.5970493615      4.11e-02  Roothaan Step
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -306.3863398235      1.57e-01   Descent step
+    2    -306.4812411749      1.54e-01   Normal BFGS step
+    3    -306.5004079090      9.35e-02   Normal BFGS step
+    4    -306.5160023723      2.32e-02   Normal BFGS step
+    5    -306.5211023309      2.73e-02   Normal BFGS step
+    6    -306.5211441739      2.11e-02   Normal BFGS step
+    7    -306.5225107627      6.04e-03   Normal BFGS step
+    8    -306.5224886121      5.69e-03  Line search: overstep
+    9    -306.5226011126      1.25e-03   Normal BFGS step
+   10    -306.5226100651      7.80e-04   Normal BFGS step
+   11    -306.5226121011      5.51e-04   Normal BFGS step
+   12    -306.5226128831      1.12e-04   Normal BFGS step
+   13    -306.5226130268      2.34e-05   Normal BFGS step
+   14    -306.5226130372      1.19e-05   Normal BFGS step
+   15    -306.5226130394      3.68e-06   Normal BFGS step
+   16    -306.5226130397      1.80e-06   Normal BFGS step
+   17    -306.5226130397      5.24e-07   Normal BFGS step
+   18    -306.5226130397      1.98e-07   Normal BFGS step
+   19    -306.5226130397      1.92e-07   Normal BFGS step
+   20    -306.5226130397      5.07e-08   Normal BFGS step
+   21    -306.5226130397      3.86e-08   Normal BFGS step
+   22    -306.5226130397      2.19e-08   Normal BFGS step
+   23    -306.5226130397      1.95e-09   Normal BFGS step
+   24    -306.5226130397      1.35e-09   Normal BFGS step
+   25    -306.5226130397      1.38e-09   Normal BFGS step
+   26    -306.5226130397      7.58e-10   Normal BFGS step
+   27    -306.5226130397      8.15e-11  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 267.17s  wall 24.00s 
+ SCF   energy =  -306.52261304
+ Total energy =  -306.52261304
+ Integrated density by DFT XC:
+   Number of electrons = 46
+   Numerical integral  =    46.000005397098
+   Relative error      =     0.0000117328 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ A cutoff of  1.0D-14 yielded   3991 shell pairs
+ There are     20409 function pairs (     22950 Cartesian)
+ This NEO calculation is using proton isotope
+Setting pmass = 1836.15
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 2 
+input section passed (neo_scf): 0
+ This is a NEO-MECP calculation
+ NEO-MECP alpha = 500.00
+ NEO-MECP shift (cm^-1): 0.00
+ NEO-MECP shift (Hartree): 0.00
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+input section passed (density_load_save): none
+ NEO-MSDFT calculation has been requested 
+ There are 1 number of transferring nuclei 
+ 2 NEO-DFT diabatic states will be considered in the NEO-MECP routine 
+ Number of electronic ao: 201  Number of electronic mo: 200
+ Number of nuclear ao: 46  Number of nuclear mo: 46
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+
+ NEO-DFT Diabatic State 1:
+ Performing inital eSCF... 
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -172.2320788447      2.21e+00   Descent step
+    2    -177.4530455454      2.70e+00   Descent step
+    3    -182.0052992473      2.15e+00   Descent step
+    4    -186.0657858301      1.49e+00   Descent step
+    5    -189.8096515127      1.23e+00   Descent step
+    6    -198.8096812202      1.31e+00  Line search: understep
+    7    -202.7490854001      2.78e+00   Descent step
+    8    -206.0583509496      1.58e+00   Descent step
+    9    -208.9898812813      9.21e-01   Descent step
+   10    -211.8628308100      1.02e+00   Descent step
+   11    -214.7277849295      1.17e+00   Descent step
+   12    -217.4258220670      1.20e+00   Descent step
+   13    -220.0961319129      1.21e+00   Descent step
+   14    -222.6307239600      9.40e-01   Descent step
+   15    -225.1151262440      9.12e-01   Descent step
+   16    -227.6449492703      1.29e+00   Descent step
+   17    -230.1252613481      9.95e-01   Descent step
+   18    -232.4248231294      7.47e-01   Descent step
+   19    -234.7260591948      9.21e-01   Descent step
+   20    -236.9052832194      7.14e-01   Descent step
+   21    -239.0398741222      7.44e-01   Descent step
+   22    -241.2473961929      1.02e+00   Descent step
+   23    -243.3518164988      8.92e-01   Descent step
+   24    -245.1657325368      7.81e-01   Descent step
+   25    -246.9376804867      6.33e-01   Descent step
+   26    -248.7194430671      6.89e-01   Descent step
+   27    -250.5681858202      7.45e-01   Descent step
+   28    -252.4374676973      6.65e-01   Descent step
+   29    -254.2304252091      8.34e-01   Descent step
+   30    -255.8285446277      4.86e-01   Descent step
+   31    -257.4895044808      4.26e-01   Descent step
+   32    -259.3072533560      6.09e-01   Descent step
+   33    -261.2044470311      1.16e+00   Descent step
+   34    -262.8179374550      6.22e-01   Descent step
+   35    -264.4175949556      5.33e-01   Descent step
+   36    -266.1806146028      7.83e-01   Descent step
+   37    -267.9484184885      8.99e-01   Descent step
+   38    -269.7817529232      8.15e-01   Descent step
+   39    -271.5303952297      7.73e-01   Descent step
+   40    -273.2624631919      6.28e-01   Descent step
+   41    -275.1139291120      8.26e-01   Descent step
+   42    -277.0073839787      1.87e+00   Descent step
+   43    -278.5459421769      6.81e-01   Descent step
+   44    -280.0712431246      8.30e-01   Descent step
+   45    -281.6922647466      1.10e+00   Descent step
+   46    -283.5176133254      1.52e+00   Descent step
+   47    -285.5720745040      1.89e+00   Descent step
+   48    -287.2600876780      1.13e+00   Descent step
+   49    -289.0899664738      1.42e+00   Descent step
+   50    -290.7563260625      1.58e+00   Descent step
+   51    -292.3315813109      9.99e-01   Descent step
+   52    -293.6131539437      7.04e-01   Descent step
+   53    -294.5316129075      5.76e-01   Descent step
+   54    -295.4409418953      9.07e-01   Descent step
+   55    -296.0102724472      1.07e+00   Descent step
+   56    -296.7905015723      1.58e+00   Descent step
+   57    -297.6533075018      5.33e-01   Descent step
+   58    -298.6769507058      6.70e-01   Descent step
+   59    -299.4934204947      5.03e-01   Descent step
+   60    -300.2730924756      3.60e-01   Descent step
+   61    -301.0623684636      4.94e-01   Descent step
+   62    -301.7591534766      1.85e+00   Descent step
+   63    -302.3937326366      6.69e-01   Descent step
+   64    -302.8900951948      4.60e-01   Descent step
+   65    -303.4141273157      3.69e-01   Descent step
+   66    -303.8973685181      9.69e-01   Descent step
+   67    -304.4366814727      5.18e-01   Descent step
+   68    -304.9929519959      5.39e-01   Descent step
+   69    -305.5781447715      8.23e-01   Descent step
+   70    -305.5946083404      3.65e-01   Descent step
+   71    -305.6702661334      6.37e-01   Descent step
+   72    -305.5873555426      7.10e-01   Descent step
+   73    -305.8795572848      8.93e-01  Line search: overstep
+   74    -306.0431022359      3.34e-01   Descent step
+   75    -305.8659660807      3.15e-01   Descent step
+   76    -306.1214970477      8.25e-01  Line search: overstep
+   77    -306.0755322225      9.92e-02   Dog-leg BFGS step
+   78    -306.1410213314      4.20e-01  Line search: overstep
+   79    -306.0827949842      5.05e-02   Dog-leg BFGS step
+   80    -306.1502944825      1.01e-01  Line search: overstep
+   81    -306.1187429354      2.67e-02   Normal BFGS step
+   82    -306.1536658076      1.04e-01  Line search: overstep
+   83    -306.1482583122      3.83e-02   Normal BFGS step
+   84    -306.1565209827      8.45e-02  Line search: overstep
+   85    -306.1576113869      1.92e-02   Normal BFGS step
+   86    -306.1581928479      1.18e-02   Normal BFGS step
+   87    -306.1585555496      7.36e-03   Normal BFGS step
+   88    -306.1581837046      6.87e-03   Normal BFGS step
+   89    -306.1588266082      1.07e-02  Line search: overstep
+   90    -306.1590611317      3.88e-03   Normal BFGS step
+   91    -306.1590793942      1.75e-03   Normal BFGS step
+   92    -306.1590891335      1.43e-03   Normal BFGS step
+   93    -306.1590984538      1.70e-03   Normal BFGS step
+   94    -306.1591069417      1.51e-03   Normal BFGS step
+   95    -306.1591889116      3.42e-03  Line search: understep
+   96    -306.1587063701      2.06e-02  Line search: understep
+   97    -306.1592663735      1.77e-01  Line search: overstep
+   98    -306.1589769997      3.60e-02  Line search: understep
+   99    -306.1593267443      1.62e-01  Line search: overstep
+  100    -306.1591447090      4.84e-02  Line search: understep
+  101    -306.3099257701      1.50e-01   Dog-leg BFGS step
+  102    -306.5044359490      4.00e-01   Descent step
+  103    -306.4250963116      1.03e-01   Dog-leg BFGS step
+  104    -306.5124719688      2.77e-01  Line search: overstep
+  105    -306.3950570279      5.62e-02   Dog-leg BFGS step
+  106    -306.5168069461      4.11e-01  Line search: overstep
+  107    -306.4412833085      2.00e-02   Dog-leg BFGS step
+  108    -306.5188720722      1.24e-01  Line search: overstep
+  109    -306.5204891803      1.92e-02   Normal BFGS step
+  110    -306.5209299255      1.36e-02   Normal BFGS step
+  111    -306.5209374858      2.49e-03   Normal BFGS step
+  112    -306.5209578680      2.68e-03   Normal BFGS step
+  113    -306.5209567974      1.96e-03   Normal BFGS step
+  114    -306.5209636976      1.70e-03  Line search: overstep
+  115    -306.5209644959      6.59e-04   Normal BFGS step
+  116    -306.5209649786      3.59e-04   Normal BFGS step
+  117    -306.5209650377      8.59e-05   Normal BFGS step
+  118    -306.5209650587      4.62e-05   Normal BFGS step
+  119    -306.5209650602      1.39e-05   Normal BFGS step
+  120    -306.5209650609      1.47e-05   Normal BFGS step
+  121    -306.5209650610      2.01e-06   Normal BFGS step
+  122    -306.5209650610      1.22e-06   Normal BFGS step
+  123    -306.5209650610      4.43e-07   Normal BFGS step
+  124    -306.5209650610      2.53e-07   Normal BFGS step
+  125    -306.5209650610      2.59e-08   Normal BFGS step
+  126    -306.5209650610      3.11e-08   Normal BFGS step
+  127    -306.5209650610      1.29e-08   Normal BFGS step
+  128    -306.5209650610      3.52e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.57e-09
+  129    -306.5209650610      1.92e-09   Normal BFGS step
+  130    -306.5209650610      1.81e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.31e-09
+  131    -306.5209650610      2.26e-10   Normal BFGS step
+  132    -306.5209650610      1.53e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.31e-09
+  133    -306.5209650610      2.28e-11   Normal BFGS step
+  133    -306.5209650610      2.28e-11  Convergence criterion met
+ ----------------------------------------------
+
+ E(eSCF) = -306.5209650610
+ Initial eSCF converged, proceeding to NEO-SCF... 
+ 
+Switching off gesman and scfman for the next cycles...
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     215.9100456626      5.90e-02   Normal BFGS step
+    2     215.9090702772      2.78e-02   Normal BFGS step
+    3     215.9088780570      1.21e-02   Normal BFGS step
+    4     215.9088756625      1.44e-03   Normal BFGS step
+    5     215.9088756407      1.55e-04   Normal BFGS step
+    6     215.9088756389      5.06e-05   Normal BFGS step
+    7     215.9088756388      7.46e-06   Normal BFGS step
+    8     215.9088756388      7.35e-07   Normal BFGS step
+    9     215.9088756388      1.21e-07   Normal BFGS step
+   10     215.9088756388      2.21e-08   Normal BFGS step
+   11     215.9088756388      3.98e-09   Normal BFGS step
+   12     215.9088756388      1.16e-09   Normal BFGS step
+   13     215.9088756388      1.17e-10   Normal BFGS step
+   14     215.9088756388      2.77e-11   Normal BFGS step
+   14     215.9088756388      2.77e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5142730405      1.87e-03   Normal BFGS step
+    2    -306.5143178476      3.53e-03   Normal BFGS step
+    3    -306.5143209308      2.60e-03   Normal BFGS step
+    4    -306.5143307154      1.24e-03   Normal BFGS step
+    5    -306.5143307090      8.74e-05   Normal BFGS step
+    6    -306.5143308117      1.34e-04   Normal BFGS step
+    7    -306.5143308113      3.51e-05   Normal BFGS step
+    8    -306.5143308167      2.37e-05   Normal BFGS step
+    9    -306.5143308167      1.39e-06   Normal BFGS step
+   10    -306.5143308167      8.57e-07   Normal BFGS step
+   11    -306.5143308167      6.01e-07   Normal BFGS step
+   12    -306.5143308167      8.70e-07   Normal BFGS step
+   13    -306.5143308167      1.66e-07   Normal BFGS step
+   14    -306.5143308167      1.53e-07   Normal BFGS step
+   15    -306.5143308167      6.04e-09   Normal BFGS step
+   16    -306.5143308167      7.10e-09   Normal BFGS step
+   17    -306.5143308168      1.19e-09   Normal BFGS step
+   18    -306.5143308167      2.02e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.09e-09
+   19    -306.5143308167      1.51e-10   Normal BFGS step
+   20    -306.5143308167      8.41e-11   Normal BFGS step
+   20    -306.5143308167      8.41e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5091951131      4.95e-04      2.57e-04  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5095447207      5.77e-02      2.35e-02   Normal BFGS step
+    2    -306.5124332904      4.34e-02      5.32e-02   Normal BFGS step
+    3    -306.5137204897      1.03e-02      3.55e-02   Normal BFGS step
+    4    -306.5143204180      2.11e-02      8.87e-03   Normal BFGS step
+    5    -306.5143715809      4.34e-03      2.05e-03   Normal BFGS step
+    6    -306.5144457294      2.92e-03      2.39e-03   Normal BFGS step
+    7    -306.5144780131      3.46e-03      1.55e-03   Normal BFGS step
+    8    -306.5144969461      2.31e-03      2.70e-03   Normal BFGS step
+    9    -306.5145066556      1.04e-03      2.07e-03   Normal BFGS step
+   10    -306.5145099392      7.25e-04      7.36e-04   Normal BFGS step
+   11    -306.5145117224      6.62e-04      5.52e-04   Normal BFGS step
+   12    -306.5145119948      4.48e-04      1.13e-04   Normal BFGS step
+   13    -306.5145121908      1.74e-04      1.04e-04   Normal BFGS step
+   14    -306.5145123672      1.32e-04      7.26e-05   Normal BFGS step
+   15    -306.5145124185      9.24e-05      3.59e-05   Normal BFGS step
+   16    -306.5145124283      4.55e-05      5.84e-05   Normal BFGS step
+   17    -306.5145124382      2.35e-05      3.00e-05   Normal BFGS step
+   18    -306.5145124385      1.03e-05      4.26e-06   Normal BFGS step
+   19    -306.5145124386      4.45e-06      1.26e-06   Normal BFGS step
+   20    -306.5145124386      1.01e-06      2.54e-07   Normal BFGS step
+   21    -306.5145124386      4.60e-07      6.99e-08   Normal BFGS step
+   22    -306.5145124386      8.27e-08      3.04e-08   Normal BFGS step
+   23    -306.5145124386      5.65e-08      5.28e-09   Normal BFGS step
+   24    -306.5145124386      1.50e-08      7.76e-09   Normal BFGS step
+   25    -306.5145124386      6.22e-09      1.56e-08   Normal BFGS step
+   26    -306.5145124386      4.56e-09      5.19e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.55e-08
+   27    -306.5145124386      1.99e-09      1.80e-09   Normal BFGS step
+   28    -306.5145124386      5.37e-10      1.29e-09   Normal BFGS step
+   29    -306.5145124386      6.58e-10      8.63e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.55e-08
+   30    -306.5145124386      1.11e-10      3.18e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.55e-08
+   31    -306.5145124386      3.26e-10      3.14e-10   Normal BFGS step
+   32    -306.5145124386      3.91e-11      4.96e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145124386
+ Expectation value of proton 0 : -0.11773651 2.08142490 -0.00000001
+
+ Calculating Analytical Gradient of Diabatic State 1...
+
+ NEO-DFT Diabatic State 2:
+ Performing inital eSCF... 
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -171.9443981858      2.13e+00   Descent step
+    2    -177.1749330850      2.69e+00   Descent step
+    3    -181.7349129434      2.19e+00   Descent step
+    4    -185.7917632928      1.56e+00   Descent step
+    5    -189.5016999110      1.21e+00   Descent step
+    6    -198.6930124442      1.30e+00  Line search: understep
+    7    -202.6725275971      2.16e+00   Descent step
+    8    -206.0111194756      1.65e+00   Descent step
+    9    -208.8948352674      9.91e-01   Descent step
+   10    -211.7463129150      9.83e-01   Descent step
+   11    -214.6411980409      1.25e+00   Descent step
+   12    -217.2980930226      1.17e+00   Descent step
+   13    -219.9505599561      1.18e+00   Descent step
+   14    -222.4722293108      8.71e-01   Descent step
+   15    -224.9662846484      9.05e-01   Descent step
+   16    -227.4201425484      1.47e+00   Descent step
+   17    -229.8185628626      8.67e-01   Descent step
+   18    -232.2155559151      9.28e-01   Descent step
+   19    -234.3954903142      7.59e-01   Descent step
+   20    -236.4664546813      7.07e-01   Descent step
+   21    -238.6520885366      8.69e-01   Descent step
+   22    -240.7659730331      6.26e-01   Descent step
+   23    -242.8363987754      7.48e-01   Descent step
+   24    -244.7439162731      9.72e-01   Descent step
+   25    -246.6057088229      8.17e-01   Descent step
+   26    -248.4023707434      7.21e-01   Descent step
+   27    -250.2589593277      6.25e-01   Descent step
+   28    -252.1418833291      8.04e-01   Descent step
+   29    -253.9853459671      8.85e-01   Descent step
+   30    -255.6306389905      6.85e-01   Descent step
+   31    -257.3341520774      4.95e-01   Descent step
+   32    -259.1508325112      9.10e-01   Descent step
+   33    -260.9765369941      8.66e-01   Descent step
+   34    -262.6151680469      6.10e-01   Descent step
+   35    -264.1910973559      5.48e-01   Descent step
+   36    -265.9579916065      6.51e-01   Descent step
+   37    -267.6887725030      5.33e-01   Descent step
+   38    -269.5221978486      7.71e-01   Descent step
+   39    -271.3208420581      8.47e-01   Descent step
+   40    -273.1105691529      8.92e-01   Descent step
+   41    -275.0634223229      1.98e+00   Descent step
+   42    -276.8212931556      7.50e-01   Descent step
+   43    -278.5433528239      1.17e+00   Descent step
+   44    -280.1607475629      9.57e-01   Descent step
+   45    -281.8887984202      1.27e+00   Descent step
+   46    -283.9528928808      2.68e+00   Descent step
+   47    -285.6997335250      1.54e+00   Descent step
+   48    -287.4013774772      8.13e-01   Descent step
+   49    -289.3892171755      1.49e+00   Descent step
+   50    -290.9910000301      2.34e+00   Descent step
+   51    -292.3317789508      8.96e-01   Descent step
+   52    -293.4796955971      8.69e-01   Descent step
+   53    -294.4273568785      4.44e-01   Descent step
+   54    -295.4659046843      7.33e-01   Descent step
+   55    -296.4172642801      5.56e-01   Descent step
+   56    -297.3527444645      7.24e-01   Descent step
+   57    -298.3712888826      5.95e-01   Descent step
+   58    -299.3988078933      1.04e+00   Descent step
+   59    -300.1491405468      5.17e-01   Descent step
+   60    -300.9643081494      7.38e-01   Descent step
+   61    -301.5713118038      2.09e+00   Descent step
+   62    -302.4407819114      7.72e-01   Descent step
+   63    -303.2222680341      4.73e-01   Descent step
+   64    -303.6527200453      8.13e-01   Descent step
+   65    -304.1011183991      4.33e-01   Descent step
+   66    -304.4255103578      7.22e-01   Descent step
+   67    -305.0353832384      6.95e-01   Descent step
+   68    -305.5604781146      1.05e+00   Descent step
+   69    -305.7511060909      3.06e-01   Descent step
+   70    -305.6895900193      3.26e-01   Descent step
+   71    -305.8508435439      6.28e-01  Line search: overstep
+   72    -305.7010583025      1.12e-01   Descent step
+   73    -305.8840141961      7.92e-01  Line search: overstep
+   74    -305.7864629855      1.69e-01   Dog-leg BFGS step
+   75    -305.9184064667      6.36e-01  Line search: overstep
+   76    -305.9524749456      8.82e-02   Dog-leg BFGS step
+   77    -305.8615762650      2.69e-01   Descent step
+   78    -306.0107997334      6.45e-01  Line search: overstep
+   79    -305.9563293509      2.33e-01   Dog-leg BFGS step
+   80    -306.0603554093      7.55e-01  Line search: overstep
+   81    -306.0409857150      2.71e-01   Dog-leg BFGS step
+   82    -306.1263492793      5.51e-01  Line search: overstep
+   83    -306.0768560744      7.18e-02   Dog-leg BFGS step
+   84    -306.1453591303      3.57e-01  Line search: overstep
+   85    -306.0951823188      1.38e-01   Normal BFGS step
+   86    -306.1551414725      4.77e-01  Line search: overstep
+   87    -306.1531792962      4.78e-02   Normal BFGS step
+   88    -306.1578610594      3.21e-02  Line search: overstep
+   89    -306.1542818428      1.86e-02   Normal BFGS step
+   90    -306.1587729381      1.55e-02  Line search: overstep
+   91    -306.1589463407      1.45e-02   Normal BFGS step
+   92    -306.1592662318      8.91e-03   Normal BFGS step
+   93    -306.1592843080      2.69e-03   Normal BFGS step
+   94    -306.1593147168      2.66e-03   Normal BFGS step
+   95    -306.1593168830      7.96e-04   Normal BFGS step
+   96    -306.1593185576      5.02e-04   Normal BFGS step
+   97    -306.1593232942      9.71e-04   Normal BFGS step
+   98    -306.1595398573      2.80e-03  Line search: understep
+   99    -306.1747923972      1.93e-02  Line search: understep
+  100    -306.2217444301      1.71e-01   Normal BFGS step
+  101    -306.4485796531      3.48e-01   Descent step
+  102    -306.3812828177      1.73e-01   Descent step
+  103    -306.4968510410      3.42e-01  Line search: overstep
+  104    -306.4682704622      1.20e-01   Dog-leg BFGS step
+  105    -306.5099812084      7.38e-02  Line search: overstep
+  106    -306.4516962795      6.59e-02   Dog-leg BFGS step
+  107    -306.5177154898      1.19e-01  Line search: overstep
+  108    -306.5059909579      4.04e-02   Normal BFGS step
+  109    -306.5197054726      1.05e-01  Line search: overstep
+  110    -306.5207701619      2.28e-02   Normal BFGS step
+  111    -306.5208923970      6.14e-03   Normal BFGS step
+  112    -306.5209282408      3.89e-03   Normal BFGS step
+  113    -306.5209386054      1.34e-03   Normal BFGS step
+  114    -306.5209411703      4.69e-04   Normal BFGS step
+  115    -306.5209417478      2.42e-04   Normal BFGS step
+  116    -306.5209418863      1.71e-04   Normal BFGS step
+  117    -306.5209419437      8.53e-05   Normal BFGS step
+  118    -306.5209419477      2.51e-05   Normal BFGS step
+  119    -306.5209419484      1.82e-05   Normal BFGS step
+  120    -306.5209419487      9.52e-06   Normal BFGS step
+  121    -306.5209419488      2.24e-06   Normal BFGS step
+  122    -306.5209419488      4.33e-07   Normal BFGS step
+  123    -306.5209419488      2.02e-07   Normal BFGS step
+  124    -306.5209419488      8.18e-08   Normal BFGS step
+  125    -306.5209419488      4.24e-08   Normal BFGS step
+  126    -306.5209419488      2.60e-08   Normal BFGS step
+  127    -306.5209419488      2.34e-08   Normal BFGS step
+  128    -306.5209419488      5.58e-09   Normal BFGS step
+  129    -306.5209419488      2.15e-09   Normal BFGS step
+  130    -306.5209419488      1.69e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.44e-09
+  131    -306.5209419488      1.82e-09   Normal BFGS step
+  132    -306.5209419488      3.21e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.44e-09
+  133    -306.5209419488      1.17e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.44e-09
+  134    -306.5209419488      8.16e-11   Normal BFGS step
+  134    -306.5209419488      8.16e-11  Convergence criterion met
+ ----------------------------------------------
+
+ E(eSCF) = -306.5209419488
+ Initial eSCF converged, proceeding to NEO-SCF... 
+ 
+Switching off gesman and scfman for the next cycles...
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5495825871      5.95e-02   Normal BFGS step
+    2    -306.5505598154      2.72e-02   Normal BFGS step
+    3    -306.5507523499      1.21e-02   Normal BFGS step
+    4    -306.5507547371      1.46e-03   Normal BFGS step
+    5    -306.5507547587      1.55e-04   Normal BFGS step
+    6    -306.5507547605      5.05e-05   Normal BFGS step
+    7    -306.5507547606      7.37e-06   Normal BFGS step
+    8    -306.5507547606      7.20e-07   Normal BFGS step
+    9    -306.5507547606      1.25e-07   Normal BFGS step
+   10    -306.5507547606      2.02e-08   Normal BFGS step
+   11    -306.5507547606      4.27e-09   Normal BFGS step
+   12    -306.5507547606      1.19e-09   Normal BFGS step
+   13    -306.5507547606      1.21e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.88e-09
+   14    -306.5507547606      2.68e-11   Normal BFGS step
+   14    -306.5507547606      2.68e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5142720692      1.93e-03   Normal BFGS step
+    2    -306.5143194317      3.92e-03   Normal BFGS step
+    3    -306.5143224251      2.77e-03   Normal BFGS step
+    4    -306.5143321634      1.29e-03   Normal BFGS step
+    5    -306.5143315437      4.72e-04   Normal BFGS step
+    6    -306.5143324030      9.44e-04  Line search: overstep
+    7    -306.5143324346      9.03e-05   Normal BFGS step
+    8    -306.5143324453      2.94e-05   Normal BFGS step
+    9    -306.5143324469      1.67e-05   Normal BFGS step
+   10    -306.5143324472      1.12e-05   Normal BFGS step
+   11    -306.5143324475      1.08e-05   Normal BFGS step
+   12    -306.5143324475      9.46e-07   Normal BFGS step
+   13    -306.5143324475      3.20e-07   Normal BFGS step
+   14    -306.5143324475      1.46e-07   Normal BFGS step
+   15    -306.5143324475      5.49e-08   Normal BFGS step
+   16    -306.5143324475      1.73e-08   Normal BFGS step
+   17    -306.5143324475      1.55e-08   Normal BFGS step
+   18    -306.5143324475      5.19e-09   Normal BFGS step
+   19    -306.5143324475      1.26e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.64e-08
+   20    -306.5143324475      1.05e-09   Normal BFGS step
+   21    -306.5143324475      1.05e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.88e-08
+   22    -306.5143324475      1.63e-10   Normal BFGS step
+   23    -306.5143324475      1.97e-10   Normal BFGS step
+   24    -306.5143324475      3.57e-11   Normal BFGS step
+   24    -306.5143324475      3.57e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5093402119      4.90e-04      2.55e-04  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5096773086      5.74e-02      2.26e-02   Normal BFGS step
+    2    -306.5124724405      4.27e-02      5.21e-02   Normal BFGS step
+    3    -306.5137154450      9.95e-03      3.52e-02   Normal BFGS step
+    4    -306.5143046039      2.19e-02      9.49e-03   Normal BFGS step
+    5    -306.5143108906      4.25e-03      4.25e-03   Normal BFGS step
+    6    -306.5144303674      3.21e-03      6.95e-03   Normal BFGS step
+    7    -306.5144743512      3.72e-03      1.29e-03   Normal BFGS step
+    8    -306.5144960449      3.37e-03      1.51e-03   Normal BFGS step
+    9    -306.5145069660      6.06e-04      2.76e-03   Normal BFGS step
+   10    -306.5145096720      3.71e-04      9.82e-04   Normal BFGS step
+   11    -306.5145114040      5.53e-04      7.13e-04   Normal BFGS step
+   12    -306.5145115760      2.86e-04      8.74e-05   Normal BFGS step
+   13    -306.5145118078      2.09e-04      9.62e-05   Normal BFGS step
+   14    -306.5145119322      1.51e-04      7.44e-05   Normal BFGS step
+   15    -306.5145119502      3.76e-05      4.31e-05   Normal BFGS step
+   16    -306.5145119587      1.73e-05      4.28e-05   Normal BFGS step
+   17    -306.5145119594      1.21e-05      4.35e-06   Normal BFGS step
+   18    -306.5145119595      3.78e-06      1.56e-06   Normal BFGS step
+   19    -306.5145119595      1.44e-06      2.23e-07   Normal BFGS step
+   20    -306.5145119595      3.77e-07      1.90e-07   Normal BFGS step
+   21    -306.5145119595      1.37e-07      5.81e-08   Normal BFGS step
+   22    -306.5145119595      1.49e-08      2.91e-08   Normal BFGS step
+   23    -306.5145119595      9.77e-09      6.64e-08   Normal BFGS step
+   24    -306.5145119595      6.43e-09      3.54e-09   Normal BFGS step
+   25    -306.5145119595      4.47e-09      3.13e-09   Normal BFGS step
+   26    -306.5145119595      4.63e-10      1.37e-09   Normal BFGS step
+   27    -306.5145119595      1.10e-09      1.89e-09   Normal BFGS step
+   28    -306.5145119595      1.21e-10      3.06e-10   Normal BFGS step
+   29    -306.5145119595      1.28e-10      3.13e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.46e-08
+   30    -306.5145119595      1.00e-10      6.93e-11   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.46e-08
+   31    -306.5145119595      3.71e-11      8.38e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145119595
+ Expectation value of proton 0 : 0.16720881 2.06993263 -0.00000002
+
+ Calculating Analytical Gradient of Diabatic State 2...
+ NEO SCF time:       CPU 6261.88s  wall 525.16s 
+
+ NEO-MECP information
+ Energy for diabatic state 0: -306.5145124386
+ Energy for diabatic state 1: -306.5145119595
+ E0 - E1: -0.0000004791
+
+ Proton-proton distance: 0.285177
+
+ Diabat 1 gradient: 
+       x          y          z
+ 1   0.0000046  -0.0000053   0.0000000 
+ 2   0.0000000   0.0000000   0.0000000 
+ 3   0.0002467  -0.0062214   0.0000000 
+ 4   0.0004745   0.0061332   0.0000000 
+ 5  -0.0030667   0.0097819  -0.0000000 
+ 6  -0.0034275  -0.0099965   0.0000000 
+ 7   0.0059982  -0.0000476  -0.0000000 
+ 8   0.0004139  -0.0000117   0.0000000 
+ 9  -0.0003888  -0.0009789  -0.0000000 
+ 10  -0.0002522   0.0010859  -0.0000000 
+ 11   0.0001338  -0.0000083   0.0000530 
+ 12  -0.0002704   0.0002769   0.0000000 
+ 13   0.0001338  -0.0000083  -0.0000530 
+
+ Diabat 2 gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000   0.0000000 
+ 2   0.0000056   0.0000048   0.0000000 
+ 3  -0.0003670   0.0090464   0.0000000 
+ 4  -0.0007019  -0.0088895   0.0000000 
+ 5   0.0044496  -0.0141844  -0.0000000 
+ 6   0.0049734   0.0145272  -0.0000000 
+ 7  -0.0087153   0.0000624   0.0000000 
+ 8  -0.0005914  -0.0000059   0.0000000 
+ 9   0.0005884   0.0014094  -0.0000000 
+ 10   0.0003553  -0.0015784   0.0000000 
+ 11  -0.0001962   0.0000146  -0.0000625 
+ 12   0.0003958  -0.0004212   0.0000000 
+ 13  -0.0001962   0.0000146   0.0000625 
+
+
+ NEO-MECP gradient: 
+       x          y          z
+ 1   0.0000046  -0.0000053   0.0000000 
+ 2   0.0000056   0.0000048   0.0000000 
+ 3  -0.0000069   0.0000876   0.0000000 
+ 4  -0.0000116  -0.0000745   0.0000000 
+ 5   0.0000392  -0.0001215  -0.0000000 
+ 6   0.0000439   0.0001372   0.0000000 
+ 7  -0.0000817  -0.0000022  -0.0000000 
+ 8  -0.0000015  -0.0000093   0.0000000 
+ 9   0.0000150   0.0000080  -0.0000000 
+ 10  -0.0000012  -0.0000150  -0.0000000 
+ 11  -0.0000026   0.0000012   0.0000053 
+ 12   0.0000049  -0.0000115   0.0000000 
+ 13  -0.0000026   0.0000012  -0.0000053 
+
+
+ NEO-MECP f_grad (orthogonal): 
+       x          y          z
+ 1  -0.0000000   0.0000000  -0.0000000 
+ 2   0.0000000   0.0000000   0.0000000 
+ 3  -0.0000033   0.0000819  -0.0000000 
+ 4  -0.0000063  -0.0000805   0.0000000 
+ 5   0.0000403  -0.0001285  -0.0000000 
+ 6   0.0000450   0.0001315  -0.0000000 
+ 7  -0.0000789   0.0000006   0.0000000 
+ 8  -0.0000054   0.0000000  -0.0000000 
+ 9   0.0000052   0.0000128   0.0000000 
+ 10   0.0000033  -0.0000143   0.0000000 
+ 11  -0.0000018   0.0000001  -0.0000006 
+ 12   0.0000036  -0.0000037   0.0000000 
+ 13  -0.0000018   0.0000001   0.0000006 
+
+
+ NEO-MECP g_grad (parallel): 
+       x          y          z
+ 1   0.0000027  -0.0000031   0.0000000 
+ 2   0.0000023   0.0000020   0.0000000 
+ 3  -0.0000036   0.0000057   0.0000000 
+ 4  -0.0000053   0.0000060   0.0000000 
+ 5  -0.0000011   0.0000070  -0.0000000 
+ 6  -0.0000011   0.0000057   0.0000000 
+ 7  -0.0000028  -0.0000028  -0.0000000 
+ 8   0.0000039  -0.0000093   0.0000000 
+ 9   0.0000098  -0.0000048  -0.0000000 
+ 10  -0.0000045  -0.0000007  -0.0000000 
+ 11  -0.0000008   0.0000010   0.0000059 
+ 12   0.0000013  -0.0000078   0.0000000 
+ 13  -0.0000008   0.0000010  -0.0000059 
+
+
+ Calculating analytic gradient of the SCF energy
+
+ *****************************************************
+             Starting BFGS Algorithm
+ *****************************************************
+            LIBOPT3 RUN PARAMETERS
+
+  Geometry Optimization Coordinates :
+	Cartesian
+
+  Step Length Selection Method :
+	Eigenvector Following Algorithm
+
+  Step Length Limiter :
+	Root-Mean-Square of Gradient
+
+  Convergence Criteria :
+	Max Gradient Component    	1.00000000e-05
+	Max Displacement Component	1.20000000e-03
+	Absolute Energy Difference	1.00000000e-06
+
+  Initial Hessian :
+	Approximate Hessian - Model Internal Coordinate
+
+  Type of Verification :
+	Verify with final updated Hessian
+ *****************************************************
+
+	OPTIMIZATION CYCLE:	1
+
+ Scaling Magnitude of Eigenvalues
+ 	Minimum: -25.00000000	 Maximum: 25.00000000
+ 33 Hessian Eigenvalues to form next step
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000
+
+ Minimum Search taking a RFO step
+ Searching for Lambda that minimizes along all modes
+	Value of Lambda   -0.00000006
+	Norm  of Stepsize  0.00024100
+	RMS   of Stepsize  0.00003859
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H      -0.0759432153     1.0929119921    -0.0000000060
+    2      GH      0.1016367673     1.0862773380    -0.0000000085
+    3      O      -1.1910297787     0.8506393595     0.0000000110
+    4      O       1.2124141088     0.8153025949    -0.0000000293
+    5      C      -1.1879885244    -0.4349907688     0.0000000082
+    6      C       1.2170178135    -0.4704744941    -0.0000000344
+    7      C      -0.0049778382    -1.1802127122    -0.0000000097
+    8      H      -0.0317382696    -2.2661799305    -0.0000000091
+    9      H      -2.1684150981    -0.9323989253     0.0000000203
+   10      C       2.5525380568    -1.1567862672    -0.0000000910
+   11      H       3.1230938358    -0.8411436439     0.8847719380
+   12      H       2.4507158494    -2.2475547353     0.0000001377
+   13      H       3.1230935566    -0.8411440132    -0.8847724354
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =         230.08091705 hartrees
+ There are       23 alpha and       23 beta electrons
+
+                       Distance Matrix (Angstroms)
+             H (  1)   GH(  2)   O (  3)   O (  4)   C (  5)   C (  6)
+   GH(  2)  0.177704
+   O (  3)  1.141102  1.313968
+   O (  4)  1.317927  1.143352  2.403704
+   C (  5)  1.889744  1.994340  1.285634  2.706504
+   C (  6)  2.028774  1.915085  2.746641  1.285785  2.405268
+   C (  7)  2.274232  2.268996  2.351825  2.337547  1.398167  1.413153
+   H (  8)  3.359383  3.355109  3.325435  3.323169  2.165680  2.187224
+   H (  9)  2.912099  3.037793  2.033349  3.805846  1.099387  3.416801
+   C ( 10)  3.459777  3.322386  4.247830  2.384338  3.809531  1.501545
+   H ( 11)  3.841514  3.691473  4.717692  2.679054  4.419639  2.133856
+   H ( 12)  4.188404  4.078310  4.781330  3.303708  4.065164  2.163337
+   H ( 13)  3.841514  3.691473  4.717692  2.679055  4.419639  2.133856
+             C (  7)   H (  8)   H (  9)   C ( 10)   H ( 11)   H ( 12)
+   H (  8)  1.086297
+   H (  9)  2.177584  2.518801
+   C ( 10)  2.557623  2.812337  4.726283
+   H ( 11)  3.268428  3.573026  5.365745  1.099084
+   H ( 12)  2.677620  2.482524  4.802708  1.095511  1.792458
+   H ( 13)  3.268428  3.573026  5.365744  1.099084  1.769544  1.792458
+
+ 
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =     0.0000000069 hartrees
+skipping gesman as requested
+ Constructing Nucl. Initial Guess for NEO Calculation: CORE
+ NEO centers: 1 2 
+ Skipping gen_scfman as requested.
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ Requested basis set is aug-cc-pVDZ
+ There are 89 shells and 201 basis functions
+ A cutoff of  1.0D-14 yielded   3991 shell pairs
+ There are     20409 function pairs (     22950 Cartesian)
+ Requested basis set is non-standard
+ There are 18 shells and 46 basis functions
+ This NEO calculation is using proton isotope
+Setting pmass = 1836.1526734260
+ Electronic basis set linear dependency threshold: 10E-6.0000000000
+ Nuclear basis set linear dependency threshold: 10E-5.0000000000
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 2 
+input section passed (neo_scf): 0
+ This is a NEO-MECP calculation
+ NEO-MECP alpha = 500.0000000000
+ NEO-MECP shift (cm^-1): 0.0000000000
+ NEO-MECP shift (Hartree): 0.0000000000
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+input section passed (density_load_save): none
+ NEO-MSDFT calculation has been requested 
+ There are 1 number of transferring nuclei 
+ 2 NEO-DFT diabatic states will be considered in the NEO-MECP routine 
+ Number of electronic ao: 201  Number of electronic mo: 200
+ Number of nuclear ao: 46  Number of nuclear mo: 46
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+
+ NEO-DFT Diabatic State 1:
+ Taking the electronic guess from the previous step... 
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     215.9488662146      3.00e-05   Normal BFGS step
+    2     215.9488662145      1.16e-05   Normal BFGS step
+    3     215.9488662145      1.72e-06   Normal BFGS step
+    4     215.9488662145      2.72e-07   Normal BFGS step
+    5     215.9488662145      5.68e-08   Normal BFGS step
+    6     215.9488662145      1.12e-08   Normal BFGS step
+    7     215.9488662145      3.28e-09   Normal BFGS step
+    8     215.9488662145      4.44e-10   Normal BFGS step
+    9     215.9488662145      6.01e-11   Normal BFGS step
+    9     215.9488662145      6.01e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5145076821      3.04e-04   Normal BFGS step
+    2    -306.5145080379      6.81e-04  Line search: overstep
+    3    -306.5145080438      7.97e-05   Normal BFGS step
+    4    -306.5145080443      2.02e-05   Normal BFGS step
+    5    -306.5145080455      1.71e-05   Normal BFGS step
+    6    -306.5145080455      1.50e-06   Normal BFGS step
+    7    -306.5145080455      2.64e-06   Normal BFGS step
+    8    -306.5145080455      1.74e-06   Normal BFGS step
+    9    -306.5145080455      5.67e-07   Normal BFGS step
+   10    -306.5145080455      2.68e-07   Normal BFGS step
+   11    -306.5145080455      1.07e-07   Normal BFGS step
+   12    -306.5145080455      2.29e-08   Normal BFGS step
+   13    -306.5145080455      1.15e-08   Normal BFGS step
+   14    -306.5145080455      3.54e-09   Normal BFGS step
+   15    -306.5145080455      1.31e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.53e-08
+   16    -306.5145080455      3.53e-10   Normal BFGS step
+   17    -306.5145080455      2.12e-10   Normal BFGS step
+   18    -306.5145080455      2.20e-11   Normal BFGS step
+   18    -306.5145080455      2.20e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5145077342      3.39e-06      1.73e-06  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5145076815      5.52e-04      2.11e-04   Normal BFGS step
+    2    -306.5145079921      3.39e-04      4.85e-04  Line search: overstep
+    3    -306.5145079315      1.35e-04      1.16e-04   Normal BFGS step
+    4    -306.5145080269      7.26e-05      2.59e-04  Line search: overstep
+    5    -306.5145080351      8.17e-05      7.25e-06   Normal BFGS step
+    6    -306.5145080407      3.60e-05      1.09e-05   Normal BFGS step
+    7    -306.5145080463      1.68e-05      2.28e-05   Normal BFGS step
+    8    -306.5145080479      1.50e-05      1.85e-05   Normal BFGS step
+    9    -306.5145080480      4.81e-06      1.06e-05   Normal BFGS step
+   10    -306.5145080485      6.01e-06      1.33e-05   Normal BFGS step
+   11    -306.5145080485      2.29e-06      2.53e-06   Normal BFGS step
+   12    -306.5145080485      1.24e-06      1.48e-06   Normal BFGS step
+   13    -306.5145080485      8.76e-07      7.29e-07   Normal BFGS step
+   14    -306.5145080486      8.14e-07      6.18e-07   Normal BFGS step
+   15    -306.5145080486      4.31e-07      3.05e-07   Normal BFGS step
+   16    -306.5145080486      3.65e-07      3.27e-07   Normal BFGS step
+   17    -306.5145080486      1.21e-07      1.75e-07   Normal BFGS step
+   18    -306.5145080486      4.24e-08      3.45e-08   Normal BFGS step
+   19    -306.5145080486      8.42e-09      1.44e-08   Normal BFGS step
+   20    -306.5145080486      8.82e-09      7.37e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.05e-08
+   21    -306.5145080486      5.34e-09      2.15e-09   Normal BFGS step
+   22    -306.5145080486      3.26e-10      6.35e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.05e-08
+   23    -306.5145080486      1.15e-10      2.23e-10   Normal BFGS step
+   24    -306.5145080486      1.18e-10      2.67e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.05e-08
+   25    -306.5145080486      7.99e-11      2.97e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.05e-08
+   26    -306.5145080486      1.77e-11      3.03e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145080486
+ Expectation value of proton 0 : -0.11759687 2.08141488 -0.00000001
+
+ Calculating Analytical Gradient of Diabatic State 1...
+
+ NEO-DFT Diabatic State 2:
+ Taking the electronic guess from the previous step... 
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5143028478      3.14e-05   Normal BFGS step
+    2    -306.5143028479      1.23e-05   Normal BFGS step
+    3    -306.5143028479      1.85e-06   Normal BFGS step
+    4    -306.5143028479      3.02e-07   Normal BFGS step
+    5    -306.5143028479      5.49e-08   Normal BFGS step
+    6    -306.5143028479      1.14e-08   Normal BFGS step
+    7    -306.5143028479      3.20e-09   Normal BFGS step
+    8    -306.5143028479      4.52e-10   Normal BFGS step
+    9    -306.5143028479      6.26e-11   Normal BFGS step
+    9    -306.5143028479      6.26e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5145179029      3.05e-04   Normal BFGS step
+    2    -306.5145182621      6.86e-04  Line search: overstep
+    3    -306.5145182678      8.03e-05   Normal BFGS step
+    4    -306.5145182684      2.71e-05   Normal BFGS step
+    5    -306.5145182697      2.32e-05   Normal BFGS step
+    6    -306.5145182697      3.66e-06   Normal BFGS step
+    7    -306.5145182698      5.39e-06   Normal BFGS step
+    8    -306.5145182698      1.14e-06   Normal BFGS step
+    9    -306.5145182698      4.53e-07   Normal BFGS step
+   10    -306.5145182698      2.16e-07   Normal BFGS step
+   11    -306.5145182698      1.25e-07   Normal BFGS step
+   12    -306.5145182698      1.02e-08   Normal BFGS step
+   13    -306.5145182698      1.06e-08   Normal BFGS step
+   14    -306.5145182698      7.65e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.43e-08
+   15    -306.5145182698      4.41e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.43e-08
+   16    -306.5145182698      6.96e-11   Normal BFGS step
+   16    -306.5145182698      6.96e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5145179462      3.47e-06      1.77e-06  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5145178944      5.74e-04      2.13e-04   Normal BFGS step
+    2    -306.5145182145      3.53e-04      4.88e-04  Line search: overstep
+    3    -306.5145181516      1.36e-04      1.17e-04   Normal BFGS step
+    4    -306.5145182504      7.67e-05      2.63e-04  Line search: overstep
+    5    -306.5145182587      8.33e-05      7.46e-06   Normal BFGS step
+    6    -306.5145182628      3.71e-05      1.68e-05   Normal BFGS step
+    7    -306.5145182705      2.02e-05      4.30e-05   Normal BFGS step
+    8    -306.5145182720      1.58e-05      1.26e-05   Normal BFGS step
+    9    -306.5145182724      5.86e-06      1.80e-05   Normal BFGS step
+   10    -306.5145182729      7.12e-06      4.80e-06   Normal BFGS step
+   11    -306.5145182729      2.95e-06      1.38e-06   Normal BFGS step
+   12    -306.5145182729      2.84e-06      1.81e-06   Normal BFGS step
+   13    -306.5145182729      7.95e-07      5.85e-07   Normal BFGS step
+   14    -306.5145182730      1.25e-06      8.15e-07   Normal BFGS step
+   15    -306.5145182730      3.98e-07      1.42e-07   Normal BFGS step
+   16    -306.5145182730      5.09e-07      1.43e-07   Normal BFGS step
+   17    -306.5145182730      2.72e-07      5.27e-08   Normal BFGS step
+   18    -306.5145182730      1.03e-07      3.05e-08   Normal BFGS step
+   19    -306.5145182730      2.87e-08      2.99e-08   Normal BFGS step
+   20    -306.5145182730      1.14e-08      9.87e-09   Normal BFGS step
+   21    -306.5145182730      6.50e-09      2.73e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 2.13e-08
+   22    -306.5145182730      1.25e-09      1.06e-09   Normal BFGS step
+   23    -306.5145182730      9.14e-10      2.17e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 2.13e-08
+   24    -306.5145182730      5.17e-10      1.87e-09   Normal BFGS step
+   25    -306.5145182730      1.01e-10      7.61e-11   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 2.13e-08
+   26    -306.5145182730      5.32e-11      4.08e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145182730
+ Expectation value of proton 0 : 0.16735073 2.06993298 -0.00000002
+
+ Calculating Analytical Gradient of Diabatic State 2...
+ NEO SCF time:       CPU 3298.35s  wall 276.57s 
+
+ NEO-MECP information
+ Energy for diabatic state 0: -306.5145080486
+ Energy for diabatic state 1: -306.5145182730
+ E0 - E1: 0.0000102244
+
+ Proton-proton distance: 0.285179
+
+ Diabat 1 gradient: 
+       x          y          z
+ 1  -0.0000246  -0.0000021   0.0000000 
+ 2   0.0000000   0.0000000   0.0000000 
+ 3   0.0002593  -0.0063015   0.0000000 
+ 4   0.0004977   0.0062068   0.0000000 
+ 5  -0.0031003   0.0098909  -0.0000000 
+ 6  -0.0034657  -0.0101061   0.0000000 
+ 7   0.0060682  -0.0000490  -0.0000000 
+ 8   0.0004146  -0.0000097   0.0000000 
+ 9  -0.0003947  -0.0009849  -0.0000000 
+ 10  -0.0002487   0.0010984  -0.0000000 
+ 11   0.0001343  -0.0000103   0.0000507 
+ 12  -0.0002743   0.0002776   0.0000000 
+ 13   0.0001343  -0.0000103  -0.0000507 
+
+ Diabat 2 gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000   0.0000000 
+ 2  -0.0000242   0.0000035   0.0000000 
+ 3  -0.0003443   0.0089722   0.0000000 
+ 4  -0.0006883  -0.0088103   0.0000000 
+ 5   0.0044162  -0.0140795  -0.0000000 
+ 6   0.0049355   0.0144142  -0.0000000 
+ 7  -0.0086459   0.0000603   0.0000000 
+ 8  -0.0005907  -0.0000037  -0.0000000 
+ 9   0.0005829   0.0014039  -0.0000000 
+ 10   0.0003583  -0.0015654   0.0000000 
+ 11  -0.0001956   0.0000127  -0.0000648 
+ 12   0.0003917  -0.0004205   0.0000000 
+ 13  -0.0001956   0.0000127   0.0000648 
+
+
+ NEO-MECP gradient: 
+       x          y          z
+ 1  -0.0000246  -0.0000021   0.0000000 
+ 2  -0.0000242   0.0000035   0.0000000 
+ 3   0.0000794  -0.0017484   0.0000000 
+ 4   0.0001442   0.0017301   0.0000000 
+ 5  -0.0008596   0.0027452  -0.0000000 
+ 6  -0.0009613  -0.0027965   0.0000000 
+ 7   0.0016819  -0.0000164  -0.0000000 
+ 8   0.0001149  -0.0000079   0.0000000 
+ 9  -0.0001032  -0.0002728  -0.0000000 
+ 10  -0.0000678   0.0003043  -0.0000000 
+ 11   0.0000360  -0.0000034   0.0000162 
+ 12  -0.0000758   0.0000695   0.0000000 
+ 13   0.0000360  -0.0000034  -0.0000162 
+
+
+ NEO-MECP f_grad (orthogonal): 
+       x          y          z
+ 1  -0.0000028  -0.0000002   0.0000000 
+ 2   0.0000028  -0.0000004  -0.0000000 
+ 3   0.0000691  -0.0017476   0.0000000 
+ 4   0.0001357   0.0017182  -0.0000000 
+ 5  -0.0008600   0.0027426   0.0000000 
+ 6  -0.0009613  -0.0028056   0.0000000 
+ 7   0.0016836  -0.0000125  -0.0000000 
+ 8   0.0001150  -0.0000007   0.0000000 
+ 9  -0.0001119  -0.0002733  -0.0000000 
+ 10  -0.0000695   0.0003048  -0.0000000 
+ 11   0.0000378  -0.0000026   0.0000132 
+ 12  -0.0000762   0.0000799  -0.0000000 
+ 13   0.0000378  -0.0000026  -0.0000132 
+
+
+ NEO-MECP g_grad (parallel): 
+       x          y          z
+ 1  -0.0000145  -0.0000012   0.0000000 
+ 2  -0.0000100   0.0000015   0.0000000 
+ 3   0.0000103  -0.0000008   0.0000000 
+ 4   0.0000085   0.0000119   0.0000000 
+ 5   0.0000004   0.0000026  -0.0000000 
+ 6  -0.0000000   0.0000090   0.0000000 
+ 7  -0.0000017  -0.0000039  -0.0000000 
+ 8  -0.0000002  -0.0000072   0.0000000 
+ 9   0.0000086   0.0000005  -0.0000000 
+ 10   0.0000017  -0.0000005  -0.0000000 
+ 11  -0.0000018  -0.0000008   0.0000030 
+ 12   0.0000004  -0.0000103   0.0000000 
+ 13  -0.0000018  -0.0000008  -0.0000030 
+
+
+ Calculating analytic gradient of the SCF energy
+
+     Step 1	:
+        Energy is -306.5145080486
+                            Maximum         Tolerance       Converged?
+         Gradient           2.79652931e-03	1.00000000e-05	false
+         Displacement       1.37179054e-04	1.20000000e-03	true
+         Energy change      4.39006311e-06	1.00000000e-06	false
+
+
+	OPTIMIZATION CYCLE:	2
+
+ Scaling Magnitude of Eigenvalues
+ 	Minimum: -25.00000000	 Maximum: 25.00000000
+ 33 Hessian Eigenvalues to form next step
+   0.98842813   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   22.34314738
+
+ Minimum Search taking a RFO step
+ Searching for Lambda that minimizes along all modes
+	Value of Lambda   -0.00000117
+	Norm  of Stepsize  0.00022881
+	RMS   of Stepsize  0.00003664
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H      -0.0759427294     1.0929120598    -0.0000000060
+    2      GH      0.1016372367     1.0862772158    -0.0000000085
+    3      O      -1.1910317116     0.8506806972     0.0000000110
+    4      O       1.2124106526     0.8152615939    -0.0000000293
+    5      C      -1.1879682023    -0.4350558664     0.0000000082
+    6      C       1.2170405434    -0.4704082827    -0.0000000344
+    7      C      -0.0050176819    -1.1802123172    -0.0000000097
+    8      H      -0.0317410175    -2.2661796990    -0.0000000091
+    9      H      -2.1684127467    -0.9323924939     0.0000000203
+   10      C       2.5525396594    -1.1567934264    -0.0000000910
+   11      H       3.1230929542    -0.8411435131     0.8847715179
+   12      H       2.4507176319    -2.2475562919     0.0000001377
+   13      H       3.1230926750    -0.8411438823    -0.8847720153
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =         230.08085266 hartrees
+ There are       23 alpha and       23 beta electrons
+
+                       Distance Matrix (Angstroms)
+             H (  1)   GH(  2)   O (  3)   O (  4)   C (  5)   C (  6)
+   GH(  2)  0.177704
+   O (  3)  1.141096  1.313963
+   O (  4)  1.317932  1.143358  2.403703
+   C (  5)  1.889785  1.994376  1.285740  2.706494
+   C (  6)  2.028738  1.915044  2.746650  1.285678  2.405269
+   C (  7)  2.274231  2.268998  2.351841  2.337530  1.398081  1.413240
+   H (  8)  3.359383  3.355109  3.325473  3.323130  2.165612  2.187293
+   H (  9)  2.912094  3.037788  2.033377  3.805819  1.099370  3.416829
+   C ( 10)  3.459782  3.322392  4.247856  2.384313  3.809502  1.501560
+   H ( 11)  3.841513  3.691472  4.717707  2.679031  4.419613  2.133847
+   H ( 12)  4.188406  4.078311  4.781361  3.303673  4.065119  2.163380
+   H ( 13)  3.841513  3.691472  4.717707  2.679031  4.419613  2.133847
+             C (  7)   H (  8)   H (  9)   C ( 10)   H ( 11)   H ( 12)
+   H (  8)  1.086296
+   H (  9)  2.177543  2.518800
+   C ( 10)  2.557665  2.812338  4.726283
+   H ( 11)  3.268465  3.573028  5.365741  1.099084
+   H ( 12)  2.677659  2.482529  4.802710  1.095505  1.792458
+   H ( 13)  3.268465  3.573027  5.365741  1.099084  1.769544  1.792458
+
+ 
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =     0.0000000069 hartrees
+skipping gesman as requested
+ Constructing Nucl. Initial Guess for NEO Calculation: CORE
+ NEO centers: 1 2 
+ Skipping gen_scfman as requested.
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ Requested basis set is aug-cc-pVDZ
+ There are 89 shells and 201 basis functions
+ A cutoff of  1.0D-14 yielded   3991 shell pairs
+ There are     20409 function pairs (     22950 Cartesian)
+ Requested basis set is non-standard
+ There are 18 shells and 46 basis functions
+ This NEO calculation is using proton isotope
+Setting pmass = 1836.1526734260
+ Electronic basis set linear dependency threshold: 10E-6.0000000000
+ Nuclear basis set linear dependency threshold: 10E-5.0000000000
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 2 
+input section passed (neo_scf): false
+ This is a NEO-MECP calculation
+ NEO-MECP alpha = 500.0000000000
+ NEO-MECP shift (cm^-1): 0.0000000000
+ NEO-MECP shift (Hartree): 0.0000000000
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+input section passed (density_load_save): none
+ NEO-MSDFT calculation has been requested 
+ There are 1 number of transferring nuclei 
+ 2 NEO-DFT diabatic states will be considered in the NEO-MECP routine 
+ Number of electronic ao: 201  Number of electronic mo: 200
+ Number of nuclear ao: 46  Number of nuclear mo: 46
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+
+ NEO-DFT Diabatic State 1:
+ Taking the electronic guess from the previous step... 
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     215.9487903309      2.77e-05   Normal BFGS step
+    2     215.9487903308      1.08e-05   Normal BFGS step
+    3     215.9487903308      1.59e-06   Normal BFGS step
+    4     215.9487903308      2.57e-07   Normal BFGS step
+    5     215.9487903308      5.38e-08   Normal BFGS step
+    6     215.9487903308      1.08e-08   Normal BFGS step
+    7     215.9487903308      3.12e-09   Normal BFGS step
+    8     215.9487903308      4.23e-10   Normal BFGS step
+    9     215.9487903308      5.68e-11   Normal BFGS step
+    9     215.9487903308      5.68e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5145119098      2.90e-04   Normal BFGS step
+    2    -306.5145122334      6.50e-04  Line search: overstep
+    3    -306.5145122387      7.59e-05   Normal BFGS step
+    4    -306.5145122392      1.96e-05   Normal BFGS step
+    5    -306.5145122403      1.64e-05   Normal BFGS step
+    6    -306.5145122403      1.41e-06   Normal BFGS step
+    7    -306.5145122403      2.51e-06   Normal BFGS step
+    8    -306.5145122403      1.71e-06   Normal BFGS step
+    9    -306.5145122403      4.74e-07   Normal BFGS step
+   10    -306.5145122403      2.45e-07   Normal BFGS step
+   11    -306.5145122403      9.72e-08   Normal BFGS step
+   12    -306.5145122403      2.11e-08   Normal BFGS step
+   13    -306.5145122403      1.10e-08   Normal BFGS step
+   14    -306.5145122403      3.75e-09   Normal BFGS step
+   15    -306.5145122403      1.30e-09   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.39e-08
+   16    -306.5145122403      3.56e-10   Normal BFGS step
+   17    -306.5145122403      2.15e-10   Normal BFGS step
+   18    -306.5145122403      2.21e-11   Normal BFGS step
+   18    -306.5145122403      2.21e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5145119594      3.23e-06      1.65e-06  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5145119115      5.22e-04      2.00e-04   Normal BFGS step
+    2    -306.5145121921      3.22e-04      4.61e-04  Line search: overstep
+    3    -306.5145121374      1.25e-04      1.10e-04   Normal BFGS step
+    4    -306.5145122235      7.06e-05      2.47e-04  Line search: overstep
+    5    -306.5145122309      7.61e-05      6.97e-06   Normal BFGS step
+    6    -306.5145122360      3.34e-05      1.01e-05   Normal BFGS step
+    7    -306.5145122410      1.57e-05      2.13e-05   Normal BFGS step
+    8    -306.5145122425      1.39e-05      1.75e-05   Normal BFGS step
+    9    -306.5145122426      4.68e-06      9.77e-06   Normal BFGS step
+   10    -306.5145122430      5.75e-06      1.26e-05   Normal BFGS step
+   11    -306.5145122430      2.50e-06      2.53e-06   Normal BFGS step
+   12    -306.5145122431      1.15e-06      1.34e-06   Normal BFGS step
+   13    -306.5145122431      9.20e-07      6.83e-07   Normal BFGS step
+   14    -306.5145122431      8.84e-07      5.88e-07   Normal BFGS step
+   15    -306.5145122431      4.31e-07      3.44e-07   Normal BFGS step
+   16    -306.5145122431      3.18e-07      3.08e-07   Normal BFGS step
+   17    -306.5145122431      1.04e-07      1.50e-07   Normal BFGS step
+   18    -306.5145122431      3.50e-08      3.45e-08   Normal BFGS step
+   19    -306.5145122431      2.02e-08      1.07e-08   Normal BFGS step
+   20    -306.5145122431      2.57e-09      4.38e-09   Normal BFGS step
+   21    -306.5145122431      6.21e-10      1.85e-09   Normal BFGS step
+   22    -306.5145122431      7.17e-10      7.45e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.11e-08
+   23    -306.5145122431      8.45e-11      1.29e-10   Normal BFGS step
+   24    -306.5145122431      1.18e-10      1.65e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.11e-08
+   25    -306.5145122431      8.35e-11      2.48e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 3.11e-08
+   26    -306.5145122431      3.47e-11      5.51e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145122431
+ Expectation value of proton 0 : -0.11773283 2.08142602 -0.00000001
+
+ Calculating Analytical Gradient of Diabatic State 1...
+
+ NEO-DFT Diabatic State 2:
+ Taking the electronic guess from the previous step... 
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5143269139      2.93e-05   Normal BFGS step
+    2    -306.5143269140      1.17e-05   Normal BFGS step
+    3    -306.5143269140      1.75e-06   Normal BFGS step
+    4    -306.5143269140      2.94e-07   Normal BFGS step
+    5    -306.5143269140      5.39e-08   Normal BFGS step
+    6    -306.5143269140      1.15e-08   Normal BFGS step
+    7    -306.5143269140      3.12e-09   Normal BFGS step
+    8    -306.5143269140      4.53e-10   Normal BFGS step
+    9    -306.5143269140      5.32e-11   Normal BFGS step
+    9    -306.5143269140      5.32e-11  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -306.5145119103      2.90e-04   Normal BFGS step
+    2    -306.5145122348      6.52e-04  Line search: overstep
+    3    -306.5145122400      7.62e-05   Normal BFGS step
+    4    -306.5145122406      2.63e-05   Normal BFGS step
+    5    -306.5145122418      2.20e-05   Normal BFGS step
+    6    -306.5145122418      3.43e-06   Normal BFGS step
+    7    -306.5145122418      5.00e-06   Normal BFGS step
+    8    -306.5145122418      1.17e-06   Normal BFGS step
+    9    -306.5145122418      4.50e-07   Normal BFGS step
+   10    -306.5145122418      2.23e-07   Normal BFGS step
+   11    -306.5145122418      1.18e-07   Normal BFGS step
+   12    -306.5145122418      1.09e-08   Normal BFGS step
+   13    -306.5145122418      1.10e-08   Normal BFGS step
+   14    -306.5145122418      7.65e-10   Normal BFGS step
+   15    -306.5145122418      3.65e-10   Normal BFGS step
+   16    -306.5145122418      8.42e-11   Normal BFGS step
+   16    -306.5145122418      8.42e-11  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -306.5145119535      3.27e-06      1.67e-06  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -306.5145119075      5.37e-04      2.01e-04   Normal BFGS step
+    2    -306.5145121926      3.30e-04      4.60e-04  Line search: overstep
+    3    -306.5145121366      1.29e-04      1.10e-04   Normal BFGS step
+    4    -306.5145122245      7.18e-05      2.49e-04  Line search: overstep
+    5    -306.5145122319      7.92e-05      6.99e-06   Normal BFGS step
+    6    -306.5145122355      3.52e-05      1.59e-05   Normal BFGS step
+    7    -306.5145122425      1.92e-05      4.06e-05   Normal BFGS step
+    8    -306.5145122438      1.50e-05      1.18e-05   Normal BFGS step
+    9    -306.5145122442      5.60e-06      1.70e-05   Normal BFGS step
+   10    -306.5145122445      6.77e-06      4.60e-06   Normal BFGS step
+   11    -306.5145122446      2.68e-06      1.25e-06   Normal BFGS step
+   12    -306.5145122446      2.69e-06      1.76e-06   Normal BFGS step
+   13    -306.5145122446      7.33e-07      5.66e-07   Normal BFGS step
+   14    -306.5145122446      1.16e-06      7.72e-07   Normal BFGS step
+   15    -306.5145122446      3.69e-07      1.20e-07   Normal BFGS step
+   16    -306.5145122446      4.55e-07      1.12e-07   Normal BFGS step
+   17    -306.5145122446      2.41e-07      4.74e-08   Normal BFGS step
+   18    -306.5145122446      9.35e-08      2.70e-08   Normal BFGS step
+   19    -306.5145122446      2.92e-08      2.61e-08   Normal BFGS step
+   20    -306.5145122446      1.06e-08      7.98e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.72e-08
+   21    -306.5145122446      6.52e-09      2.85e-09   Normal BFGS step
+   22    -306.5145122446      1.09e-09      8.87e-10   Normal BFGS step
+   23    -306.5145122446      8.15e-10      1.95e-09   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.72e-08
+   24    -306.5145122446      4.21e-10      1.57e-09   Normal BFGS step
+   25    -306.5145122446      1.07e-10      7.91e-11   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 1.72e-08
+   26    -306.5145122446      5.21e-11      4.26e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -306.5145122446
+ Expectation value of proton 0 : 0.16721304 2.06992750 -0.00000002
+
+ Calculating Analytical Gradient of Diabatic State 2...
+ NEO SCF time:       CPU 3284.81s  wall 275.42s 
+
+ NEO-MECP information
+ Energy for diabatic state 0: -306.5145122431
+ Energy for diabatic state 1: -306.5145122446
+ E0 - E1: 0.0000000015
+
+ Proton-proton distance: 0.285178
+
+ Diabat 1 gradient: 
+       x          y          z
+ 1   0.0000034  -0.0000044   0.0000000 
+ 2   0.0000000   0.0000000   0.0000000 
+ 3   0.0002476  -0.0062255   0.0000000 
+ 4   0.0004759   0.0061358   0.0000000 
+ 5  -0.0030666   0.0097843  -0.0000000 
+ 6  -0.0034312  -0.0100043   0.0000000 
+ 7   0.0060031  -0.0000458  -0.0000000 
+ 8   0.0004136  -0.0000091   0.0000000 
+ 9  -0.0003910  -0.0009790  -0.0000000 
+ 10  -0.0002494   0.0010865  -0.0000000 
+ 11   0.0001328  -0.0000090   0.0000509 
+ 12  -0.0002709   0.0002794   0.0000000 
+ 13   0.0001328  -0.0000090  -0.0000509 
+
+ Diabat 2 gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000   0.0000000 
+ 2   0.0000041   0.0000048   0.0000000 
+ 3  -0.0003661   0.0090428   0.0000000 
+ 4  -0.0007004  -0.0088866   0.0000000 
+ 5   0.0044500  -0.0141819  -0.0000000 
+ 6   0.0049696   0.0145193  -0.0000000 
+ 7  -0.0087105   0.0000642   0.0000000 
+ 8  -0.0005918  -0.0000033  -0.0000000 
+ 9   0.0005862   0.0014093  -0.0000000 
+ 10   0.0003580  -0.0015777   0.0000000 
+ 11  -0.0001971   0.0000139  -0.0000646 
+ 12   0.0003953  -0.0004186   0.0000000 
+ 13  -0.0001971   0.0000139   0.0000646 
+
+
+ NEO-MECP gradient: 
+       x          y          z
+ 1   0.0000034  -0.0000044   0.0000000 
+ 2   0.0000041   0.0000048   0.0000000 
+ 3  -0.0000028   0.0000051   0.0000000 
+ 4  -0.0000041   0.0000056   0.0000000 
+ 5   0.0000007   0.0000044  -0.0000000 
+ 6  -0.0000031   0.0000031   0.0000000 
+ 7  -0.0000011  -0.0000009  -0.0000000 
+ 8   0.0000033  -0.0000067   0.0000000 
+ 9   0.0000078  -0.0000044  -0.0000000 
+ 10  -0.0000016  -0.0000007  -0.0000000 
+ 11  -0.0000018   0.0000003   0.0000038 
+ 12   0.0000009  -0.0000054   0.0000000 
+ 13  -0.0000018   0.0000003  -0.0000038 
+
+
+ NEO-MECP f_grad (orthogonal): 
+       x          y          z
+ 1   0.0000000  -0.0000000   0.0000000 
+ 2  -0.0000000  -0.0000000  -0.0000000 
+ 3   0.0000000  -0.0000003   0.0000000 
+ 4   0.0000000   0.0000003  -0.0000000 
+ 5  -0.0000001   0.0000004   0.0000000 
+ 6  -0.0000001  -0.0000004   0.0000000 
+ 7   0.0000003  -0.0000000  -0.0000000 
+ 8   0.0000000  -0.0000000   0.0000000 
+ 9  -0.0000000  -0.0000000  -0.0000000 
+ 10  -0.0000000   0.0000000  -0.0000000 
+ 11   0.0000000  -0.0000000   0.0000000 
+ 12  -0.0000000   0.0000000  -0.0000000 
+ 13   0.0000000  -0.0000000  -0.0000000 
+
+
+ NEO-MECP g_grad (parallel): 
+       x          y          z
+ 1   0.0000020  -0.0000026   0.0000000 
+ 2   0.0000017   0.0000020   0.0000000 
+ 3  -0.0000028   0.0000053   0.0000000 
+ 4  -0.0000041   0.0000053   0.0000000 
+ 5   0.0000008   0.0000040  -0.0000000 
+ 6  -0.0000030   0.0000035   0.0000000 
+ 7  -0.0000014  -0.0000009  -0.0000000 
+ 8   0.0000033  -0.0000067   0.0000000 
+ 9   0.0000078  -0.0000044  -0.0000000 
+ 10  -0.0000015  -0.0000007  -0.0000000 
+ 11  -0.0000018   0.0000003   0.0000038 
+ 12   0.0000010  -0.0000054   0.0000000 
+ 13  -0.0000018   0.0000003  -0.0000038 
+
+
+ Calculating analytic gradient of the SCF energy
+
+     Step 2	:
+        Energy is -306.5145122431
+                            Maximum         Tolerance       Converged?
+         Gradient           7.75850906e-06	1.00000000e-05	true
+         Displacement       1.25121419e-04	1.20000000e-03	true
+         Energy change      4.19452863e-06	1.00000000e-06	false
+
+	 Optimization Converged in 2 cycles
+
+ *****************************************************
+             End of BFGS Algorithm
+ *****************************************************
+		----------------------------------
+		   Verification of Optimization
+		----------------------------------
+
+ Eigenvalues of Hessian in Optimization Verification
+   0.98840332   0.99999898   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   1.00000000   1.00000000   1.00000000
+   1.00000000   1.00000000   22.34016452
+
+ Found a minimum
+		---------------------------------
+		       End of Verification
+		---------------------------------
+
+ Final energy is -306.514512243080
+
+	******************************
+	**  OPTIMIZATION CONVERGED  **
+	******************************
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H      -0.0759427294     1.0929120598    -0.0000000060
+    2      GH      0.1016372367     1.0862772158    -0.0000000085
+    3      O      -1.1910317116     0.8506806972     0.0000000110
+    4      O       1.2124106526     0.8152615939    -0.0000000293
+    5      C      -1.1879682023    -0.4350558664     0.0000000082
+    6      C       1.2170405434    -0.4704082827    -0.0000000344
+    7      C      -0.0050176819    -1.1802123172    -0.0000000097
+    8      H      -0.0317410175    -2.2661796990    -0.0000000091
+    9      H      -2.1684127467    -0.9323924939     0.0000000203
+   10      C       2.5525396594    -1.1567934264    -0.0000000910
+   11      H       3.1230929542    -0.8411435131     0.8847715179
+   12      H       2.4507176319    -2.2475562919     0.0000001377
+   13      H       3.1230926750    -0.8411438823    -0.8847720153
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =         230.08085266 hartrees
+ There are       23 alpha and       23 beta electrons
+
+Z-matrix Print:
+$molecule
+0 1
+O 
+Gh 1 1.143358
+H  2 0.177704 1 168.428123
+O  3 1.141096 2 165.604301 1 0.000000 0
+C  1 1.285678 2 103.917929 3 -0.000000 0
+C  4 1.285740 3 102.119459 2 -0.000000 0
+H  6 1.099370 4 116.760169 3 -180.000000 0
+C  6 1.398081 4 122.343896 3 0.000000 0
+H  8 1.086296 6 120.797736 4 180.000000 0
+C  5 1.501560 1 117.407410 2 180.000000 0
+H  10 1.095505 5 111.868010 1 180.000000 0
+H  10 1.099084 5 109.294644 1 58.530092 0
+H  10 1.099084 5 109.294643 1 -58.530120 0
+$end
+
+ -----------------------------------------------------------------------
+                  END OF GEOMETRY OPTIMIZER USING LIBOPT3               
+ -----------------------------------------------------------------------
+ Total job time:  1102.49s(wall), 13116.83s(cpu) 
+ Tue May 12 19:09:39 2026
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
