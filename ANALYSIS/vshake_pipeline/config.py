@@ -74,8 +74,16 @@ class MasterXyzConfig:
 class SirConfig:
     nslices: int = 10
     var: float = 0.95
-    n_eigenvalues_plot: int = 10
+    n_eigenvalues_plot: int = 3
     n_eigenvectors_viz: int = 3
+    noise_floor: float = 1.0
+    bootstrap_fractions: list[float] = field(
+        default_factory=lambda: [0.75, 0.85]
+    )
+    bootstrap_n: int = 100
+    bootstrap_seed: int = 0
+    bootstrap_combo_spectrum: bool = True
+    viz_source: str = "filtered"
 
 
 @dataclass
@@ -352,12 +360,41 @@ def load_config(path: str | Path) -> PipelineConfig:
     qc = _section(raw, "qchem_mecp")
     geom = _section(raw, "geom")
 
-    n_eig_plot = int(sr.get("n_eigenvalues_plot", 10))
+    n_eig_plot = int(sr.get("n_eigenvalues_plot", 3))
     if n_eig_plot < 1:
         raise ValueError(f"sir.n_eigenvalues_plot must be >= 1; got {n_eig_plot!r}")
     n_vec_viz = int(sr.get("n_eigenvectors_viz", 3))
     if n_vec_viz < 1:
         raise ValueError(f"sir.n_eigenvectors_viz must be >= 1; got {n_vec_viz!r}")
+
+    noise_floor = float(sr.get("noise_floor", 1.0))
+    if noise_floor < 0.0:
+        raise ValueError(f"sir.noise_floor must be >= 0; got {noise_floor!r}")
+
+    raw_fractions = sr.get("bootstrap_fractions", [0.75, 0.85])
+    if not isinstance(raw_fractions, (list, tuple)) or not raw_fractions:
+        raise ValueError(
+            "sir.bootstrap_fractions must be a non-empty list of fractions in (0, 1]"
+        )
+    bootstrap_fractions = [float(f) for f in raw_fractions]
+    for f in bootstrap_fractions:
+        if not (0.0 < f <= 1.0):
+            raise ValueError(
+                f"sir.bootstrap_fractions entries must be in (0, 1]; got {f!r}"
+            )
+
+    bootstrap_n = int(sr.get("bootstrap_n", 100))
+    if bootstrap_n < 1:
+        raise ValueError(f"sir.bootstrap_n must be >= 1; got {bootstrap_n!r}")
+
+    bootstrap_seed = int(sr.get("bootstrap_seed", 0))
+    bootstrap_combo_spectrum = bool(sr.get("bootstrap_combo_spectrum", True))
+
+    viz_source = str(sr.get("viz_source", "filtered")).lower()
+    if viz_source not in ("all", "filtered"):
+        raise ValueError(
+            f"sir.viz_source must be 'all' or 'filtered'; got {viz_source!r}"
+        )
 
     cos_bar = _section(sv, "cos_barchart")
     cos_xlim = parse_optional_lim_pair_from_section(
@@ -384,6 +421,12 @@ def load_config(path: str | Path) -> PipelineConfig:
             var=float(sr.get("var", 0.95)),
             n_eigenvalues_plot=n_eig_plot,
             n_eigenvectors_viz=n_vec_viz,
+            noise_floor=noise_floor,
+            bootstrap_fractions=bootstrap_fractions,
+            bootstrap_n=bootstrap_n,
+            bootstrap_seed=bootstrap_seed,
+            bootstrap_combo_spectrum=bootstrap_combo_spectrum,
+            viz_source=viz_source,
         ),
         sir_viz=SirVizConfig(
             arrow_scale=float(sv.get("arrow_scale", 1.0)),

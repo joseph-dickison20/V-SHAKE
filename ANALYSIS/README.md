@@ -14,12 +14,13 @@ how "% of spectrum" and the atomic contributions are computed — see
 | --- | --- | --- |
 | `master_xyz` | `01_master_xyz/` | Gather TRAJS `seam_geometries.xyz`, Kabsch-align to the MECP, write `master.xyz` (frame 0 = MECP) |
 | `geom` | `02_geom/` | Donor–acceptor (and CBO CN-bend) geometric scatters |
-| `sir` | `03_sir/` | PCA-whiten Cartesians, run SIR on \(V\), write eigenvalues + eigenvectors |
+| `sir` | `03_sir/` | PCA-whiten Cartesians; run SIR on \(V\) for `all`, noise-floor-`filtered`, and classical bootstrap variants |
 | `sir_viz` | `04_sir_viz/` | PyMOL renders of the eigenvectors, g⊥, and ∇V, plus cosine bar charts |
 
 There is no dimensionality test and no atom-pair importance analysis. Step 3
-produces the eigen-decomposition and a bar chart of eigenvalues against their
-index; step 4 draws the eigenvectors.
+always writes unfiltered (`all/`), noise-floor-filtered (`filtered/`), and
+bootstrap (`bootstrap_pXX/`) eigenvalue results; step 4 draws eigenvectors from
+exactly one of `all` or `filtered` (YAML `sir.viz_source`, default `filtered`).
 
 ## Quick start
 
@@ -99,10 +100,19 @@ runs/{CBO,HEO}/
   01_master_xyz/{H,D}/master.xyz
   02_geom/{H,D}/plots/
   02_geom/combo_plots/
-  03_sir/{H,D}/sir_results.npz, sir_report.txt,
-                sir_eigenvalue_spectrum.png, sir_modes.molden
-  03_sir/combo_bar_plots/sir_eigenvalue_spectrum.png     # grouped H vs D
-  04_sir_viz/{H,D}/
+  03_sir/{H,D}/
+    all/           sir_results.npz, sir_report.txt,
+                   sir_eigenvalue_spectrum.png, sir_modes.molden
+    filtered/      same (frames with V < noise_floor dropped; MECP kept)
+    bootstrap_p75/ sir_bootstrap.npz, sir_report.txt,
+                   sir_eigenvalue_spectrum.png   # mean bars + Tukey whiskers
+    bootstrap_p85/ ...
+    eta1_vs_filtered.txt                         # |cos|/angle of η1 vs filtered
+  03_sir/combo_bar_plots/{all,filtered}/
+                   sir_eigenvalue_spectrum.png   # grouped H vs D
+  03_sir/combo_bar_plots/bootstrap_combo/        # when bootstrap_combo_spectrum
+                   sir_eigenvalue_spectrum.png   # 100%+fractions × H/D (6 bars/index)
+  04_sir_viz/{H,D}/                              # from sir.viz_source NPZ
     sir{k}/        sir{k}.gif, sir{k}_arrows.png,
                    sir{k}_vs_gperp.txt, sir{k}_vs_gperp_barchart.png,
                    sir{k}_vs_gradV.txt, sir{k}_vs_gradV_barchart.png
@@ -121,8 +131,14 @@ Beyond `run_name`, `trajectory_root`, `temps`, `isotopes`, `master_xyz`, and
 sir:
   nslices: 10              # SIR slices over the response V
   var: 0.95                # PCA variance cutoff before whitening
-  n_eigenvalues_plot: 10   # eigenvalues on the step-3 bar chart
+  n_eigenvalues_plot: 3    # eigenvalues on the step-3 bar chart
   n_eigenvectors_viz: 3    # eigenvectors rendered in step 4
+  noise_floor: 1.0         # cm^-1; frames with V < this dropped for filtered/bootstrap
+  bootstrap_fractions: [0.75, 0.85]
+  bootstrap_n: 100         # classical bootstrap replicates per fraction
+  bootstrap_seed: 0        # reproducible RNG (offset per isotope/fraction)
+  bootstrap_combo_spectrum: true  # one mega H/D+fractions combo plot (else per-fraction)
+  viz_source: filtered     # filtered | all  -> which NPZ sir_viz reads
 
 qchem_mecp:
   temp: HIGH_TEMP          # batch supplying the MECP msdft_0.out

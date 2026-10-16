@@ -182,6 +182,19 @@ def step_geom(
     return out_root
 
 
+def _sir_variant_markers(out_root: Path, isotopes: list[str], sr) -> list[Path]:
+    """Markers that must exist for step ``sir`` to be considered complete."""
+    markers: list[Path] = []
+    for iso in isotopes:
+        iso_dir = out_root / iso
+        markers.append(iso_dir / "all" / "sir_results.npz")
+        markers.append(iso_dir / "filtered" / "sir_results.npz")
+        for frac in sr.bootstrap_fractions:
+            pxx = f"bootstrap_p{int(round(100 * float(frac))):02d}"
+            markers.append(iso_dir / pxx / "sir_bootstrap.npz")
+    return markers
+
+
 def step_sir(
     resolved: ResolvedConfig,
     run_dir: Path,
@@ -192,16 +205,17 @@ def step_sir(
     """SIR eigen-decomposition of V on the seam manifold.
 
     One ``sir_compute.py`` invocation covers every isotope so it can also emit
-    the grouped H/D eigenvalue bar chart under ``combo_bar_plots/``.
+    the grouped H/D eigenvalue bar charts under ``combo_bar_plots/``. Always
+    writes ``all/``, ``filtered/``, and bootstrap fraction variants.
     """
     cfg = resolved.pipeline
     master_root = run_dir / "01_master_xyz"
     out_root = run_dir / "03_sir"
     sr = cfg.sir
 
-    markers = [out_root / iso / "sir_results.npz" for iso in cfg.isotopes]
+    markers = _sir_variant_markers(out_root, cfg.isotopes, sr)
     if all(m.is_file() for m in markers) and not force:
-        log.info("Skip sir (NPZ exists for all isotopes)")
+        log.info("Skip sir (all/filtered/bootstrap NPZs exist for all isotopes)")
         return out_root
 
     out_root.mkdir(parents=True, exist_ok=True)
@@ -228,8 +242,20 @@ def step_sir(
             str(sr.n_eigenvalues_plot),
             "--n-eigenvectors-viz",
             str(sr.n_eigenvectors_viz),
+            "--noise-floor",
+            str(sr.noise_floor),
+            "--bootstrap-fractions",
+            *[str(f) for f in sr.bootstrap_fractions],
+            "--bootstrap-n",
+            str(sr.bootstrap_n),
+            "--bootstrap-seed",
+            str(sr.bootstrap_seed),
         ]
     )
+    if sr.bootstrap_combo_spectrum:
+        cmd.append("--bootstrap-combo-spectrum")
+    else:
+        cmd.append("--no-bootstrap-combo-spectrum")
     if force:
         cmd.append("--force")
     _run_cmd(cmd, dry_run=dry_run)
@@ -254,11 +280,14 @@ def step_sir_viz(
     out_root = run_dir / "04_sir_viz"
     sv = cfg.sir_viz
     sr = cfg.sir
+    viz_source = sr.viz_source  # "filtered" | "all"
 
     for iso in cfg.isotopes:
-        npz = sir_root / iso / "sir_results.npz"
+        npz = sir_root / iso / viz_source / "sir_results.npz"
         if not npz.is_file() and not dry_run:
-            raise FileNotFoundError(f"Missing SIR NPZ: {npz}")
+            raise FileNotFoundError(
+                f"Missing SIR NPZ for viz_source={viz_source!r}: {npz}"
+            )
 
         qchem = Path(resolved.qchem_paths[iso])
         if not qchem.is_file() and not dry_run:

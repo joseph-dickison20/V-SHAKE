@@ -29,6 +29,7 @@ symbols in the paper and the variable names in the code is collected in
   - [Assumptions and caveats](#assumptions-and-caveats)
 - [Part 2: The implementation (`sir_compute.py`)](#part-2-the-implementation-sir_computepy)
   - [Inputs and outputs](#inputs-and-outputs)
+  - [Noise-floor filtering and classical bootstrap](#noise-floor-filtering-and-classical-bootstrap)
   - [Step 0: reading the master XYZ and the response](#step-0-reading-the-master-xyz-and-the-response)
   - [Step 1: Kabsch alignment to the MECP](#step-1-kabsch-alignment-to-the-mecp)
   - [Step 2: PCA whitening](#step-2-pca-whitening)
@@ -284,10 +285,12 @@ y-axis is auto-scaled for this reason.
 ## Part 2: The implementation (`sir_compute.py`)
 
 The script is a single, self-contained SIR driver. It takes one or more
-MECP-aligned master XYZ files (one per isotope), runs the full SIR pipeline for
-each, writes a per-isotope report + eigenvalue plot + reusable results archive,
-and — when given more than one isotope — a grouped H/D eigenvalue bar chart. All
-tunable parameters are exposed as command-line flags.
+MECP-aligned master XYZ files (one per isotope), always runs three families of
+analyses per isotope (`all`, `filtered`, and classical bootstrap at each
+configured fraction), writes reports + eigenvalue plots + reusable archives, and
+— when given more than one isotope — grouped H/D eigenvalue bar charts under
+`combo_bar_plots/{variant}/`. All tunable parameters are exposed as command-line
+flags (and mirrored in the pipeline YAML `sir:` block).
 
 ### Inputs and outputs
 
@@ -297,22 +300,84 @@ comment line carries the metadata `delta_cm^-1=... E0=... step=...`. The respons
 used by SIR is $V = \delta_{\text{cm}^{-1}} / 2$, i.e. half the tunneling
 splitting, read directly from each comment line.
 
-**Outputs (per isotope, written under `OUTPUT_DIR/<isotope>/`):**
+**Outputs (per isotope, under `OUTPUT_DIR/<isotope>/`):**
+
+```text
+all/           sir_results.npz, sir_report.txt,
+               sir_eigenvalue_spectrum.png, sir_modes.molden
+filtered/      same (noise-floor subset; MECP always kept at index 0)
+bootstrap_p75/ sir_bootstrap.npz, sir_report.txt,
+               sir_eigenvalue_spectrum.png   # mean bars + Tukey box/whiskers
+bootstrap_p85/ ...
+eta1_vs_filtered.txt   # |cos| and angle of each bootstrap η1 vs filtered η1
+```
 
 | File | Contents |
 |------|----------|
-| `sir_eigenvalue_spectrum.png` | Bar chart of the leading SIR eigenvalues $\lambda_i$. |
-| `sir_report.txt` | Human-readable summary: frame/atom counts, response range, PCA components kept, full eigenvalue spectrum with percentages, and the dominant per-atom contributions to each visualized direction. |
-| `sir_results.npz` | Machine-readable archive: `symbols`, `ref_coords` (MECP geometry), `y` (responses), `sir_vals` (eigenvalues), `betas` (the $\boldsymbol{\eta}_i$ as Cartesian directions), PCA eigenvalues, and all run parameters. |
-| `sir_modes.molden` | The top directions written as Molden normal modes for visualization/animation. |
+| `sir_eigenvalue_spectrum.png` | For `all`/`filtered`: plain bar chart of leading $\lambda_i$. For bootstrap: bar at the **mean** over replicates with a Tukey box-and-whisker overlaid (Q1/median/Q3; whiskers to 1.5×IQR). |
+| `sir_report.txt` | Human-readable summary (frame counts, response range, PCA/SIR params, spectrum; bootstrap reports also list η₁ `|cos|`/angle vs filtered and mean/std/quartiles). |
+| `sir_results.npz` | Full archive for `all`/`filtered`: `symbols`, `ref_coords` (MECP), `y`, `sir_vals`, `betas`, PCA eigenvalues, run parameters. |
+| `sir_bootstrap.npz` | Bootstrap stack: `sir_vals_boot` `(N, n_eig)`, `eta1_cos_abs` / `eta1_angle_deg` `(N,)`, plus `fraction`, `n_replicates`, `sample_size`, `noise_floor`, and SIR params. |
+| `eta1_vs_filtered.txt` | Per-isotope rollup of η₁ similarity for every bootstrap fraction. |
+| `sir_modes.molden` | Top directions as Molden modes (`all`/`filtered` only). |
 
-**Combined output (when >1 isotope):** `OUTPUT_DIR/combo_bar_plots/sir_eigenvalue_spectrum.png`,
-a grouped bar chart placing H and D side by side per eigenvalue index, using the
-shared H/D color convention (`hd_plot_colors.py`).
+**Combined output (when >1 isotope):**
 
-The `betas` array in the NPZ is what the downstream `sir_viz` step consumes to
-draw the arrows and GIFs. The `.molden` file is an alternative route to the same
-visualization.
+- `combo_bar_plots/{all,filtered}/sir_eigenvalue_spectrum.png` — plain grouped H/D bars.
+- With `bootstrap_combo_spectrum: true` (default): one
+  `combo_bar_plots/bootstrap_combo/sir_eigenvalue_spectrum.png` with **six bars
+  per eigenvalue index** in fraction-major order: filtered 100% H/D, then each
+  bootstrap fraction descending (e.g. 85%, 75%) × H/D. Filtered bars have no
+  whiskers; bootstrap bars show Tukey whiskers. Distinct hatch patterns
+  distinguish bootstrap fractions from each other and from the solid 100% bars.
+  With the flag off, separate `combo_bar_plots/bootstrap_pXX/` charts are written
+  instead.
+
+The `betas` array in the **`all/` or `filtered/`** NPZ is what the downstream
+`sir_viz` step consumes (YAML `sir.viz_source`, default `filtered`). Bootstrap
+results are analysis-only and are never passed to PyMOL.
+
+### Noise-floor filtering and classical bootstrap
+
+**Noise floor.** Frames with $V$ below `noise_floor` (default $1.0$ cm$^{-1}$) are
+dropped for the `filtered` and bootstrap families. Frame 0 (the MECP) is **always
+retained** as index 0 so `ref_coords` stay the MECP geometry even if the MECP
+itself sits below the floor. If too few frames remain for PCA whitening or for
+`nslices` SIR slices, the script fails with a clear error.
+
+**Classical bootstrap (on the filtered set).** For each fraction $f$ in
+`bootstrap_fractions` (default $[0.75, 0.85]$):
+
+1. Set sample size $m = \lfloor f \cdot n_{\text{filtered}}\rfloor$.
+2. Draw $N=$ `bootstrap_n` replicates (default 100). Each replicate keeps the MECP
+   at index 0 and draws $m-1$ indices **with replacement** from the non-MECP
+   filtered pool.
+3. Run SIR on that sample; collect the eigenvalue spectrum `sir_vals` and the
+   leading Cartesian direction $\boldsymbol{\eta}_1$ (`betas[:, 0]`).
+4. Write `bootstrap_pXX/` where `XX = round(100 f)` (e.g. $0.75$ → `bootstrap_p75`).
+
+RNG seeding uses `bootstrap_seed` with a deterministic offset per isotope index
+and fraction index so re-runs are reproducible.
+
+**η₁ similarity to filtered 100%.** For each bootstrap replicate, compare
+$\boldsymbol{\eta}_1^{\text{boot}}$ to $\boldsymbol{\eta}_1^{\text{filtered}}$ with
+the sign-invariant overlap $|\cos\theta| = |\boldsymbol{\eta}_1^{\text{filt}}\cdot
+\boldsymbol{\eta}_1^{\text{boot}}|$ (both unit-normalized) and
+$\theta = \arccos(|\cos\theta|)$ in degrees. Values near $|\cos|=1$ / $\theta=0$
+mean the leading coupling-controlling direction is unchanged under subsampling.
+Per-replicate tables appear in each `bootstrap_pXX/sir_report.txt` and in the
+isotope rollup `eta1_vs_filtered.txt`; arrays `eta1_cos_abs` /
+`eta1_angle_deg` are stored in `sir_bootstrap.npz`.
+
+**Reading the whisker plots.** For each eigenvalue index $i$, the bar height is
+the mean of $\lambda_i$ over the $N$ replicates. The overlaid box shows Q1,
+median, and Q3; whiskers extend to the most extreme replicate within $1.5\times$
+IQR of the box (Tukey). Wide whiskers mean that eigenvalue is unstable under
+subsampling; a dominant leading $\lambda_1$ with tight whiskers is the usual
+signature of a robust coupling-controlling direction. The combined
+`bootstrap_combo` figure places filtered 100% bars first (no whiskers), then
+bootstrap fractions in descending order, with H and D nested inside each
+fraction.
 
 ### Step 0: reading the master XYZ and the response
 
@@ -381,8 +446,8 @@ eigenvectors are the whitened-space directions $\mathbf{v}_i$.
 
 ### Step 4: un-whitening to Cartesian directions
 
-Back in `run_sir`, the whitened eigenvectors are mapped to physical Cartesian
-displacements:
+Back in `run_sir_on_frames` / `compute_sir_core`, the whitened eigenvectors are
+mapped to physical Cartesian displacements:
 
 ```python
 betas = V @ (sir_vecs / np.sqrt(pca_eigvals)[:, None])
@@ -402,7 +467,7 @@ motion shown in the paper.
 
 ### Step 5: outputs
 
-`run_sir` then:
+For each of `all` and `filtered`, `run_sir_on_frames` then:
 
 - Plots the eigenvalue spectrum (`plot_eigenvalue_spectrum`) with an auto-scaled
   y-axis, since SIR eigenvalues are unnormalized.
@@ -415,10 +480,17 @@ motion shown in the paper.
 - Writes `sir_modes.molden`, converting the reference geometry to Bohr (Molden's
   convention) while leaving the dimensionless displacement vectors as-is.
 
-`main` loops over every `--dataset ISOTOPE XYZ` pair, runs the per-isotope
-pipeline (or reuses a cached NPZ), collects the spectra, and if more than one
-isotope was supplied draws the grouped H/D comparison bar chart via
-`plot_combined_grouped_eigenvalue_bars`.
+Bootstrap fractions call `run_bootstrap_fraction`, which stacks replicate
+eigenvalues into `sir_bootstrap.npz`, records η₁ `|cos|`/angle vs filtered, and
+draws mean bars with Tukey whiskers (`plot_bootstrap_eigenvalue_spectrum`).
+
+`main` loops over every `--dataset ISOTOPE XYZ` pair, runs
+`run_isotope_variants` (or reuses cached markers), collects spectra / bootstrap
+stacks, and if more than one isotope was supplied draws combo plots under
+`combo_bar_plots/` (plain bars via `plot_combined_grouped_eigenvalue_bars`;
+with `--bootstrap-combo-spectrum`, one mega chart via
+`plot_combined_filtered_bootstrap_spectrum`; otherwise per-fraction
+`plot_combined_bootstrap_eigenvalue_bars`).
 
 ---
 
@@ -469,9 +541,14 @@ Key flags:
 | `--run-name` | (required) | Label used in reports/titles. |
 | `--nslices` | 10 | Number of SIR slices $N_s$. |
 | `--var` | 0.95 | Fraction of variance retained by PCA whitening. |
-| `--n-eigenvalues-plot` | 10 | How many eigenvalues to draw on the bar chart. |
+| `--n-eigenvalues-plot` | 3 | How many leading eigenvalues to draw on the bar chart (`sir.n_eigenvalues_plot`). |
 | `--n-eigenvectors-viz` | 3 | How many $\boldsymbol{\eta}_i$ to flag for visualization. |
-| `--force` | off | Recompute even if a cached `sir_results.npz` exists. |
+| `--noise-floor` | 1.0 | cm$^{-1}$; frames with $V$ below this are dropped for `filtered`/bootstrap. |
+| `--bootstrap-fractions` | 0.75 0.85 | Fractions of the filtered set for classical bootstrap. |
+| `--bootstrap-n` | 100 | Number of bootstrap replicates per fraction. |
+| `--bootstrap-seed` | 0 | Base RNG seed (offset per isotope/fraction). |
+| `--bootstrap-combo-spectrum` / `--no-bootstrap-combo-spectrum` | on | One filtered+bootstrap H/D combo spectrum vs separate per-fraction combo charts. |
+| `--force` | off | Recompute even if cached variant markers exist. |
 
 The isotope labels **must** be `H` and `D` to match the shared color convention
 in `hd_plot_colors.py` (H = Tableau red `#d62728`, D = Tableau blue `#1f77b4`);
@@ -481,12 +558,16 @@ steps so the isotopes read consistently in every figure.
 ## Reproducing the paper figures
 
 The $\boldsymbol{\eta}_1$ vectors shown in the SIR figure of the SI are the
-`betas[:, 0]` directions from each isotope's `sir_results.npz`, rendered on the
-MECP structure by the `sir_viz` step (arrows) and/or via `sir_modes.molden`
-(animations). The grouped eigenvalue bar chart under `combo_bar_plots/`
-corresponds to the eigenvalue spectra discussed in the text. Because eigenvectors
-are sign-ambiguous, an arrow may point "the other way" than a given rendering;
-only the axis of motion is physical.
+`betas[:, 0]` directions from each isotope's `all/` or `filtered/`
+`sir_results.npz` (pipeline default: `filtered`), rendered on the MECP structure
+by the `sir_viz` step (arrows) and/or via `sir_modes.molden` (animations).
+Grouped eigenvalue bar charts under `combo_bar_plots/` correspond to the
+eigenvalue spectra discussed in the text; the `bootstrap_combo` panel (or
+per-fraction bootstrap panels) add Tukey whiskers as described above, and
+`eta1_vs_filtered.txt` quantifies that $\boldsymbol{\eta}_1$ is stable under
+subsampling. Because eigenvectors are sign-ambiguous, an arrow may point "the
+other way" than a given rendering; only the axis of motion is physical (the
+$|\cos|$ metric already folds out the sign).
 
 ---
 

@@ -19,8 +19,14 @@ master_xyz:
 sir:
   nslices: 10
   var: 0.99
-  n_eigenvalues_plot: 10   # eigenvalues on the step-3 bar chart
+  n_eigenvalues_plot: 3    # eigenvalues on the step-3 bar chart
   n_eigenvectors_viz: 3    # eigenvectors rendered in step 4
+  noise_floor: 1.0              # cm^-1; frames with V < this dropped for filtered/bootstrap
+  bootstrap_fractions: [0.75, 0.85]
+  bootstrap_n: 100
+  bootstrap_seed: 0             # reproducible RNG
+  bootstrap_combo_spectrum: true  # one H/D+fractions combo plot instead of per-fraction combo charts
+  viz_source: filtered          # filtered | all  -> which NPZ sir_viz reads
 
 qchem_mecp:
   temp: HIGH_TEMP
@@ -99,7 +105,7 @@ geom:
       label: '$V$'
       output: V_vs_cn_bend.png
       xlim: [140, 180]
-      ylim: null
+      ylim: [1, 300]
     - x_id: RCO
       y_id: cn_bend
       color: vibronic_coupling

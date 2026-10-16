@@ -60,8 +60,16 @@ master_xyz:
 sir:
   nslices: 10
   var: 0.99
-  n_eigenvalues_plot: 10
+  n_eigenvalues_plot: 3
   n_eigenvectors_viz: 3
+  noise_floor: 1.0
+  bootstrap_fractions:
+  - 0.75
+  - 0.85
+  bootstrap_n: 100
+  bootstrap_seed: 0
+  bootstrap_combo_spectrum: true
+  viz_source: filtered
 sir_viz:
   arrow_scale: 3.0
   arrow_color:
@@ -152,7 +160,9 @@ geom:
     xlim:
     - 140
     - 180
-    ylim: null
+    ylim:
+    - 1
+    - 300
   - x_id: RCO
     y_id: cn_bend
     color: vibronic_coupling

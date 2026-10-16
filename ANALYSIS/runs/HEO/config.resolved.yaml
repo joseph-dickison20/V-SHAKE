@@ -45,15 +45,23 @@ master_xyz:
   - 0.0
   - 60.0
   y_lim:
-  - 10.0
+  - 1.0
   - 1400.0
   log_minor_ticks: true
   yscale: log
 sir:
   nslices: 10
   var: 0.99
-  n_eigenvalues_plot: 10
+  n_eigenvalues_plot: 3
   n_eigenvectors_viz: 3
+  noise_floor: 1.0
+  bootstrap_fractions:
+  - 0.75
+  - 0.85
+  bootstrap_n: 100
+  bootstrap_seed: 0
+  bootstrap_combo_spectrum: true
+  viz_source: filtered
 sir_viz:
   arrow_scale: 3.0
   arrow_color:
@@ -124,7 +132,7 @@ geom:
     - 2.35
     - 2.75
     ylim:
-    - 10
+    - 1
     - 1400
   - x_id: ROO
     y_field: delta_E_kcal
