@@ -1,0 +1,2390 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 6.4 (devel), Q-Chem, Inc., Pleasanton, CA (2025)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. D. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  Huseyin Aksu,  B. Alam,  
+ B. Albrecht,  A. Aldossary,  E. Alguire,  J. H. Andersen,  
+ J. E. Arias-Martinez,  V. Athavale,  F. Ballesteros,  D. Barton,  K. Begam,  
+ A. Behn,  N. Bellonzi,  Y. A. Bernard,  E. J. Berquist,  H. Burton,  
+ S. Camps,  A. Carreras,  K. Carter-Fenk,  Mathew Chow,  Jeng-Da Chai,  
+ Arnab Chakraborty,  Romit Chakraborty,  Chandrima Chakravarty,  Junhan Chen,  
+ A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  L. Cunha,  S. Dasgupta,  
+ Jia Deng,  Joseph Dickinson,  M. de Wergifosse,  M. Diedenhofen,  
+ L. B. Dittmer,  Hainam Do,  Wenjie Dou,  S. Ehlert,  Po-Tung Fang,  
+ Anthuan Ferino-Pérez,  S. Fatehi,  Qingguo Feng,  Jonathan Fetherolf,  
+ T. Friedhoff,  Thomas Froitzheim,  Sarai Folkestad,  B. Ganoe,  J. Gayvert,  
+ Qinghui Ge,  G. Gidofalvi,  M. Gimferrer,  G. Giudetti,  M. Goldey,  
+ Montgomery Gray,  J. Gomes,  C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  
+ J. A. Gyamfi,  M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  
+ M. F. Herbst,  M. Hernandez Vera,  M. Hodecker,  Z. C. Holden,  S. Houck,  
+ Xunkun Huang,  Kerwin Hui,  B. C. Huynh,  K. Ikeda,  M. Ivanov,  
+ Nayanthara K. Jayadev,  Hyunjun Ji,  Zuxin Jin,  Hanjie Jiang,  
+ Subrata Jana,  B. Kaduk,  S. Kaehler,  Richard Kang,  K. Khistyaev,  
+ Jaehoon Kim,  Yongbin Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  Elena Kolodzeiski,  D. Kosenkov,  Saikiran Kotaru,  
+ L. Koulias,  T. Kowalczyk,  C. M. Krauter,  K. Kue,  A. Kunitsa,  T. Kus,  
+ A. Landau,  C. W. Lander,  K. V. Lawler,  D. Lefrancois,  S. Lehtola,  
+ Rain Li,  Shaozhi Li,  Tao E. Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  Xiao Liu,  
+ M. Loipersberger,  A. Luenser,  C. Malbon,  Aniket Mandal,  Manisha,  
+ A. Manjanath,  P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  
+ A. V. Marenich,  T. Markovich,  S. Mason,  F. Matz,  S. A. Maurer,  
+ Samuel May,  Alexandra McIsaac,  P. F. McLaughlin,  M. F. S. J. Menger,  
+ J.-M. Mewes,  S. A. Mewes,  R. E. Moorby,  P. Morgante,  
+ Mohammad Mostafanejad,  Madhubani Mukherjee,  J. W. Mullinax,  Quyen Nguyen,  
+ Avik Kumar Ojha,  K. J. Oosterbaan,  Eno Paenurk,  Xiaoliang Pan,  G. Paran,  
+ V. Parravicini,  R. L. Patterson,  Alexander C. Paul,  Suranjan K. Paul,  
+ F. Pavosevic,  Zheng Pei,  P. Pokhilko,  S. Prager,  E. I. Proynov,  
+ E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  F. Rob,  
+ E. Rossomme,  S. Roy,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ P. E. Schneider,  Tim K. Schramm,  N. Sergueev,  S. M. Sharada,  
+ Hengyuan Shen,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Alistair J. Sterling,  Yingli Su,  Yu-Chuan Su,  E. J. Sundstrom,  
+ J. Talbot,  J. A. Tan,  Zhen Tao,  Hung-Hsuan Teh,  J. Thirman,  C. Titeca,  
+ N. Tkachenko,  Hung-Yi Tsai,  T. Tsuchimochi,  N. M. Tubman,  C. Utku,  
+ S. P. Veccham,  O. Vydrov,  Z. Wang,  Markus G. S. Weiss,  Rahel Weiss,  
+ J. Wenzel,  Jonathan Wong,  J. Witte,  H. Wu,  Yanze Wu,  A. Yamada,  
+ Chou-Hsun Yang,  Kun Yao,  S. Yeganeh,  S. R. Yost,  Qi Yu,  A. Zech,  
+ F. Zeller,  Chongxiao Zhao,  T. Zhao,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  Zeyi Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  
+ N. A. Besley,  K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  
+ Hsing-Ta Chen,  S. Coriani,  C. J. Cramer,  A. E. DePrince, III,  
+ R. A. DiStasio Jr.,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  
+ W. A. Goddard III,  S. Grimme,  S. Hammes-Schiffer,  T. Head-Gordon,  
+ W. J. Hehre,  Chao-Ping Hsu,  T.-C. Jagau,  Yousung Jung,  A. Klamt,  
+ Jing Kong,  D. S. Lambrecht,  Xiangyuan Li,  WanZhen Liang,  N. J. Mayhall,  
+ C. W. McCurdy,  J. B. Neaton,  T. Neudecker,  C. Ochsenfeld,  
+ J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Haisheng Ren,  Yihan Shao,  
+ L. V. Slipchenko,  R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  
+ A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  Fan Wang,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 6.4.0 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 12.8.2 (Cortisol Injector).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Oct 16 12:28:25 2026  
+
+ Host: r915u29n04.grace.ycrc.yale.edu
+0
+
+ Scratch files written to /home/jad279/palmer_scratch/qchem169253//
+ Executable: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/software/QCHEM7/exe/qcprog.exe
+ Number of threads = 24
+ Processing $rem in /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/software/QCHEM7/config/preferences:
+ Processing $rem in /home/jad279/.qchemrc:
+ Symmetry disabled for mixed basis and EFP jobs.
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+-1 1
+H    0.0000000000   0.0000000000  -0.2568943467
+@H   0.0000000000   0.0000000000   0.2568943467
+F    0.0000000000   0.0000000000  -1.4000000000
+F    0.0000000000   0.0000000000   1.4000000000
+$end
+
+
+$rem
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+BASIS                       mixed
+NEO                         TRUE
+NEO_EPC                     EPC172
+NEO_PURECART                1111
+NEO_VPP                     FALSE
+NEO_SIMULTANEOUS_SCF        TRUE
+NEO_N_HARTREE_PROD          TRUE
+NEO_MSDFT                   TRUE
+METHOD                      B3LYP
+SCF_ALGORITHM               GDM
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+MAX_SCF_CYCLES              1000
+THRESH                      14
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+$end
+
+$neo_basis
+H    1
+S   1   1.00
+     31.997                  1.0
+S   1   1.00
+     16.010                  1.0
+S   1   1.00
+      8.734                  1.0
+S   1   1.00
+      1.957                  1.0
+P   1   1.00
+     24.028                  1.0
+P   1   1.00
+     13.795                  1.0
+P   1   1.00
+      9.438                  1.0
+D   1   1.00
+     19.016                  1.0
+D   1   1.00
+     10.524                  1.0
+****
+H    2
+S   1   1.00
+     31.997                  1.0
+S   1   1.00
+     16.010                  1.0
+S   1   1.00
+      8.734                  1.0
+S   1   1.00
+      1.957                  1.0
+P   1   1.00
+     24.028                  1.0
+P   1   1.00
+     13.795                  1.0
+P   1   1.00
+      9.438                  1.0
+D   1   1.00
+     19.016                  1.0
+D   1   1.00
+     10.524                  1.0
+****
+$end
+
+$basis
+H  1
+aug-cc-pV5Z
+****
+H  2
+aug-cc-pV5Z
+****
+F  3
+aug-cc-pVDZ
+****
+F  4
+aug-cc-pVDZ
+****
+$end
+
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000000    -0.2568943467
+    2      GH      0.0000000000     0.0000000000     0.2568943467
+    3      F       0.0000000000     0.0000000000    -1.4000000000
+    4      F       0.0000000000     0.0000000000     1.4000000000
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          22.34911605 hartrees
+ There are       10 alpha and       10 beta electrons
+ Requested basis set is non-standard
+ There are 58 shells and 206 basis functions
+
+ Total QAlloc Memory Limit   5000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+
+                       Distance Matrix (Angstroms)
+             H (  1)   GH(  2)   F (  3)
+   GH(  2)  0.513789
+   F (  3)  1.143106  1.656894
+   F (  4)  1.656894  1.143106  2.800000
+
+ A cutoff of  1.0D-14 yielded   1711 shell pairs
+ There are     21759 function pairs (     34848 Cartesian)
+ Requested basis set is non-standard
+ There are 18 shells and 46 basis functions
+ Smallest overlap matrix eigenvalue = 3.21E-08
+ Linear dependence detected in AO basis
+ Tighter screening thresholds may be required for diffuse basis sets
+ Use S2THRESH > 14 and THRESH = 14 in case of SCF convergence issues
+ Number of orthogonalized atomic orbitals = 205
+ Maximum deviation from orthogonality = 6.539E-11
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000038 hartrees
+ Guess MOs from core Hamiltonian diagonalization
+ Constructing Nucl. Initial Guess for NEO Calculation: CORE
+ NEO centers: 1 2 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ using 24 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -181.1209341663      1.69e+00   Descent step
+    2    -185.3077900128      1.43e+00  Line search: understep
+    3    -173.9658929501      1.55e+00  Line search: overstep
+    4    -191.0740673603      1.35e+00   Descent step
+    5    -194.2945660045      8.92e-01   Descent step
+    6    -196.4672971539      1.07e+00   Descent step
+    7    -198.3592519053      6.90e-01   Descent step
+    8    -199.4993716354      4.25e-01   Descent step
+    9    -200.0183196906      1.77e-01   Descent step
+   10    -200.2928603436      6.46e-02   Descent step
+   11    -200.3340069601      1.33e-01   Normal BFGS step
+   12    -200.3835307840      8.89e-03   Normal BFGS step
+   13    -200.3839376494      6.98e-03   Normal BFGS step
+   14    -200.3840705900      5.87e-03   Normal BFGS step
+   15    -200.3841865282      1.63e-03   Normal BFGS step
+   16    -200.3842033544      4.99e-04   Normal BFGS step
+   17    -200.3842059884      1.49e-04   Normal BFGS step
+   18    -200.3842061982      1.38e-04   Normal BFGS step
+   19    -200.3842063413      3.57e-05   Normal BFGS step
+   20    -200.3842063594      2.76e-05   Normal BFGS step
+   21    -200.3842063636      1.18e-05   Normal BFGS step
+   22    -200.3842063642      1.89e-06   Normal BFGS step
+   23    -200.3842063643      2.71e-07   Normal BFGS step
+   24    -200.3842063643      1.55e-07   Normal BFGS step
+   25    -200.3842063643      1.14e-07   Normal BFGS step
+   26    -200.3842063643      5.31e-08   Normal BFGS step
+   27    -200.3842063643      9.78e-09   Normal BFGS step
+   28    -200.3842063643      2.38e-09   Normal BFGS step
+   29    -200.3842063643      7.82e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 692.57s  wall 36.00s 
+ SCF   energy =  -200.38420636
+ Total energy =  -200.38420636
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000039984
+   Relative error      =     0.0000001999 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses protons
+ A cutoff of  1.0D-14 yielded   1711 shell pairs
+ There are     21759 function pairs (     34848 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 2 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ NEO-MSDFT calculation has been requested 
+ There are 1 number of transferring nuclei 
+ 2 NEO-DFT diabatic states will be considered in the NEO-MSDFT routine 
+ Number of electronic ao: 206  Number of electronic mo: 205
+ Number of nuclear ao: 46  Number of nuclear mo: 46
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read protonic density based on nuclear initial guess selection 
+ Read electronic density from eSCF
+ NEO-SCF calculation will be performed using GDM
+
+ NEO-DFT Diabatic State 1:
+ Performing inital eSCF... 
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -200.3842063643      2.86e-10   Normal BFGS step
+    1    -200.3842063643      2.86e-10  Convergence criterion met
+ ----------------------------------------------
+
+ E(eSCF) = -200.3842063643
+ Initial eSCF converged, proceeding to NEO-SCF... 
+ 
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1      14.1829148391      9.25e-02   Normal BFGS step
+    2      14.1794016433      5.44e-02   Normal BFGS step
+    3      14.1787913932      3.31e-02   Normal BFGS step
+    4      14.1787432553      7.40e-03   Normal BFGS step
+    5      14.1787424462      7.33e-04   Normal BFGS step
+    6      14.1787423471      2.30e-04   Normal BFGS step
+    7      14.1787423446      4.65e-05   Normal BFGS step
+    8      14.1787423446      5.49e-06   Normal BFGS step
+    9      14.1787423446      6.45e-07   Normal BFGS step
+   10      14.1787423446      1.47e-07   Normal BFGS step
+   11      14.1787423446      9.54e-09   Normal BFGS step
+   12      14.1787423446      1.92e-09   Normal BFGS step
+   13      14.1787423446      3.54e-10   Normal BFGS step
+   13      14.1787423446      3.54e-10  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1    -200.3813426287      9.01e-03   Normal BFGS step
+    2    -200.3818585843      1.19e-02  Line search: overstep
+    3    -200.3818727931      2.49e-03   Normal BFGS step
+    4    -200.3818736733      8.81e-04   Normal BFGS step
+    5    -200.3818750379      7.01e-04   Normal BFGS step
+    6    -200.3818753443      1.89e-04   Normal BFGS step
+    7    -200.3818753670      5.84e-05   Normal BFGS step
+    8    -200.3818753675      7.71e-06   Normal BFGS step
+    9    -200.3818753675      8.44e-07   Normal BFGS step
+   10    -200.3818753675      1.96e-07   Normal BFGS step
+   11    -200.3818753675      2.23e-08   Normal BFGS step
+   12    -200.3818753675      3.87e-09   Normal BFGS step
+   13    -200.3818753675      1.40e-09   Normal BFGS step
+   14    -200.3818753675      9.16e-10   Normal BFGS step
+   14    -200.3818753675      9.16e-10  Convergence criterion met
+ ----------------------------------------------
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -200.3395136692      1.15e-03      2.15e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -200.3561811880      9.22e-02      5.72e-02   Normal BFGS step
+    2    -200.3719593765      5.43e-02      6.47e-02   Normal BFGS step
+    3    -200.3784674101      3.04e-02      3.95e-02   Normal BFGS step
+    4    -200.3800192441      4.54e-02      1.33e-02   Normal BFGS step
+    5    -200.3809141386      1.98e-02      1.16e-02   Normal BFGS step
+    6    -200.3818852620      6.96e-03      9.54e-03   Normal BFGS step
+    7    -200.3824575190      1.61e-02      2.75e-03   Normal BFGS step
+    8    -200.3628320979      3.48e-02      7.71e-03   Normal BFGS step
+    9    -200.3823990613      7.68e-02      4.23e-02  Line search: overstep
+   10    -200.3824583745      3.92e-02      9.82e-03  Line search: overstep
+   11    -200.3824082394      3.68e-02      8.63e-03  Line search: understep
+   12    -200.3824558995      3.90e-02      9.70e-03  Line search: overstep
+   13    -200.3824581515      3.70e-02      8.74e-03  Line search: overstep
+   14    -200.3824561446      3.68e-02      8.64e-03  Line search: understep
+   15    -200.3824579669      3.70e-02      8.73e-03  Line search: overstep
+   16    -200.3824563399      3.68e-02      8.65e-03  Line search: understep
+   17    -200.3824578148      3.70e-02      8.72e-03  Line search: overstep
+   18    -200.3824564960      3.68e-02      8.66e-03  Line search: understep
+   19    -200.3824576898      3.70e-02      8.71e-03  Line search: overstep
+   20    -200.3824566210      3.69e-02      8.66e-03  Line search: understep
+   21    -200.3824575875      3.70e-02      8.71e-03  Line search: overstep
+   22    -200.3824567213      3.69e-02      8.67e-03  Line search: understep
+   23    -200.3824575039      3.69e-02      8.70e-03  Line search: overstep
+   24    -200.3824568020      3.69e-02      8.67e-03  Line search: understep
+  gdm_simult::   16 failed line searches.  Resetting
+   25    -200.3824574356      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   17 failed line searches.  Resetting
+   26    -200.3824568670      3.69e-02      8.67e-03  Line search: understep
+  gdm_simult::   18 failed line searches.  Resetting
+   27    -200.3824568085      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   19 failed line searches.  Resetting
+   28    -200.3824568611      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   20 failed line searches.  Resetting
+   29    -200.3824568138      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   21 failed line searches.  Resetting
+   30    -200.3824568090      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   22 failed line searches.  Resetting
+   31    -200.3824568133      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   23 failed line searches.  Resetting
+   32    -200.3824568095      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   24 failed line searches.  Resetting
+   33    -200.3824568129      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   25 failed line searches.  Resetting
+   34    -200.3824568098      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   26 failed line searches.  Resetting
+   35    -200.3824568126      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   27 failed line searches.  Resetting
+   36    -200.3824568101      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   28 failed line searches.  Resetting
+   37    -200.3824568124      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   29 failed line searches.  Resetting
+   38    -200.3824568103      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   30 failed line searches.  Resetting
+   39    -200.3824568122      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   31 failed line searches.  Resetting
+   40    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   32 failed line searches.  Resetting
+   41    -200.3824568122      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   33 failed line searches.  Resetting
+   42    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   34 failed line searches.  Resetting
+   43    -200.3824568122      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   35 failed line searches.  Resetting
+   44    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   36 failed line searches.  Resetting
+   45    -200.3824568122      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   37 failed line searches.  Resetting
+   46    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   38 failed line searches.  Resetting
+   47    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   39 failed line searches.  Resetting
+   48    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   40 failed line searches.  Resetting
+   49    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   41 failed line searches.  Resetting
+   50    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   42 failed line searches.  Resetting
+   51    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   43 failed line searches.  Resetting
+   52    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   44 failed line searches.  Resetting
+   53    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   45 failed line searches.  Resetting
+   54    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   46 failed line searches.  Resetting
+   55    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   47 failed line searches.  Resetting
+   56    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   48 failed line searches.  Resetting
+   57    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   49 failed line searches.  Resetting
+   58    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   50 failed line searches.  Resetting
+   59    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   51 failed line searches.  Resetting
+   60    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   52 failed line searches.  Resetting
+   61    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   53 failed line searches.  Resetting
+   62    -200.3824568123      3.69e-02      8.70e-03  Line search: understep
+  gdm_simult::   54 failed line searches.  Resetting
+   63    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   55 failed line searches.  Resetting
+   64    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   56 failed line searches.  Resetting
+   65    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   57 failed line searches.  Resetting
+   66    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   58 failed line searches.  Resetting
+   67    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   59 failed line searches.  Resetting
+   68    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   60 failed line searches.  Resetting
+   69    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   61 failed line searches.  Resetting
+   70    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   62 failed line searches.  Resetting
+   71    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   63 failed line searches.  Resetting
+   72    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   64 failed line searches.  Resetting
+   73    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   65 failed line searches.  Resetting
+   74    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   66 failed line searches.  Resetting
+   75    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   67 failed line searches.  Resetting
+   76    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   68 failed line searches.  Resetting
+   77    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   69 failed line searches.  Resetting
+   78    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   70 failed line searches.  Resetting
+   79    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   71 failed line searches.  Resetting
+   80    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   72 failed line searches.  Resetting
+   81    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   73 failed line searches.  Resetting
+   82    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   74 failed line searches.  Resetting
+   83    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   75 failed line searches.  Resetting
+   84    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   76 failed line searches.  Resetting
+   85    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   77 failed line searches.  Resetting
+   86    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   78 failed line searches.  Resetting
+   87    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   79 failed line searches.  Resetting
+   88    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   80 failed line searches.  Resetting
+   89    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   81 failed line searches.  Resetting
+   90    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   82 failed line searches.  Resetting
+   91    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   83 failed line searches.  Resetting
+   92    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   84 failed line searches.  Resetting
+   93    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   85 failed line searches.  Resetting
+   94    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   86 failed line searches.  Resetting
+   95    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   87 failed line searches.  Resetting
+   96    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   88 failed line searches.  Resetting
+   97    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   89 failed line searches.  Resetting
+   98    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   90 failed line searches.  Resetting
+   99    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   91 failed line searches.  Resetting
+  100    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   92 failed line searches.  Resetting
+  101    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   93 failed line searches.  Resetting
+  102    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   94 failed line searches.  Resetting
+  103    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   95 failed line searches.  Resetting
+  104    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   96 failed line searches.  Resetting
+  105    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   97 failed line searches.  Resetting
+  106    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   98 failed line searches.  Resetting
+  107    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   99 failed line searches.  Resetting
+  108    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   100 failed line searches.  Resetting
+  109    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   101 failed line searches.  Resetting
+  110    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   102 failed line searches.  Resetting
+  111    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   103 failed line searches.  Resetting
+  112    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   104 failed line searches.  Resetting
+  113    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   105 failed line searches.  Resetting
+  114    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   106 failed line searches.  Resetting
+  115    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   107 failed line searches.  Resetting
+  116    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   108 failed line searches.  Resetting
+  117    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   109 failed line searches.  Resetting
+  118    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   110 failed line searches.  Resetting
+  119    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   111 failed line searches.  Resetting
+  120    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   112 failed line searches.  Resetting
+  121    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   113 failed line searches.  Resetting
+  122    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   114 failed line searches.  Resetting
+  123    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   115 failed line searches.  Resetting
+  124    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   116 failed line searches.  Resetting
+  125    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   117 failed line searches.  Resetting
+  126    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   118 failed line searches.  Resetting
+  127    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   119 failed line searches.  Resetting
+  128    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   120 failed line searches.  Resetting
+  129    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   121 failed line searches.  Resetting
+  130    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   122 failed line searches.  Resetting
+  131    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   123 failed line searches.  Resetting
+  132    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   124 failed line searches.  Resetting
+  133    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   125 failed line searches.  Resetting
+  134    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   126 failed line searches.  Resetting
+  135    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   127 failed line searches.  Resetting
+  136    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   128 failed line searches.  Resetting
+  137    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   129 failed line searches.  Resetting
+  138    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   130 failed line searches.  Resetting
+  139    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   131 failed line searches.  Resetting
+  140    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   132 failed line searches.  Resetting
+  141    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   133 failed line searches.  Resetting
+  142    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   134 failed line searches.  Resetting
+  143    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   135 failed line searches.  Resetting
+  144    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   136 failed line searches.  Resetting
+  145    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   137 failed line searches.  Resetting
+  146    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   138 failed line searches.  Resetting
+  147    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   139 failed line searches.  Resetting
+  148    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   140 failed line searches.  Resetting
+  149    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   141 failed line searches.  Resetting
+  150    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   142 failed line searches.  Resetting
+  151    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   143 failed line searches.  Resetting
+  152    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   144 failed line searches.  Resetting
+  153    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   145 failed line searches.  Resetting
+  154    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   146 failed line searches.  Resetting
+  155    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   147 failed line searches.  Resetting
+  156    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   148 failed line searches.  Resetting
+  157    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   149 failed line searches.  Resetting
+  158    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   150 failed line searches.  Resetting
+  159    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   151 failed line searches.  Resetting
+  160    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   152 failed line searches.  Resetting
+  161    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   153 failed line searches.  Resetting
+  162    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   154 failed line searches.  Resetting
+  163    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   155 failed line searches.  Resetting
+  164    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   156 failed line searches.  Resetting
+  165    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   157 failed line searches.  Resetting
+  166    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   158 failed line searches.  Resetting
+  167    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   159 failed line searches.  Resetting
+  168    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   160 failed line searches.  Resetting
+  169    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   161 failed line searches.  Resetting
+  170    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   162 failed line searches.  Resetting
+  171    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   163 failed line searches.  Resetting
+  172    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   164 failed line searches.  Resetting
+  173    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   165 failed line searches.  Resetting
+  174    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   166 failed line searches.  Resetting
+  175    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   167 failed line searches.  Resetting
+  176    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   168 failed line searches.  Resetting
+  177    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   169 failed line searches.  Resetting
+  178    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   170 failed line searches.  Resetting
+  179    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   171 failed line searches.  Resetting
+  180    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   172 failed line searches.  Resetting
+  181    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   173 failed line searches.  Resetting
+  182    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   174 failed line searches.  Resetting
+  183    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   175 failed line searches.  Resetting
+  184    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   176 failed line searches.  Resetting
+  185    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   177 failed line searches.  Resetting
+  186    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   178 failed line searches.  Resetting
+  187    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   179 failed line searches.  Resetting
+  188    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   180 failed line searches.  Resetting
+  189    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   181 failed line searches.  Resetting
+  190    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   182 failed line searches.  Resetting
+  191    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   183 failed line searches.  Resetting
+  192    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   184 failed line searches.  Resetting
+  193    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   185 failed line searches.  Resetting
+  194    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   186 failed line searches.  Resetting
+  195    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   187 failed line searches.  Resetting
+  196    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   188 failed line searches.  Resetting
+  197    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   189 failed line searches.  Resetting
+  198    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   190 failed line searches.  Resetting
+  199    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   191 failed line searches.  Resetting
+  200    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   192 failed line searches.  Resetting
+  201    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   193 failed line searches.  Resetting
+  202    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   194 failed line searches.  Resetting
+  203    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   195 failed line searches.  Resetting
+  204    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   196 failed line searches.  Resetting
+  205    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   197 failed line searches.  Resetting
+  206    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   198 failed line searches.  Resetting
+  207    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   199 failed line searches.  Resetting
+  208    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   200 failed line searches.  Resetting
+  209    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   201 failed line searches.  Resetting
+  210    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   202 failed line searches.  Resetting
+  211    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   203 failed line searches.  Resetting
+  212    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   204 failed line searches.  Resetting
+  213    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   205 failed line searches.  Resetting
+  214    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   206 failed line searches.  Resetting
+  215    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   207 failed line searches.  Resetting
+  216    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   208 failed line searches.  Resetting
+  217    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   209 failed line searches.  Resetting
+  218    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   210 failed line searches.  Resetting
+  219    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   211 failed line searches.  Resetting
+  220    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   212 failed line searches.  Resetting
+  221    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   213 failed line searches.  Resetting
+  222    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   214 failed line searches.  Resetting
+  223    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   215 failed line searches.  Resetting
+  224    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   216 failed line searches.  Resetting
+  225    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   217 failed line searches.  Resetting
+  226    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   218 failed line searches.  Resetting
+  227    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   219 failed line searches.  Resetting
+  228    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   220 failed line searches.  Resetting
+  229    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   221 failed line searches.  Resetting
+  230    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   222 failed line searches.  Resetting
+  231    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   223 failed line searches.  Resetting
+  232    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   224 failed line searches.  Resetting
+  233    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   225 failed line searches.  Resetting
+  234    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   226 failed line searches.  Resetting
+  235    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   227 failed line searches.  Resetting
+  236    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   228 failed line searches.  Resetting
+  237    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   229 failed line searches.  Resetting
+  238    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   230 failed line searches.  Resetting
+  239    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   231 failed line searches.  Resetting
+  240    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   232 failed line searches.  Resetting
+  241    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   233 failed line searches.  Resetting
+  242    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   234 failed line searches.  Resetting
+  243    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   235 failed line searches.  Resetting
+  244    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   236 failed line searches.  Resetting
+  245    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   237 failed line searches.  Resetting
+  246    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   238 failed line searches.  Resetting
+  247    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   239 failed line searches.  Resetting
+  248    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   240 failed line searches.  Resetting
+  249    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   241 failed line searches.  Resetting
+  250    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   242 failed line searches.  Resetting
+  251    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   243 failed line searches.  Resetting
+  252    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   244 failed line searches.  Resetting
+  253    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   245 failed line searches.  Resetting
+  254    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   246 failed line searches.  Resetting
+  255    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   247 failed line searches.  Resetting
+  256    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   248 failed line searches.  Resetting
+  257    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   249 failed line searches.  Resetting
+  258    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   250 failed line searches.  Resetting
+  259    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   251 failed line searches.  Resetting
+  260    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   252 failed line searches.  Resetting
+  261    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   253 failed line searches.  Resetting
+  262    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   254 failed line searches.  Resetting
+  263    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   255 failed line searches.  Resetting
+  264    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   256 failed line searches.  Resetting
+  265    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   257 failed line searches.  Resetting
+  266    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   258 failed line searches.  Resetting
+  267    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   259 failed line searches.  Resetting
+  268    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   260 failed line searches.  Resetting
+  269    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   261 failed line searches.  Resetting
+  270    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   262 failed line searches.  Resetting
+  271    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   263 failed line searches.  Resetting
+  272    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   264 failed line searches.  Resetting
+  273    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   265 failed line searches.  Resetting
+  274    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   266 failed line searches.  Resetting
+  275    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   267 failed line searches.  Resetting
+  276    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   268 failed line searches.  Resetting
+  277    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   269 failed line searches.  Resetting
+  278    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   270 failed line searches.  Resetting
+  279    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   271 failed line searches.  Resetting
+  280    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   272 failed line searches.  Resetting
+  281    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   273 failed line searches.  Resetting
+  282    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   274 failed line searches.  Resetting
+  283    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   275 failed line searches.  Resetting
+  284    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   276 failed line searches.  Resetting
+  285    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   277 failed line searches.  Resetting
+  286    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   278 failed line searches.  Resetting
+  287    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   279 failed line searches.  Resetting
+  288    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   280 failed line searches.  Resetting
+  289    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   281 failed line searches.  Resetting
+  290    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   282 failed line searches.  Resetting
+  291    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   283 failed line searches.  Resetting
+  292    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   284 failed line searches.  Resetting
+  293    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   285 failed line searches.  Resetting
+  294    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   286 failed line searches.  Resetting
+  295    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   287 failed line searches.  Resetting
+  296    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   288 failed line searches.  Resetting
+  297    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   289 failed line searches.  Resetting
+  298    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   290 failed line searches.  Resetting
+  299    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   291 failed line searches.  Resetting
+  300    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   292 failed line searches.  Resetting
+  301    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   293 failed line searches.  Resetting
+  302    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   294 failed line searches.  Resetting
+  303    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   295 failed line searches.  Resetting
+  304    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   296 failed line searches.  Resetting
+  305    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   297 failed line searches.  Resetting
+  306    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   298 failed line searches.  Resetting
+  307    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   299 failed line searches.  Resetting
+  308    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   300 failed line searches.  Resetting
+  309    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   301 failed line searches.  Resetting
+  310    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   302 failed line searches.  Resetting
+  311    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   303 failed line searches.  Resetting
+  312    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   304 failed line searches.  Resetting
+  313    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   305 failed line searches.  Resetting
+  314    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   306 failed line searches.  Resetting
+  315    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   307 failed line searches.  Resetting
+  316    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   308 failed line searches.  Resetting
+  317    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   309 failed line searches.  Resetting
+  318    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   310 failed line searches.  Resetting
+  319    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   311 failed line searches.  Resetting
+  320    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   312 failed line searches.  Resetting
+  321    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   313 failed line searches.  Resetting
+  322    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   314 failed line searches.  Resetting
+  323    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   315 failed line searches.  Resetting
+  324    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   316 failed line searches.  Resetting
+  325    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   317 failed line searches.  Resetting
+  326    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   318 failed line searches.  Resetting
+  327    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   319 failed line searches.  Resetting
+  328    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   320 failed line searches.  Resetting
+  329    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   321 failed line searches.  Resetting
+  330    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   322 failed line searches.  Resetting
+  331    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   323 failed line searches.  Resetting
+  332    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   324 failed line searches.  Resetting
+  333    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   325 failed line searches.  Resetting
+  334    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   326 failed line searches.  Resetting
+  335    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   327 failed line searches.  Resetting
+  336    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   328 failed line searches.  Resetting
+  337    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   329 failed line searches.  Resetting
+  338    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   330 failed line searches.  Resetting
+  339    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   331 failed line searches.  Resetting
+  340    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   332 failed line searches.  Resetting
+  341    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   333 failed line searches.  Resetting
+  342    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   334 failed line searches.  Resetting
+  343    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   335 failed line searches.  Resetting
+  344    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   336 failed line searches.  Resetting
+  345    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   337 failed line searches.  Resetting
+  346    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   338 failed line searches.  Resetting
+  347    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   339 failed line searches.  Resetting
+  348    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   340 failed line searches.  Resetting
+  349    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   341 failed line searches.  Resetting
+  350    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   342 failed line searches.  Resetting
+  351    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   343 failed line searches.  Resetting
+  352    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   344 failed line searches.  Resetting
+  353    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   345 failed line searches.  Resetting
+  354    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   346 failed line searches.  Resetting
+  355    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   347 failed line searches.  Resetting
+  356    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   348 failed line searches.  Resetting
+  357    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   349 failed line searches.  Resetting
+  358    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   350 failed line searches.  Resetting
+  359    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   351 failed line searches.  Resetting
+  360    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   352 failed line searches.  Resetting
+  361    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   353 failed line searches.  Resetting
+  362    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   354 failed line searches.  Resetting
+  363    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   355 failed line searches.  Resetting
+  364    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   356 failed line searches.  Resetting
+  365    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   357 failed line searches.  Resetting
+  366    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   358 failed line searches.  Resetting
+  367    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   359 failed line searches.  Resetting
+  368    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   360 failed line searches.  Resetting
+  369    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   361 failed line searches.  Resetting
+  370    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   362 failed line searches.  Resetting
+  371    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   363 failed line searches.  Resetting
+  372    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   364 failed line searches.  Resetting
+  373    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   365 failed line searches.  Resetting
+  374    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   366 failed line searches.  Resetting
+  375    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   367 failed line searches.  Resetting
+  376    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   368 failed line searches.  Resetting
+  377    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   369 failed line searches.  Resetting
+  378    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   370 failed line searches.  Resetting
+  379    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   371 failed line searches.  Resetting
+  380    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   372 failed line searches.  Resetting
+  381    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   373 failed line searches.  Resetting
+  382    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   374 failed line searches.  Resetting
+  383    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   375 failed line searches.  Resetting
+  384    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   376 failed line searches.  Resetting
+  385    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   377 failed line searches.  Resetting
+  386    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   378 failed line searches.  Resetting
+  387    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   379 failed line searches.  Resetting
+  388    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   380 failed line searches.  Resetting
+  389    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   381 failed line searches.  Resetting
+  390    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   382 failed line searches.  Resetting
+  391    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   383 failed line searches.  Resetting
+  392    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   384 failed line searches.  Resetting
+  393    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   385 failed line searches.  Resetting
+  394    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   386 failed line searches.  Resetting
+  395    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   387 failed line searches.  Resetting
+  396    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   388 failed line searches.  Resetting
+  397    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   389 failed line searches.  Resetting
+  398    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   390 failed line searches.  Resetting
+  399    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   391 failed line searches.  Resetting
+  400    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   392 failed line searches.  Resetting
+  401    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   393 failed line searches.  Resetting
+  402    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   394 failed line searches.  Resetting
+  403    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   395 failed line searches.  Resetting
+  404    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   396 failed line searches.  Resetting
+  405    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   397 failed line searches.  Resetting
+  406    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   398 failed line searches.  Resetting
+  407    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   399 failed line searches.  Resetting
+  408    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   400 failed line searches.  Resetting
+  409    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   401 failed line searches.  Resetting
+  410    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   402 failed line searches.  Resetting
+  411    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   403 failed line searches.  Resetting
+  412    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   404 failed line searches.  Resetting
+  413    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   405 failed line searches.  Resetting
+  414    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   406 failed line searches.  Resetting
+  415    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   407 failed line searches.  Resetting
+  416    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   408 failed line searches.  Resetting
+  417    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   409 failed line searches.  Resetting
+  418    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   410 failed line searches.  Resetting
+  419    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   411 failed line searches.  Resetting
+  420    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   412 failed line searches.  Resetting
+  421    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   413 failed line searches.  Resetting
+  422    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   414 failed line searches.  Resetting
+  423    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   415 failed line searches.  Resetting
+  424    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   416 failed line searches.  Resetting
+  425    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   417 failed line searches.  Resetting
+  426    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   418 failed line searches.  Resetting
+  427    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   419 failed line searches.  Resetting
+  428    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   420 failed line searches.  Resetting
+  429    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   421 failed line searches.  Resetting
+  430    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   422 failed line searches.  Resetting
+  431    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   423 failed line searches.  Resetting
+  432    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   424 failed line searches.  Resetting
+  433    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   425 failed line searches.  Resetting
+  434    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   426 failed line searches.  Resetting
+  435    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   427 failed line searches.  Resetting
+  436    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   428 failed line searches.  Resetting
+  437    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   429 failed line searches.  Resetting
+  438    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   430 failed line searches.  Resetting
+  439    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   431 failed line searches.  Resetting
+  440    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   432 failed line searches.  Resetting
+  441    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   433 failed line searches.  Resetting
+  442    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   434 failed line searches.  Resetting
+  443    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   435 failed line searches.  Resetting
+  444    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   436 failed line searches.  Resetting
+  445    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   437 failed line searches.  Resetting
+  446    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   438 failed line searches.  Resetting
+  447    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   439 failed line searches.  Resetting
+  448    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   440 failed line searches.  Resetting
+  449    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   441 failed line searches.  Resetting
+  450    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   442 failed line searches.  Resetting
+  451    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   443 failed line searches.  Resetting
+  452    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   444 failed line searches.  Resetting
+  453    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   445 failed line searches.  Resetting
+  454    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   446 failed line searches.  Resetting
+  455    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   447 failed line searches.  Resetting
+  456    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   448 failed line searches.  Resetting
+  457    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   449 failed line searches.  Resetting
+  458    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   450 failed line searches.  Resetting
+  459    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   451 failed line searches.  Resetting
+  460    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   452 failed line searches.  Resetting
+  461    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   453 failed line searches.  Resetting
+  462    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   454 failed line searches.  Resetting
+  463    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   455 failed line searches.  Resetting
+  464    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   456 failed line searches.  Resetting
+  465    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   457 failed line searches.  Resetting
+  466    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   458 failed line searches.  Resetting
+  467    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   459 failed line searches.  Resetting
+  468    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   460 failed line searches.  Resetting
+  469    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   461 failed line searches.  Resetting
+  470    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   462 failed line searches.  Resetting
+  471    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   463 failed line searches.  Resetting
+  472    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   464 failed line searches.  Resetting
+  473    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   465 failed line searches.  Resetting
+  474    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   466 failed line searches.  Resetting
+  475    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   467 failed line searches.  Resetting
+  476    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   468 failed line searches.  Resetting
+  477    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   469 failed line searches.  Resetting
+  478    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   470 failed line searches.  Resetting
+  479    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   471 failed line searches.  Resetting
+  480    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   472 failed line searches.  Resetting
+  481    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   473 failed line searches.  Resetting
+  482    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   474 failed line searches.  Resetting
+  483    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   475 failed line searches.  Resetting
+  484    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   476 failed line searches.  Resetting
+  485    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   477 failed line searches.  Resetting
+  486    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   478 failed line searches.  Resetting
+  487    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   479 failed line searches.  Resetting
+  488    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   480 failed line searches.  Resetting
+  489    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   481 failed line searches.  Resetting
+  490    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   482 failed line searches.  Resetting
+  491    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   483 failed line searches.  Resetting
+  492    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   484 failed line searches.  Resetting
+  493    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   485 failed line searches.  Resetting
+  494    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   486 failed line searches.  Resetting
+  495    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   487 failed line searches.  Resetting
+  496    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   488 failed line searches.  Resetting
+  497    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   489 failed line searches.  Resetting
+  498    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   490 failed line searches.  Resetting
+  499    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   491 failed line searches.  Resetting
+  500    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   492 failed line searches.  Resetting
+  501    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   493 failed line searches.  Resetting
+  502    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   494 failed line searches.  Resetting
+  503    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   495 failed line searches.  Resetting
+  504    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   496 failed line searches.  Resetting
+  505    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   497 failed line searches.  Resetting
+  506    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   498 failed line searches.  Resetting
+  507    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   499 failed line searches.  Resetting
+  508    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   500 failed line searches.  Resetting
+  509    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   501 failed line searches.  Resetting
+  510    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   502 failed line searches.  Resetting
+  511    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   503 failed line searches.  Resetting
+  512    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   504 failed line searches.  Resetting
+  513    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   505 failed line searches.  Resetting
+  514    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   506 failed line searches.  Resetting
+  515    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   507 failed line searches.  Resetting
+  516    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   508 failed line searches.  Resetting
+  517    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   509 failed line searches.  Resetting
+  518    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   510 failed line searches.  Resetting
+  519    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   511 failed line searches.  Resetting
+  520    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   512 failed line searches.  Resetting
+  521    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   513 failed line searches.  Resetting
+  522    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   514 failed line searches.  Resetting
+  523    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   515 failed line searches.  Resetting
+  524    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   516 failed line searches.  Resetting
+  525    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   517 failed line searches.  Resetting
+  526    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   518 failed line searches.  Resetting
+  527    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   519 failed line searches.  Resetting
+  528    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   520 failed line searches.  Resetting
+  529    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   521 failed line searches.  Resetting
+  530    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   522 failed line searches.  Resetting
+  531    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   523 failed line searches.  Resetting
+  532    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   524 failed line searches.  Resetting
+  533    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   525 failed line searches.  Resetting
+  534    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   526 failed line searches.  Resetting
+  535    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   527 failed line searches.  Resetting
+  536    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   528 failed line searches.  Resetting
+  537    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   529 failed line searches.  Resetting
+  538    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   530 failed line searches.  Resetting
+  539    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   531 failed line searches.  Resetting
+  540    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   532 failed line searches.  Resetting
+  541    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   533 failed line searches.  Resetting
+  542    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   534 failed line searches.  Resetting
+  543    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   535 failed line searches.  Resetting
+  544    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   536 failed line searches.  Resetting
+  545    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   537 failed line searches.  Resetting
+  546    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   538 failed line searches.  Resetting
+  547    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   539 failed line searches.  Resetting
+  548    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   540 failed line searches.  Resetting
+  549    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   541 failed line searches.  Resetting
+  550    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   542 failed line searches.  Resetting
+  551    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   543 failed line searches.  Resetting
+  552    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   544 failed line searches.  Resetting
+  553    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   545 failed line searches.  Resetting
+  554    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   546 failed line searches.  Resetting
+  555    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   547 failed line searches.  Resetting
+  556    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   548 failed line searches.  Resetting
+  557    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   549 failed line searches.  Resetting
+  558    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   550 failed line searches.  Resetting
+  559    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   551 failed line searches.  Resetting
+  560    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   552 failed line searches.  Resetting
+  561    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   553 failed line searches.  Resetting
+  562    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   554 failed line searches.  Resetting
+  563    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   555 failed line searches.  Resetting
+  564    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   556 failed line searches.  Resetting
+  565    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   557 failed line searches.  Resetting
+  566    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   558 failed line searches.  Resetting
+  567    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   559 failed line searches.  Resetting
+  568    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   560 failed line searches.  Resetting
+  569    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   561 failed line searches.  Resetting
+  570    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   562 failed line searches.  Resetting
+  571    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   563 failed line searches.  Resetting
+  572    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   564 failed line searches.  Resetting
+  573    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   565 failed line searches.  Resetting
+  574    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   566 failed line searches.  Resetting
+  575    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   567 failed line searches.  Resetting
+  576    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   568 failed line searches.  Resetting
+  577    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   569 failed line searches.  Resetting
+  578    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   570 failed line searches.  Resetting
+  579    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   571 failed line searches.  Resetting
+  580    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   572 failed line searches.  Resetting
+  581    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   573 failed line searches.  Resetting
+  582    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   574 failed line searches.  Resetting
+  583    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   575 failed line searches.  Resetting
+  584    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   576 failed line searches.  Resetting
+  585    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   577 failed line searches.  Resetting
+  586    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   578 failed line searches.  Resetting
+  587    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   579 failed line searches.  Resetting
+  588    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   580 failed line searches.  Resetting
+  589    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   581 failed line searches.  Resetting
+  590    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   582 failed line searches.  Resetting
+  591    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   583 failed line searches.  Resetting
+  592    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   584 failed line searches.  Resetting
+  593    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   585 failed line searches.  Resetting
+  594    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   586 failed line searches.  Resetting
+  595    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   587 failed line searches.  Resetting
+  596    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   588 failed line searches.  Resetting
+  597    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   589 failed line searches.  Resetting
+  598    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   590 failed line searches.  Resetting
+  599    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   591 failed line searches.  Resetting
+  600    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   592 failed line searches.  Resetting
+  601    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   593 failed line searches.  Resetting
+  602    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   594 failed line searches.  Resetting
+  603    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   595 failed line searches.  Resetting
+  604    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   596 failed line searches.  Resetting
+  605    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   597 failed line searches.  Resetting
+  606    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   598 failed line searches.  Resetting
+  607    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   599 failed line searches.  Resetting
+  608    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   600 failed line searches.  Resetting
+  609    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   601 failed line searches.  Resetting
+  610    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   602 failed line searches.  Resetting
+  611    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   603 failed line searches.  Resetting
+  612    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   604 failed line searches.  Resetting
+  613    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   605 failed line searches.  Resetting
+  614    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   606 failed line searches.  Resetting
+  615    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   607 failed line searches.  Resetting
+  616    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   608 failed line searches.  Resetting
+  617    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   609 failed line searches.  Resetting
+  618    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   610 failed line searches.  Resetting
+  619    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   611 failed line searches.  Resetting
+  620    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   612 failed line searches.  Resetting
+  621    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   613 failed line searches.  Resetting
+  622    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   614 failed line searches.  Resetting
+  623    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   615 failed line searches.  Resetting
+  624    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   616 failed line searches.  Resetting
+  625    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   617 failed line searches.  Resetting
+  626    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   618 failed line searches.  Resetting
+  627    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   619 failed line searches.  Resetting
+  628    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   620 failed line searches.  Resetting
+  629    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   621 failed line searches.  Resetting
+  630    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   622 failed line searches.  Resetting
+  631    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   623 failed line searches.  Resetting
+  632    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   624 failed line searches.  Resetting
+  633    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   625 failed line searches.  Resetting
+  634    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   626 failed line searches.  Resetting
+  635    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   627 failed line searches.  Resetting
+  636    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   628 failed line searches.  Resetting
+  637    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   629 failed line searches.  Resetting
+  638    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   630 failed line searches.  Resetting
+  639    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   631 failed line searches.  Resetting
+  640    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   632 failed line searches.  Resetting
+  641    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   633 failed line searches.  Resetting
+  642    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   634 failed line searches.  Resetting
+  643    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   635 failed line searches.  Resetting
+  644    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   636 failed line searches.  Resetting
+  645    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   637 failed line searches.  Resetting
+  646    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   638 failed line searches.  Resetting
+  647    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   639 failed line searches.  Resetting
+  648    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   640 failed line searches.  Resetting
+  649    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   641 failed line searches.  Resetting
+  650    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   642 failed line searches.  Resetting
+  651    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   643 failed line searches.  Resetting
+  652    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   644 failed line searches.  Resetting
+  653    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   645 failed line searches.  Resetting
+  654    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   646 failed line searches.  Resetting
+  655    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   647 failed line searches.  Resetting
+  656    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   648 failed line searches.  Resetting
+  657    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   649 failed line searches.  Resetting
+  658    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   650 failed line searches.  Resetting
+  659    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   651 failed line searches.  Resetting
+  660    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   652 failed line searches.  Resetting
+  661    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   653 failed line searches.  Resetting
+  662    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   654 failed line searches.  Resetting
+  663    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   655 failed line searches.  Resetting
+  664    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   656 failed line searches.  Resetting
+  665    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   657 failed line searches.  Resetting
+  666    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   658 failed line searches.  Resetting
+  667    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   659 failed line searches.  Resetting
+  668    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   660 failed line searches.  Resetting
+  669    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   661 failed line searches.  Resetting
+  670    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   662 failed line searches.  Resetting
+  671    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   663 failed line searches.  Resetting
+  672    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   664 failed line searches.  Resetting
+  673    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   665 failed line searches.  Resetting
+  674    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   666 failed line searches.  Resetting
+  675    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   667 failed line searches.  Resetting
+  676    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   668 failed line searches.  Resetting
+  677    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   669 failed line searches.  Resetting
+  678    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   670 failed line searches.  Resetting
+  679    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   671 failed line searches.  Resetting
+  680    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   672 failed line searches.  Resetting
+  681    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   673 failed line searches.  Resetting
+  682    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   674 failed line searches.  Resetting
+  683    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   675 failed line searches.  Resetting
+  684    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   676 failed line searches.  Resetting
+  685    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   677 failed line searches.  Resetting
+  686    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   678 failed line searches.  Resetting
+  687    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   679 failed line searches.  Resetting
+  688    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   680 failed line searches.  Resetting
+  689    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   681 failed line searches.  Resetting
+  690    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   682 failed line searches.  Resetting
+  691    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   683 failed line searches.  Resetting
+  692    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   684 failed line searches.  Resetting
+  693    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   685 failed line searches.  Resetting
+  694    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   686 failed line searches.  Resetting
+  695    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   687 failed line searches.  Resetting
+  696    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   688 failed line searches.  Resetting
+  697    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   689 failed line searches.  Resetting
+  698    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   690 failed line searches.  Resetting
+  699    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   691 failed line searches.  Resetting
+  700    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   692 failed line searches.  Resetting
+  701    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   693 failed line searches.  Resetting
+  702    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   694 failed line searches.  Resetting
+  703    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   695 failed line searches.  Resetting
+  704    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   696 failed line searches.  Resetting
+  705    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   697 failed line searches.  Resetting
+  706    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   698 failed line searches.  Resetting
+  707    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   699 failed line searches.  Resetting
+  708    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   700 failed line searches.  Resetting
+  709    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   701 failed line searches.  Resetting
+  710    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   702 failed line searches.  Resetting
+  711    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   703 failed line searches.  Resetting
+  712    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   704 failed line searches.  Resetting
+  713    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   705 failed line searches.  Resetting
+  714    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   706 failed line searches.  Resetting
+  715    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   707 failed line searches.  Resetting
+  716    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   708 failed line searches.  Resetting
+  717    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   709 failed line searches.  Resetting
+  718    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   710 failed line searches.  Resetting
+  719    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   711 failed line searches.  Resetting
+  720    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   712 failed line searches.  Resetting
+  721    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   713 failed line searches.  Resetting
+  722    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   714 failed line searches.  Resetting
+  723    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   715 failed line searches.  Resetting
+  724    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   716 failed line searches.  Resetting
+  725    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   717 failed line searches.  Resetting
+  726    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   718 failed line searches.  Resetting
+  727    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   719 failed line searches.  Resetting
+  728    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   720 failed line searches.  Resetting
+  729    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   721 failed line searches.  Resetting
+  730    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   722 failed line searches.  Resetting
+  731    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   723 failed line searches.  Resetting
+  732    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   724 failed line searches.  Resetting
+  733    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   725 failed line searches.  Resetting
+  734    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   726 failed line searches.  Resetting
+  735    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   727 failed line searches.  Resetting
+  736    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   728 failed line searches.  Resetting
+  737    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   729 failed line searches.  Resetting
+  738    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   730 failed line searches.  Resetting
+  739    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   731 failed line searches.  Resetting
+  740    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   732 failed line searches.  Resetting
+  741    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   733 failed line searches.  Resetting
+  742    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   734 failed line searches.  Resetting
+  743    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   735 failed line searches.  Resetting
+  744    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   736 failed line searches.  Resetting
+  745    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   737 failed line searches.  Resetting
+  746    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   738 failed line searches.  Resetting
+  747    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   739 failed line searches.  Resetting
+  748    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   740 failed line searches.  Resetting
+  749    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   741 failed line searches.  Resetting
+  750    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   742 failed line searches.  Resetting
+  751    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   743 failed line searches.  Resetting
+  752    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   744 failed line searches.  Resetting
+  753    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   745 failed line searches.  Resetting
+  754    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   746 failed line searches.  Resetting
+  755    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   747 failed line searches.  Resetting
+  756    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   748 failed line searches.  Resetting
+  757    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   749 failed line searches.  Resetting
+  758    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   750 failed line searches.  Resetting
+  759    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   751 failed line searches.  Resetting
+  760    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   752 failed line searches.  Resetting
+  761    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   753 failed line searches.  Resetting
+  762    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   754 failed line searches.  Resetting
+  763    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   755 failed line searches.  Resetting
+  764    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   756 failed line searches.  Resetting
+  765    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   757 failed line searches.  Resetting
+  766    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   758 failed line searches.  Resetting
+  767    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   759 failed line searches.  Resetting
+  768    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   760 failed line searches.  Resetting
+  769    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   761 failed line searches.  Resetting
+  770    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   762 failed line searches.  Resetting
+  771    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   763 failed line searches.  Resetting
+  772    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   764 failed line searches.  Resetting
+  773    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   765 failed line searches.  Resetting
+  774    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   766 failed line searches.  Resetting
+  775    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   767 failed line searches.  Resetting
+  776    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   768 failed line searches.  Resetting
+  777    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   769 failed line searches.  Resetting
+  778    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   770 failed line searches.  Resetting
+  779    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   771 failed line searches.  Resetting
+  780    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   772 failed line searches.  Resetting
+  781    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   773 failed line searches.  Resetting
+  782    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   774 failed line searches.  Resetting
+  783    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   775 failed line searches.  Resetting
+  784    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   776 failed line searches.  Resetting
+  785    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   777 failed line searches.  Resetting
+  786    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   778 failed line searches.  Resetting
+  787    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   779 failed line searches.  Resetting
+  788    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   780 failed line searches.  Resetting
+  789    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   781 failed line searches.  Resetting
+  790    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   782 failed line searches.  Resetting
+  791    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   783 failed line searches.  Resetting
+  792    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   784 failed line searches.  Resetting
+  793    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   785 failed line searches.  Resetting
+  794    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   786 failed line searches.  Resetting
+  795    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   787 failed line searches.  Resetting
+  796    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   788 failed line searches.  Resetting
+  797    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   789 failed line searches.  Resetting
+  798    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   790 failed line searches.  Resetting
+  799    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   791 failed line searches.  Resetting
+  800    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   792 failed line searches.  Resetting
+  801    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   793 failed line searches.  Resetting
+  802    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   794 failed line searches.  Resetting
+  803    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   795 failed line searches.  Resetting
+  804    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   796 failed line searches.  Resetting
+  805    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   797 failed line searches.  Resetting
+  806    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   798 failed line searches.  Resetting
+  807    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   799 failed line searches.  Resetting
+  808    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   800 failed line searches.  Resetting
+  809    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   801 failed line searches.  Resetting
+  810    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   802 failed line searches.  Resetting
+  811    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   803 failed line searches.  Resetting
+  812    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   804 failed line searches.  Resetting
+  813    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   805 failed line searches.  Resetting
+  814    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   806 failed line searches.  Resetting
+  815    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   807 failed line searches.  Resetting
+  816    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   808 failed line searches.  Resetting
+  817    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   809 failed line searches.  Resetting
+  818    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   810 failed line searches.  Resetting
+  819    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   811 failed line searches.  Resetting
+  820    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   812 failed line searches.  Resetting
+  821    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   813 failed line searches.  Resetting
+  822    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   814 failed line searches.  Resetting
+  823    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   815 failed line searches.  Resetting
+  824    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   816 failed line searches.  Resetting
+  825    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   817 failed line searches.  Resetting
+  826    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   818 failed line searches.  Resetting
+  827    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   819 failed line searches.  Resetting
+  828    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   820 failed line searches.  Resetting
+  829    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   821 failed line searches.  Resetting
+  830    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   822 failed line searches.  Resetting
+  831    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   823 failed line searches.  Resetting
+  832    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   824 failed line searches.  Resetting
+  833    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   825 failed line searches.  Resetting
+  834    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   826 failed line searches.  Resetting
+  835    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   827 failed line searches.  Resetting
+  836    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   828 failed line searches.  Resetting
+  837    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   829 failed line searches.  Resetting
+  838    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   830 failed line searches.  Resetting
+  839    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   831 failed line searches.  Resetting
+  840    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   832 failed line searches.  Resetting
+  841    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   833 failed line searches.  Resetting
+  842    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   834 failed line searches.  Resetting
+  843    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   835 failed line searches.  Resetting
+  844    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   836 failed line searches.  Resetting
+  845    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   837 failed line searches.  Resetting
+  846    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   838 failed line searches.  Resetting
+  847    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   839 failed line searches.  Resetting
+  848    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   840 failed line searches.  Resetting
+  849    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   841 failed line searches.  Resetting
+  850    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   842 failed line searches.  Resetting
+  851    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   843 failed line searches.  Resetting
+  852    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   844 failed line searches.  Resetting
+  853    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   845 failed line searches.  Resetting
+  854    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   846 failed line searches.  Resetting
+  855    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   847 failed line searches.  Resetting
+  856    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   848 failed line searches.  Resetting
+  857    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   849 failed line searches.  Resetting
+  858    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   850 failed line searches.  Resetting
+  859    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   851 failed line searches.  Resetting
+  860    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   852 failed line searches.  Resetting
+  861    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   853 failed line searches.  Resetting
+  862    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   854 failed line searches.  Resetting
+  863    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   855 failed line searches.  Resetting
+  864    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   856 failed line searches.  Resetting
+  865    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   857 failed line searches.  Resetting
+  866    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   858 failed line searches.  Resetting
+  867    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   859 failed line searches.  Resetting
+  868    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   860 failed line searches.  Resetting
+  869    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   861 failed line searches.  Resetting
+  870    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   862 failed line searches.  Resetting
+  871    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   863 failed line searches.  Resetting
+  872    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   864 failed line searches.  Resetting
+  873    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   865 failed line searches.  Resetting
+  874    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   866 failed line searches.  Resetting
+  875    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   867 failed line searches.  Resetting
+  876    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   868 failed line searches.  Resetting
+  877    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   869 failed line searches.  Resetting
+  878    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   870 failed line searches.  Resetting
+  879    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   871 failed line searches.  Resetting
+  880    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   872 failed line searches.  Resetting
+  881    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   873 failed line searches.  Resetting
+  882    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   874 failed line searches.  Resetting
+  883    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   875 failed line searches.  Resetting
+  884    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   876 failed line searches.  Resetting
+  885    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   877 failed line searches.  Resetting
+  886    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   878 failed line searches.  Resetting
+  887    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   879 failed line searches.  Resetting
+  888    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   880 failed line searches.  Resetting
+  889    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   881 failed line searches.  Resetting
+  890    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   882 failed line searches.  Resetting
+  891    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   883 failed line searches.  Resetting
+  892    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   884 failed line searches.  Resetting
+  893    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   885 failed line searches.  Resetting
+  894    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   886 failed line searches.  Resetting
+  895    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   887 failed line searches.  Resetting
+  896    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   888 failed line searches.  Resetting
+  897    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   889 failed line searches.  Resetting
+  898    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   890 failed line searches.  Resetting
+  899    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   891 failed line searches.  Resetting
+  900    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   892 failed line searches.  Resetting
+  901    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   893 failed line searches.  Resetting
+  902    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   894 failed line searches.  Resetting
+  903    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   895 failed line searches.  Resetting
+  904    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   896 failed line searches.  Resetting
+  905    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   897 failed line searches.  Resetting
+  906    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   898 failed line searches.  Resetting
+  907    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   899 failed line searches.  Resetting
+  908    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   900 failed line searches.  Resetting
+  909    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   901 failed line searches.  Resetting
+  910    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   902 failed line searches.  Resetting
+  911    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   903 failed line searches.  Resetting
+  912    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   904 failed line searches.  Resetting
+  913    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   905 failed line searches.  Resetting
+  914    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   906 failed line searches.  Resetting
+  915    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   907 failed line searches.  Resetting
+  916    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   908 failed line searches.  Resetting
+  917    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   909 failed line searches.  Resetting
+  918    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   910 failed line searches.  Resetting
+  919    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   911 failed line searches.  Resetting
+  920    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   912 failed line searches.  Resetting
+  921    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   913 failed line searches.  Resetting
+  922    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   914 failed line searches.  Resetting
+  923    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   915 failed line searches.  Resetting
+  924    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   916 failed line searches.  Resetting
+  925    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   917 failed line searches.  Resetting
+  926    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   918 failed line searches.  Resetting
+  927    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   919 failed line searches.  Resetting
+  928    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   920 failed line searches.  Resetting
+  929    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   921 failed line searches.  Resetting
+  930    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   922 failed line searches.  Resetting
+  931    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   923 failed line searches.  Resetting
+  932    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   924 failed line searches.  Resetting
+  933    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   925 failed line searches.  Resetting
+  934    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   926 failed line searches.  Resetting
+  935    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   927 failed line searches.  Resetting
+  936    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   928 failed line searches.  Resetting
+  937    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   929 failed line searches.  Resetting
+  938    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   930 failed line searches.  Resetting
+  939    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   931 failed line searches.  Resetting
+  940    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   932 failed line searches.  Resetting
+  941    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   933 failed line searches.  Resetting
+  942    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   934 failed line searches.  Resetting
+  943    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   935 failed line searches.  Resetting
+  944    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   936 failed line searches.  Resetting
+  945    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   937 failed line searches.  Resetting
+  946    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   938 failed line searches.  Resetting
+  947    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   939 failed line searches.  Resetting
+  948    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   940 failed line searches.  Resetting
+  949    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   941 failed line searches.  Resetting
+  950    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   942 failed line searches.  Resetting
+  951    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   943 failed line searches.  Resetting
+  952    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   944 failed line searches.  Resetting
+  953    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   945 failed line searches.  Resetting
+  954    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   946 failed line searches.  Resetting
+  955    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   947 failed line searches.  Resetting
+  956    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   948 failed line searches.  Resetting
+  957    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   949 failed line searches.  Resetting
+  958    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   950 failed line searches.  Resetting
+  959    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   951 failed line searches.  Resetting
+  960    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   952 failed line searches.  Resetting
+  961    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   953 failed line searches.  Resetting
+  962    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   954 failed line searches.  Resetting
+  963    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   955 failed line searches.  Resetting
+  964    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   956 failed line searches.  Resetting
+  965    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   957 failed line searches.  Resetting
+  966    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   958 failed line searches.  Resetting
+  967    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   959 failed line searches.  Resetting
+  968    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   960 failed line searches.  Resetting
+  969    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   961 failed line searches.  Resetting
+  970    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   962 failed line searches.  Resetting
+  971    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   963 failed line searches.  Resetting
+  972    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   964 failed line searches.  Resetting
+  973    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   965 failed line searches.  Resetting
+  974    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   966 failed line searches.  Resetting
+  975    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   967 failed line searches.  Resetting
+  976    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   968 failed line searches.  Resetting
+  977    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   969 failed line searches.  Resetting
+  978    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   970 failed line searches.  Resetting
+  979    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   971 failed line searches.  Resetting
+  980    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   972 failed line searches.  Resetting
+  981    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   973 failed line searches.  Resetting
+  982    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   974 failed line searches.  Resetting
+  983    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   975 failed line searches.  Resetting
+  984    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   976 failed line searches.  Resetting
+  985    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   977 failed line searches.  Resetting
+  986    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   978 failed line searches.  Resetting
+  987    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   979 failed line searches.  Resetting
+  988    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   980 failed line searches.  Resetting
+  989    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   981 failed line searches.  Resetting
+  990    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   982 failed line searches.  Resetting
+  991    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   983 failed line searches.  Resetting
+  992    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   984 failed line searches.  Resetting
+  993    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   985 failed line searches.  Resetting
+  994    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   986 failed line searches.  Resetting
+  995    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   987 failed line searches.  Resetting
+  996    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   988 failed line searches.  Resetting
+  997    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   989 failed line searches.  Resetting
+  998    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   990 failed line searches.  Resetting
+  999    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   991 failed line searches.  Resetting
+ 1000    -200.3824568123      3.69e-02      8.70e-03  Line search: overstep
+  gdm_simult::   992 failed line searches.  Resetting
+
+ Q-Chem fatal error occurred in module progman/main.C, line 179:
+
+  Problem running Q-Chem: NEO-SCF failed to converge
+
+
+
+ Please submit a crash report at q-chem.com/reporter 
+ 
+ 

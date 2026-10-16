@@ -1,0 +1,2132 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 6.4 (devel), Q-Chem, Inc., Pleasanton, CA (2025)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. D. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  Huseyin Aksu,  B. Alam,  
+ B. Albrecht,  A. Aldossary,  E. Alguire,  J. H. Andersen,  
+ J. E. Arias-Martinez,  V. Athavale,  F. Ballesteros,  D. Barton,  K. Begam,  
+ A. Behn,  N. Bellonzi,  Y. A. Bernard,  E. J. Berquist,  H. Burton,  
+ S. Camps,  A. Carreras,  K. Carter-Fenk,  Mathew Chow,  Jeng-Da Chai,  
+ Arnab Chakraborty,  Romit Chakraborty,  Chandrima Chakravarty,  Junhan Chen,  
+ A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  L. Cunha,  S. Dasgupta,  
+ Jia Deng,  Joseph Dickinson,  M. de Wergifosse,  M. Diedenhofen,  
+ L. B. Dittmer,  Hainam Do,  Wenjie Dou,  S. Ehlert,  Po-Tung Fang,  
+ Anthuan Ferino-Pérez,  S. Fatehi,  Qingguo Feng,  Jonathan Fetherolf,  
+ T. Friedhoff,  Thomas Froitzheim,  Sarai Folkestad,  B. Ganoe,  J. Gayvert,  
+ Qinghui Ge,  G. Gidofalvi,  M. Gimferrer,  G. Giudetti,  M. Goldey,  
+ Montgomery Gray,  J. Gomes,  C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  
+ J. A. Gyamfi,  M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  
+ M. F. Herbst,  M. Hernandez Vera,  M. Hodecker,  Z. C. Holden,  S. Houck,  
+ Xunkun Huang,  Kerwin Hui,  B. C. Huynh,  K. Ikeda,  M. Ivanov,  
+ Nayanthara K. Jayadev,  Hyunjun Ji,  Zuxin Jin,  Hanjie Jiang,  
+ Subrata Jana,  B. Kaduk,  S. Kaehler,  Richard Kang,  K. Khistyaev,  
+ Jaehoon Kim,  Yongbin Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  Elena Kolodzeiski,  D. Kosenkov,  Saikiran Kotaru,  
+ L. Koulias,  T. Kowalczyk,  C. M. Krauter,  K. Kue,  A. Kunitsa,  T. Kus,  
+ A. Landau,  C. W. Lander,  K. V. Lawler,  D. Lefrancois,  S. Lehtola,  
+ Rain Li,  Shaozhi Li,  Tao E. Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  Xiao Liu,  
+ M. Loipersberger,  A. Luenser,  C. Malbon,  Aniket Mandal,  Manisha,  
+ A. Manjanath,  P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  
+ A. V. Marenich,  T. Markovich,  S. Mason,  F. Matz,  S. A. Maurer,  
+ Samuel May,  Alexandra McIsaac,  P. F. McLaughlin,  M. F. S. J. Menger,  
+ J.-M. Mewes,  S. A. Mewes,  R. E. Moorby,  P. Morgante,  
+ Mohammad Mostafanejad,  Madhubani Mukherjee,  J. W. Mullinax,  Quyen Nguyen,  
+ Avik Kumar Ojha,  K. J. Oosterbaan,  Eno Paenurk,  Xiaoliang Pan,  G. Paran,  
+ V. Parravicini,  R. L. Patterson,  Alexander C. Paul,  Suranjan K. Paul,  
+ F. Pavosevic,  Zheng Pei,  P. Pokhilko,  S. Prager,  E. I. Proynov,  
+ E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  F. Rob,  
+ E. Rossomme,  S. Roy,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ P. E. Schneider,  Tim K. Schramm,  N. Sergueev,  S. M. Sharada,  
+ Hengyuan Shen,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Alistair J. Sterling,  Yingli Su,  Yu-Chuan Su,  E. J. Sundstrom,  
+ J. Talbot,  J. A. Tan,  Zhen Tao,  Hung-Hsuan Teh,  J. Thirman,  C. Titeca,  
+ N. Tkachenko,  Hung-Yi Tsai,  T. Tsuchimochi,  N. M. Tubman,  C. Utku,  
+ S. P. Veccham,  O. Vydrov,  Z. Wang,  Markus G. S. Weiss,  Rahel Weiss,  
+ J. Wenzel,  Jonathan Wong,  J. Witte,  H. Wu,  Yanze Wu,  A. Yamada,  
+ Chou-Hsun Yang,  Kun Yao,  S. Yeganeh,  S. R. Yost,  Qi Yu,  A. Zech,  
+ F. Zeller,  Chongxiao Zhao,  T. Zhao,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  Zeyi Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  
+ N. A. Besley,  K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  
+ Hsing-Ta Chen,  S. Coriani,  C. J. Cramer,  A. E. DePrince, III,  
+ R. A. DiStasio Jr.,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  
+ W. A. Goddard III,  S. Grimme,  S. Hammes-Schiffer,  T. Head-Gordon,  
+ W. J. Hehre,  Chao-Ping Hsu,  T.-C. Jagau,  Yousung Jung,  A. Klamt,  
+ Jing Kong,  D. S. Lambrecht,  Xiangyuan Li,  WanZhen Liang,  N. J. Mayhall,  
+ C. W. McCurdy,  J. B. Neaton,  T. Neudecker,  C. Ochsenfeld,  
+ J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Haisheng Ren,  Yihan Shao,  
+ L. V. Slipchenko,  R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  
+ A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  Fan Wang,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 6.4.0 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 12.8.2 (Cortisol Injector).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Tue Oct 13 11:05:24 2026  
+
+ Host: r914u09n01.grace.ycrc.yale.edu
+0
+
+ Scratch files written to /home/jad279/palmer_scratch/qchem1578433//
+ Executable: /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/software/QCHEM7/exe/qcprog.exe
+ Number of threads = 24
+ Processing $rem in /gpfs/gibbs/pi/hammes_schiffer/jad279/BOUCHET/software/QCHEM7/config/preferences:
+ Processing $rem in /home/jad279/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+1 1
+H     0.0000000000   0.0000000000   0.1500000000
+N     0.0000000000   0.0000000000   1.5312500000
+H    -0.0000000000  -0.9686120476   1.8737057911
+H    -0.8388426397   0.4843060238   1.8737057911
+H     0.8388426397   0.4843060238   1.8737057911
+N     0.0000000000  -0.0000000000  -1.5312500000
+H    -0.0000000000   0.9686120476  -1.8737057911
+H    -0.8388426397  -0.4843060238  -1.8737057911
+H     0.8388426397  -0.4843060238  -1.8737057911
+$end
+
+$rem
+JOBTYPE                     OPT
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+NEO                         TRUE
+NEO_ISOTOPE                 2
+NEO_EPC                     EPC172
+SCF_ALGORITHM               GDM
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+MAX_SCF_CYCLES              1000
+NEO_PURECART                1111
+NEO_SIMULTANEOUS_SCF        TRUE
+NEO_N_HARTREE_PROD          TRUE
+NEO_VPP                     FALSE
+THRESH                      14
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+GEOM_OPT_MAX_CYCLES         30
+$end
+
+$neo_msdft
+SAVE_DENS 1
+$end
+
+$OPT
+FIXED
+2 XYZ
+3 XYZ
+4 XYZ
+5 XYZ
+6 XYZ
+7 XYZ
+8 XYZ
+9 XYZ
+ENDFIXED
+$END
+
+$neo_basis
+H    1
+S   1   1.00
+     45.251                  1.0
+S   1   1.00
+     22.642                  1.0
+S   1   1.00
+      12.352                 1.0
+S   1   1.00
+      2.768                  1.0
+P   1   1.00
+     33.981                  1.0
+P   1   1.00
+     19.509                  1.0
+P   1   1.00
+      13.347                 1.0
+D   1   1.00
+     26.893                  1.0
+D   1   1.00
+     14.883                  1.0
+****
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000000     0.1500000000
+    2      N       0.0000000000     0.0000000000     1.5312500000
+    3      H      -0.0000000000    -0.9686120476     1.8737057911
+    4      H      -0.8388426397     0.4843060238     1.8737057911
+    5      H       0.8388426397     0.4843060238     1.8737057911
+    6      N       0.0000000000    -0.0000000000    -1.5312500000
+    7      H      -0.0000000000     0.9686120476    -1.8737057911
+    8      H      -0.8388426397    -0.4843060238    -1.8737057911
+    9      H       0.8388426397    -0.4843060238    -1.8737057911
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          45.86323810 hartrees
+ There are       10 alpha and       10 beta electrons
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+
+ Total QAlloc Memory Limit   5000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 1.00E-03
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 21.000000 electrons
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ using 24 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using Roothaan-Hall, GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1    -113.6960222866      4.73e-02  Roothaan Step
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.4442365243      7.80e-02   Descent step
+    2    -113.4195918671      1.00e-01  Line search: overstep
+    3    -113.4990350514      1.37e-02   Normal BFGS step
+    4    -113.5000593957      1.01e-02   Normal BFGS step
+    5    -113.5003269694      8.01e-03   Normal BFGS step
+    6    -113.5005029804      1.13e-03   Normal BFGS step
+    7    -113.5005054420      4.02e-04   Normal BFGS step
+    8    -113.5005057623      2.68e-05   Normal BFGS step
+    9    -113.5005057737      7.45e-06   Normal BFGS step
+   10    -113.5005057741      6.14e-07   Normal BFGS step
+   11    -113.5005057741      4.66e-08   Normal BFGS step
+   12    -113.5005057741      4.11e-08   Normal BFGS step
+   13    -113.5005057741      1.24e-08   Normal BFGS step
+   14    -113.5005057741      2.53e-09   Normal BFGS step
+   15    -113.5005057741      8.03e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 119.25s  wall 7.00s 
+ SCF   energy =  -113.50050577
+ Total energy =  -113.50050577
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    19.999999972792
+   Relative error      =     0.0000001360 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read protonic density based on nuclear initial guess selection 
+ Read electronic density from eSCF
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4654323349      2.10e-03      2.63e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4828951617      5.92e-02      5.56e-02   Normal BFGS step
+    2    -113.4901299071      3.85e-02      3.71e-02   Normal BFGS step
+    3    -113.4966676009      3.91e-02      3.10e-02   Normal BFGS step
+    4    -113.4989341357      2.97e-02      7.55e-03   Normal BFGS step
+    5    -113.5001348993      2.08e-02      7.48e-03   Normal BFGS step
+    6    -113.5008105007      1.29e-02      6.41e-03   Normal BFGS step
+    7    -113.5010561116      9.39e-03      3.99e-03   Normal BFGS step
+    8    -113.5012975472      3.94e-03      3.69e-03   Normal BFGS step
+    9    -113.5013748109      5.36e-03      1.80e-03   Normal BFGS step
+   10    -113.5014709631      4.11e-03      2.37e-03   Normal BFGS step
+   11    -113.5014760671      1.43e-03      3.85e-04   Normal BFGS step
+   12    -113.5014773415      8.44e-04      1.85e-04   Normal BFGS step
+   13    -113.5014773849      1.20e-04      6.04e-05   Normal BFGS step
+   14    -113.5014773916      2.00e-05      4.33e-05   Normal BFGS step
+   15    -113.5014773921      1.42e-05      4.12e-06   Normal BFGS step
+   16    -113.5014773922      3.67e-06      1.03e-06   Normal BFGS step
+   17    -113.5014773922      1.32e-06      2.57e-07   Normal BFGS step
+   18    -113.5014773922      9.44e-08      1.08e-07   Normal BFGS step
+   19    -113.5014773922      5.65e-09      6.73e-09   Normal BFGS step
+   20    -113.5014773922      5.04e-09      8.79e-09   Normal BFGS step
+   21    -113.5014773922      1.16e-09      7.32e-10   Normal BFGS step
+   22    -113.5014773922      9.90e-10      9.17e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5014773922
+ NEO SCF time:       CPU 487.94s  wall 25.76s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6123   -14.5452    -1.1352    -1.0675    -0.7361    -0.7361    -0.6781    -0.6781 
+   -0.6731    -0.5074 
+  -- Virtual --
+   -0.1982    -0.1534    -0.1227    -0.1227    -0.0970    -0.0970    -0.0950    -0.0789 
+   -0.0575    -0.0575    -0.0373    -0.0301    -0.0301    -0.0197    -0.0069    -0.0069 
+    0.0015     0.0148     0.0148     0.0398     0.0398     0.0458     0.1244     0.1348 
+    0.1348     0.1600     0.2258     0.2268     0.2268     0.2410     0.2550     0.2550 
+    0.2610     0.2845     0.3015     0.3015     0.3092     0.3316     0.3316     0.3560 
+    0.3588     0.3588     0.4224     0.4224     0.4919     0.4919     0.4980     0.5681 
+    0.5681     0.5744     0.6356     0.6356     0.6552     0.7026     0.7821     0.7821 
+    0.8231     0.8479     0.8826     0.8826     1.2341     1.3521     1.3521     1.4002 
+    1.4002     1.4140     1.4233     1.4609     1.4851     1.4851     1.5208     1.6058 
+    1.6058     1.7642     1.8051     1.8051     1.8447     1.8447     1.8620     1.8620 
+    1.8700     1.9094     1.9094     1.9226     1.9930     1.9930     2.1153     2.2384 
+    2.3146     2.3146     2.3596     2.3596     2.4186     2.5883     2.8600     2.8803 
+    2.8803     2.9617     2.9617 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6763 
+  -- Virtual --
+   -0.6705    -0.6704    -0.6704    -0.6647    -0.6642    -0.6642    -0.6639    -0.6639 
+   -0.6637    -0.6532    -0.6526    -0.6526    -0.6397    -0.6395    -0.6395    -0.6393 
+   -0.6393    -0.6351    -0.6271    -0.6267    -0.6267    -0.5875 
+ ---------------------------------------
+ Expectation value of proton 0 : 0.00000000 0.00000000 0.35226707
+ Protonic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000000 Dz: 0.8953805
+ Electronic dipole moment: 
+ Dx: 0.0000000 DY: -0.0000000 Dz: 0.7971270
+ Total dipole moment: 
+ Dx: 0.0000000 DY: -0.0000000 Dz: 1.6925075 Total 1.6925075
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.698286
+      2                    0.038350
+      3                    0.067055
+      4                    0.067055
+      5                    0.067055
+      6                    0.024129
+      7                    0.012690
+      8                    0.012690
+      9                    0.012690
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1  -0.0000000  -0.0000000  -0.0201789 
+ 2   0.0000000   0.0000000   0.0458891 
+ 3   0.0000000  -0.0048751   0.0005970 
+ 4  -0.0042224   0.0024376   0.0005964 
+ 5   0.0042224   0.0024376   0.0005964 
+ 6   0.0000000   0.0000000  -0.0289184 
+ 7   0.0000000   0.0082579   0.0004723 
+ 8  -0.0071521  -0.0041290   0.0004730 
+ 9   0.0071521  -0.0041290   0.0004730 
+
+ Max gradient component =       4.589E-02
+ RMS gradient           =       1.159E-02
+
+ NEO GRAD time:       CPU 50.17s  wall 2.37s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+**WARNING** Cannot use Internal Coordinates with Fixed Atoms
+  Cartesian Optimization Enforced
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   1
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000000    0.1500000000
+      2  N         0.0000000000    0.0000000000    1.5312500000
+      3  H         0.0000000000   -0.9686120476    1.8737057911
+      4  H        -0.8388426397    0.4843060238    1.8737057911
+      5  H         0.8388426397    0.4843060238    1.8737057911
+      6  N         0.0000000000    0.0000000000   -1.5312500000
+      7  H         0.0000000000    0.9686120476   -1.8737057911
+      8  H        -0.8388426397   -0.4843060238   -1.8737057911
+      9  H         0.8388426397   -0.4843060238   -1.8737057911
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.501477392
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     1.000000    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00040702
+ Step Taken.  Stepsize is  0.020171
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.020179      0.000300      NO
+         Displacement       0.017929      0.001200      NO
+         Energy change     *********      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000056     0.1594878709
+    2      N       0.0000000000     0.0000000000     1.5300640161
+    3      H       0.0000000000    -0.9686120476     1.8725198072
+    4      H      -0.8388426397     0.4843060238     1.8725198072
+    5      H       0.8388426397     0.4843060238     1.8725198072
+    6      N       0.0000000000     0.0000000000    -1.5324359839
+    7      H       0.0000000000     0.9686120476    -1.8748917750
+    8      H      -0.8388426397    -0.4843060238    -1.8748917750
+    9      H       0.8388426397    -0.4843060238    -1.8748917750
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          45.87099260 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 9.99E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5009322599      2.28e-03   Normal BFGS step
+    2    -113.5009602904      2.88e-04   Normal BFGS step
+    3    -113.5009605664      4.32e-04   Normal BFGS step
+    4    -113.5009610863      1.17e-04   Normal BFGS step
+    5    -113.5009611329      7.61e-05   Normal BFGS step
+    6    -113.5009611493      1.35e-05   Normal BFGS step
+    7    -113.5009611501      8.19e-06   Normal BFGS step
+    8    -113.5009611513      1.53e-06   Normal BFGS step
+    9    -113.5009611513      5.48e-07   Normal BFGS step
+   10    -113.5009611513      1.99e-08   Normal BFGS step
+   11    -113.5009611513      4.94e-09   Normal BFGS step
+   12    -113.5009611513      1.37e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 96.41s  wall 6.00s 
+ SCF   energy =  -113.50096115
+ Total energy =  -113.50096115
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    19.999999978166
+   Relative error      =     0.0000001092 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4582999119      2.32e-03      2.42e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4811462665      5.30e-02      8.20e-02   Normal BFGS step
+    2    -113.4934574117      4.06e-02      5.94e-02   Normal BFGS step
+    3    -113.4979913717      3.28e-02      2.55e-02   Normal BFGS step
+    4    -113.4995386330      3.12e-02      5.84e-03   Normal BFGS step
+    5    -113.5000654987      2.74e-02      5.31e-03   Normal BFGS step
+    6    -113.5013091440      2.56e-02      9.86e-03   Normal BFGS step
+    7    -113.5016812211      1.24e-02      3.04e-03   Normal BFGS step
+    8    -113.5018631635      7.23e-03      2.08e-03   Normal BFGS step
+    9    -113.5018856651      2.47e-03      7.41e-04   Normal BFGS step
+   10    -113.5018912134      1.36e-03      2.61e-04   Normal BFGS step
+   11    -113.5018914937      2.38e-04      1.37e-04   Normal BFGS step
+   12    -113.5018915503      1.50e-04      4.07e-05   Normal BFGS step
+   13    -113.5018915598      7.40e-05      1.21e-05   Normal BFGS step
+   14    -113.5018915605      1.90e-05      7.08e-06   Normal BFGS step
+   15    -113.5018915606      5.82e-06      2.72e-06   Normal BFGS step
+   16    -113.5018915606      9.71e-07      9.84e-07   Normal BFGS step
+   17    -113.5018915606      9.21e-08      1.18e-07   Normal BFGS step
+   18    -113.5018915606      2.50e-08      3.56e-08   Normal BFGS step
+   19    -113.5018915606      1.71e-08      1.79e-08   Normal BFGS step
+   20    -113.5018915606      3.43e-09      6.13e-09   Normal BFGS step
+   21    -113.5018915606      1.73e-09      2.39e-09   Normal BFGS step
+   22    -113.5018915606      4.53e-10      2.97e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5018915606
+ NEO SCF time:       CPU 495.37s  wall 25.98s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6142   -14.5432    -1.1374    -1.0658    -0.7378    -0.7378    -0.6765    -0.6765 
+   -0.6757    -0.5058 
+  -- Virtual --
+   -0.1984    -0.1531    -0.1230    -0.1230    -0.0970    -0.0970    -0.0943    -0.0785 
+   -0.0577    -0.0577    -0.0375    -0.0301    -0.0301    -0.0193    -0.0072    -0.0072 
+    0.0015     0.0152     0.0152     0.0399     0.0399     0.0458     0.1244     0.1349 
+    0.1349     0.1601     0.2253     0.2267     0.2267     0.2409     0.2550     0.2550 
+    0.2614     0.2840     0.3014     0.3014     0.3097     0.3310     0.3310     0.3560 
+    0.3596     0.3596     0.4223     0.4223     0.4915     0.4915     0.4972     0.5686 
+    0.5686     0.5725     0.6352     0.6352     0.6573     0.7028     0.7823     0.7823 
+    0.8224     0.8484     0.8828     0.8828     1.2359     1.3504     1.3504     1.4011 
+    1.4011     1.4128     1.4227     1.4621     1.4843     1.4843     1.5256     1.6078 
+    1.6078     1.7666     1.8037     1.8037     1.8455     1.8455     1.8634     1.8634 
+    1.8699     1.9087     1.9087     1.9234     1.9933     1.9933     2.1114     2.2396 
+    2.3144     2.3144     2.3611     2.3611     2.4171     2.5908     2.8592     2.8794 
+    2.8794     2.9623     2.9623 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6764 
+  -- Virtual --
+   -0.6705    -0.6705    -0.6705    -0.6648    -0.6642    -0.6642    -0.6639    -0.6639 
+   -0.6638    -0.6531    -0.6527    -0.6527    -0.6397    -0.6395    -0.6395    -0.6393 
+   -0.6393    -0.6352    -0.6270    -0.6267    -0.6267    -0.5871 
+ ---------------------------------------
+ Expectation value of proton 0 : -0.00000000 0.00000001 0.37134671
+ Protonic dipole moment: 
+ Dx: -0.0000000 DY: 0.0000000 Dz: 0.9438764
+ Electronic dipole moment: 
+ Dx: -0.0000000 DY: -0.0000000 Dz: 0.9548297
+ Total dipole moment: 
+ Dx: -0.0000000 DY: -0.0000000 Dz: 1.7847748 Total 1.7847748
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.690506
+      2                    0.041747
+      3                    0.069100
+      4                    0.069100
+      5                    0.069100
+      6                    0.025268
+      7                    0.011726
+      8                    0.011726
+      9                    0.011726
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1  -0.0000000  -0.0000000  -0.0208682 
+ 2  -0.0000000  -0.0000000   0.0457852 
+ 3  -0.0000000  -0.0047756   0.0005892 
+ 4  -0.0041363   0.0023878   0.0005886 
+ 5   0.0041363   0.0023878   0.0005886 
+ 6  -0.0000000   0.0000000  -0.0282863 
+ 7  -0.0000000   0.0083498   0.0005338 
+ 8  -0.0072317  -0.0041749   0.0005345 
+ 9   0.0072317  -0.0041749   0.0005345 
+
+ Max gradient component =       4.579E-02
+ RMS gradient           =       1.157E-02
+
+ NEO GRAD time:       CPU 50.02s  wall 2.42s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+**WARNING** Hereditary positive definiteness endangered
+ due to small product of step size times gradient change
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   2
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000056    0.1594878709
+      2  N         0.0000000000    0.0000000000    1.5300640161
+      3  H         0.0000000000   -0.9686120476    1.8725198072
+      4  H        -0.8388426397    0.4843060238    1.8725198072
+      5  H         0.8388426397    0.4843060238    1.8725198072
+      6  N         0.0000000000    0.0000000000   -1.5324359839
+      7  H         0.0000000000    0.9686120476   -1.8748917750
+      8  H        -0.8388426397   -0.4843060238   -1.8748917750
+      9  H         0.8388426397   -0.4843060238   -1.8748917750
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.501891561
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  1 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+    -0.038447
+**WARNING** Hessian does not have the desired local structure
+**WARNING** Hessian does not have the desired local structure
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.04759624
+ Calculated Step too Large.  Step scaled by  0.131533
+ Step Taken.  Stepsize is  0.300000
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.020868      0.000300      NO
+         Displacement       0.266667      0.001200      NO
+         Energy change     -0.000414      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000762     0.3006017938
+    2      N       0.0000000000    -0.0000000088     1.5124247758
+    3      H       0.0000000000    -0.9686120564     1.8548805669
+    4      H      -0.8388426397     0.4843060150     1.8548805669
+    5      H       0.8388426397     0.4843060150     1.8548805669
+    6      N       0.0000000000    -0.0000000088    -1.5500752242
+    7      H       0.0000000000     0.9686120388    -1.8925310153
+    8      H      -0.8388426397    -0.4843060326    -1.8925310153
+    9      H       0.8388426397    -0.4843060326    -1.8925310153
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          46.05497719 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 8.66E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5029935596      2.47e-02   Normal BFGS step
+    2    -113.5093163671      6.67e-03   Normal BFGS step
+    3    -113.5093787321      9.38e-03   Normal BFGS step
+    4    -113.5095610234      1.44e-03   Normal BFGS step
+    5    -113.5095726154      7.85e-04   Normal BFGS step
+    6    -113.5095760663      1.06e-04   Normal BFGS step
+    7    -113.5095760598      1.04e-04   Normal BFGS step
+    8    -113.5095761399      8.41e-06   Normal BFGS step
+    9    -113.5095761403      3.96e-06   Normal BFGS step
+   10    -113.5095761405      1.13e-07   Normal BFGS step
+   11    -113.5095761405      1.52e-08   Normal BFGS step
+   12    -113.5095761405      2.26e-09   Normal BFGS step
+   13    -113.5095761405      2.51e-09   Normal BFGS step
+   14    -113.5095761405      1.06e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 108.89s  wall 6.00s 
+ SCF   energy =  -113.50957614
+ Total energy =  -113.50957614
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000100320
+   Relative error      =     0.0000005016 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4547379832      2.15e-03      2.20e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4736062162      6.27e-02      6.79e-02   Normal BFGS step
+    2    -113.4969442001      4.24e-02      6.53e-02   Normal BFGS step
+    3    -113.5014534273      3.26e-02      1.80e-02   Normal BFGS step
+    4    -113.5047976186      3.77e-02      6.11e-03   Normal BFGS step
+    5    -113.5053830105      3.44e-02      4.78e-03   Normal BFGS step
+    6    -113.5077179423      4.41e-02      8.79e-03   Normal BFGS step
+    7    -113.5080807295      1.56e-02      2.53e-03   Normal BFGS step
+    8    -113.5082250811      6.23e-03      1.44e-03   Normal BFGS step
+    9    -113.5082456423      2.13e-03      9.44e-04   Normal BFGS step
+   10    -113.5082492185      8.88e-04      3.20e-04   Normal BFGS step
+   11    -113.5082497528      3.78e-04      2.18e-04   Normal BFGS step
+   12    -113.5082498128      9.34e-05      4.23e-05   Normal BFGS step
+   13    -113.5082498237      5.69e-05      3.41e-05   Normal BFGS step
+   14    -113.5082498251      1.55e-05      9.06e-06   Normal BFGS step
+   15    -113.5082498252      8.67e-06      1.61e-06   Normal BFGS step
+   16    -113.5082498253      1.86e-06      2.15e-06   Normal BFGS step
+   17    -113.5082498253      9.62e-07      4.92e-07   Normal BFGS step
+   18    -113.5082498253      5.33e-07      3.56e-07   Normal BFGS step
+   19    -113.5082498253      2.08e-07      1.24e-07   Normal BFGS step
+   20    -113.5082498253      1.10e-07      8.99e-08   Normal BFGS step
+   21    -113.5082498253      3.08e-08      5.01e-08   Normal BFGS step
+   22    -113.5082498253      2.94e-08      1.92e-08   Normal BFGS step
+   23    -113.5082498253      2.96e-09      7.09e-09   Normal BFGS step
+   24    -113.5082498253      3.40e-09      6.52e-09   Normal BFGS step
+   25    -113.5082498253      2.50e-10      2.92e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5082498253
+ NEO SCF time:       CPU 579.69s  wall 29.48s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6353   -14.5205    -1.1654    -1.0453    -0.7588    -0.7588    -0.7151    -0.6579 
+   -0.6579    -0.4849 
+  -- Virtual --
+   -0.2020    -0.1489    -0.1283    -0.1283    -0.0972    -0.0972    -0.0910    -0.0644 
+   -0.0600    -0.0600    -0.0394    -0.0298    -0.0298    -0.0114    -0.0107    -0.0107 
+    0.0018     0.0212     0.0212     0.0412     0.0412     0.0449     0.1263     0.1359 
+    0.1359     0.1628     0.2189     0.2251     0.2251     0.2403     0.2540     0.2540 
+    0.2676     0.2778     0.2990     0.2990     0.3168     0.3256     0.3256     0.3551 
+    0.3705     0.3705     0.4209     0.4209     0.4821     0.4843     0.4843     0.5520 
+    0.5771     0.5771     0.6272     0.6272     0.6810     0.7088     0.7858     0.7858 
+    0.8114     0.8547     0.8867     0.8867     1.2654     1.3286     1.3286     1.3974 
+    1.4104     1.4104     1.4162     1.4754     1.4754     1.4764     1.6073     1.6350 
+    1.6350     1.7863     1.7863     1.8081     1.8538     1.8538     1.8793     1.8802 
+    1.8802     1.9041     1.9041     1.9403     1.9946     1.9946     2.0504     2.2485 
+    2.3276     2.3276     2.3798     2.3798     2.4044     2.6251     2.8668     2.8668 
+    2.8734     2.9696     2.9696 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6826 
+  -- Virtual --
+   -0.6767    -0.6767    -0.6758    -0.6713    -0.6704    -0.6704    -0.6702    -0.6702 
+   -0.6698    -0.6595    -0.6595    -0.6587    -0.6461    -0.6461    -0.6456    -0.6456 
+   -0.6455    -0.6422    -0.6336    -0.6336    -0.6328    -0.5811 
+ ---------------------------------------
+ Expectation value of proton 0 : 0.00000000 0.00000011 0.60680012
+ Protonic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000003 Dz: 1.5423439
+ Electronic dipole moment: 
+ Dx: -0.0000000 DY: 0.0000007 Dz: 3.1213832
+ Total dipole moment: 
+ Dx: -0.0000000 DY: 0.0000001 Dz: 2.8552851 Total 2.8552851
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.521908
+      2                    0.129373
+      3                    0.098883
+      4                    0.098883
+      5                    0.098883
+      6                    0.039371
+      7                    0.004233
+      8                    0.004233
+      9                    0.004233
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1  -0.0000000   0.0000000  -0.0171561 
+ 2  -0.0000000  -0.0000001   0.0336047 
+ 3   0.0000000  -0.0036363   0.0002948 
+ 4  -0.0031495   0.0018182   0.0002944 
+ 5   0.0031495   0.0018182   0.0002944 
+ 6  -0.0000000   0.0000001  -0.0212072 
+ 7  -0.0000000   0.0093691   0.0012913 
+ 8  -0.0081145  -0.0046846   0.0012919 
+ 9   0.0081145  -0.0046846   0.0012919 
+
+ Max gradient component =       3.360E-02
+ RMS gradient           =       8.989E-03
+
+ NEO GRAD time:       CPU 52.48s  wall 2.49s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   3
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000762    0.3006017938
+      2  N         0.0000000000   -0.0000000088    1.5124247758
+      3  H         0.0000000000   -0.9686120564    1.8548805669
+      4  H        -0.8388426397    0.4843060150    1.8548805669
+      5  H         0.8388426397    0.4843060150    1.8548805669
+      6  N         0.0000000000   -0.0000000088   -1.5500752242
+      7  H         0.0000000000    0.9686120388   -1.8925310153
+      8  H        -0.8388426397   -0.4843060326   -1.8925310153
+      9  H         0.8388426397   -0.4843060326   -1.8925310153
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.508249825
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.013920    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.01155398
+ Calculated Step too Large.  Step scaled by  0.445459
+ Step Taken.  Stepsize is  0.300000
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.017156      0.000300      NO
+         Displacement       0.266667      0.001200      NO
+         Energy change     -0.006358      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000001150     0.4417157167
+    2      N       0.0000000000    -0.0000000088     1.4947855354
+    3      H       0.0000000000    -0.9686120564     1.8372413265
+    4      H      -0.8388426397     0.4843060150     1.8372413265
+    5      H       0.8388426397     0.4843060150     1.8372413265
+    6      N       0.0000000000    -0.0000000088    -1.5677144646
+    7      H       0.0000000000     0.9686120388    -1.9101702557
+    8      H      -0.8388426397    -0.4843060326    -1.9101702557
+    9      H       0.8388426397    -0.4843060326    -1.9101702557
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          46.38733616 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 6.74E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5068185417      1.82e-02   Normal BFGS step
+    2    -113.5134759284      5.29e-03   Normal BFGS step
+    3    -113.5136388820      3.90e-03   Normal BFGS step
+    4    -113.5137338132      1.43e-03   Normal BFGS step
+    5    -113.5137492697      7.63e-04   Normal BFGS step
+    6    -113.5137528116      2.46e-04   Normal BFGS step
+    7    -113.5137529079      1.81e-04   Normal BFGS step
+    8    -113.5137531076      1.46e-05   Normal BFGS step
+    9    -113.5137531086      4.46e-06   Normal BFGS step
+   10    -113.5137531087      2.26e-07   Normal BFGS step
+   11    -113.5137531087      4.51e-08   Normal BFGS step
+   12    -113.5137531087      9.49e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 94.63s  wall 5.00s 
+ SCF   energy =  -113.51375311
+ Total energy =  -113.51375311
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000200006
+   Relative error      =     0.0000010000 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4266974818      2.25e-03      2.62e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4510090481      6.88e-02      8.44e-02   Normal BFGS step
+    2    -113.4878677134      5.35e-02      7.32e-02   Normal BFGS step
+    3    -113.4976527996      4.62e-02      2.06e-02   Normal BFGS step
+    4    -113.5005694373      4.76e-02      1.43e-02   Normal BFGS step
+    5    -113.5064232168      5.86e-02      1.34e-02   Normal BFGS step
+    6    -113.5047654659      3.78e-02      6.53e-03   Normal BFGS step
+    7    -113.5083778007      6.79e-02      1.26e-02  Line search: overstep
+    8    -113.5093187016      2.65e-02      5.56e-03   Normal BFGS step
+    9    -113.5096415035      1.11e-02      4.72e-03   Normal BFGS step
+   10    -113.5097542461      6.05e-03      1.46e-03   Normal BFGS step
+   11    -113.5097711353      3.47e-03      1.09e-03   Normal BFGS step
+   12    -113.5097735023      1.35e-03      3.50e-04   Normal BFGS step
+   13    -113.5097736788      2.78e-04      4.44e-05   Normal BFGS step
+   14    -113.5097736908      7.61e-05      2.18e-05   Normal BFGS step
+   15    -113.5097736913      2.07e-05      4.45e-06   Normal BFGS step
+   16    -113.5097736914      5.33e-06      1.42e-06   Normal BFGS step
+   17    -113.5097736914      1.62e-06      8.14e-07   Normal BFGS step
+   18    -113.5097736914      8.78e-07      2.47e-07   Normal BFGS step
+   19    -113.5097736914      1.50e-07      6.56e-08   Normal BFGS step
+   20    -113.5097736914      3.38e-08      3.96e-08   Normal BFGS step
+   21    -113.5097736914      2.00e-08      1.61e-08   Normal BFGS step
+   22    -113.5097736914      9.97e-09      3.34e-09   Normal BFGS step
+   23    -113.5097736914      4.39e-09      2.92e-09   Normal BFGS step
+   24    -113.5097736914      2.02e-09      6.31e-10   Normal BFGS step
+   25    -113.5097736914      1.15e-09      3.85e-10   Normal BFGS step
+   26    -113.5097736914      1.88e-10      7.70e-11   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5097736914
+ NEO SCF time:       CPU 577.64s  wall 29.97s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6462   -14.5072    -1.1860    -1.0334    -0.7722    -0.7722    -0.7468    -0.6469 
+   -0.6469    -0.4712 
+  -- Virtual --
+   -0.2050    -0.1460    -0.1325    -0.1325    -0.0978    -0.0978    -0.0926    -0.0612 
+   -0.0612    -0.0504    -0.0393    -0.0295    -0.0295    -0.0132    -0.0132    -0.0007 
+    0.0020     0.0254     0.0254     0.0423     0.0423     0.0441     0.1306     0.1368 
+    0.1368     0.1652     0.2145     0.2242     0.2242     0.2407     0.2529     0.2529 
+    0.2717     0.2738     0.2969     0.2969     0.3221     0.3239     0.3239     0.3539 
+    0.3774     0.3774     0.4183     0.4183     0.4651     0.4785     0.4785     0.5432 
+    0.5848     0.5848     0.6156     0.6156     0.6896     0.7193     0.7923     0.7923 
+    0.8018     0.8600     0.8899     0.8899     1.2980     1.3220     1.3220     1.3877 
+    1.3943     1.4185     1.4185     1.4743     1.4743     1.4851     1.6538     1.6538 
+    1.6750     1.7758     1.7758     1.8259     1.8476     1.8476     1.8902     1.8902 
+    1.9163     1.9188     1.9188     1.9927     1.9927     2.0045     2.0169     2.2517 
+    2.3686     2.3686     2.3942     2.3942     2.4191     2.6432     2.8594     2.8594 
+    2.9727     2.9727     2.9796 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6881 
+  -- Virtual --
+   -0.6817    -0.6817    -0.6807    -0.6774    -0.6764    -0.6764    -0.6744    -0.6744 
+   -0.6729    -0.6653    -0.6653    -0.6622    -0.6512    -0.6512    -0.6487    -0.6487 
+   -0.6486    -0.6461    -0.6379    -0.6379    -0.6288    -0.5552 
+ ---------------------------------------
+ Expectation value of proton 0 : 0.00000000 0.00000016 0.76578126
+ Protonic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000004 Dz: 1.9464368
+ Electronic dipole moment: 
+ Dx: -0.0000000 DY: 0.0000006 Dz: 5.0280489
+ Total dipole moment: 
+ Dx: 0.0000000 DY: 0.0000002 Dz: 3.4715330 Total 3.4715330
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.327585
+      2                    0.241930
+      3                    0.126192
+      4                    0.126192
+      5                    0.126192
+      6                    0.041234
+      7                    0.003558
+      8                    0.003558
+      9                    0.003558
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000   0.0107767 
+ 2  -0.0000000  -0.0000001   0.0021376 
+ 3   0.0000000  -0.0030408  -0.0002781 
+ 4  -0.0026337   0.0015204  -0.0002784 
+ 5   0.0026337   0.0015204  -0.0002784 
+ 6   0.0000000   0.0000001  -0.0172852 
+ 7   0.0000000   0.0099130   0.0017349 
+ 8  -0.0085854  -0.0049565   0.0017355 
+ 9   0.0085854  -0.0049565   0.0017355 
+
+ Max gradient component =       1.729E-02
+ RMS gradient           =       5.275E-03
+
+ NEO GRAD time:       CPU 53.87s  wall 2.55s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   4
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000001150    0.4417157167
+      2  N         0.0000000000   -0.0000000088    1.4947855354
+      3  H         0.0000000000   -0.9686120564    1.8372413265
+      4  H        -0.8388426397    0.4843060150    1.8372413265
+      5  H         0.8388426397    0.4843060150    1.8372413265
+      6  N         0.0000000000   -0.0000000088   -1.5677144646
+      7  H         0.0000000000    0.9686120388   -1.9101702557
+      8  H        -0.8388426397   -0.4843060326   -1.9101702557
+      9  H         0.8388426397   -0.4843060326   -1.9101702557
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.509773691
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.104748    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00109723
+ Step Taken.  Stepsize is  0.101815
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.010777      0.000300      NO
+         Displacement       0.090503      0.001200      NO
+         Energy change     -0.001524      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000840     0.3938237863
+    2      N       0.0000000000    -0.0000000088     1.5007720267
+    3      H       0.0000000000    -0.9686120564     1.8432278178
+    4      H      -0.8388426397     0.4843060150     1.8432278178
+    5      H       0.8388426397     0.4843060150     1.8432278178
+    6      N       0.0000000000    -0.0000000088    -1.5617279733
+    7      H       0.0000000000     0.9686120388    -1.9041837644
+    8      H      -0.8388426397    -0.4843060326    -1.9041837644
+    9      H       0.8388426397    -0.4843060326    -1.9041837644
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          46.25548961 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 7.42E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5129881567      7.84e-03   Normal BFGS step
+    2    -113.5138440301      3.70e-03   Normal BFGS step
+    3    -113.5138656987      2.84e-03   Normal BFGS step
+    4    -113.5139069640      3.60e-04   Normal BFGS step
+    5    -113.5139076455      3.46e-04   Normal BFGS step
+    6    -113.5139081843      1.00e-04   Normal BFGS step
+    7    -113.5139082277      5.56e-05   Normal BFGS step
+    8    -113.5139082618      4.25e-06   Normal BFGS step
+    9    -113.5139082619      1.08e-06   Normal BFGS step
+   10    -113.5139082619      9.01e-08   Normal BFGS step
+   11    -113.5139082619      1.90e-08   Normal BFGS step
+   12    -113.5139082619      5.30e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 93.03s  wall 5.00s 
+ SCF   energy =  -113.51390826
+ Total energy =  -113.51390826
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000177101
+   Relative error      =     0.0000008855 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4458955066      4.01e-03      4.24e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4558567150      8.68e-02      8.16e-02   Normal BFGS step
+    2    -113.5031715494      6.13e-02      1.21e-01   Normal BFGS step
+    3    -113.5067156311      3.22e-02      2.45e-02   Normal BFGS step
+    4    -113.5084689924      4.18e-02      9.30e-03   Normal BFGS step
+    5    -113.5097357499      1.89e-02      6.67e-03   Normal BFGS step
+    6    -113.5099792143      8.23e-03      4.27e-03   Normal BFGS step
+    7    -113.5101353220      9.27e-03      3.98e-03   Normal BFGS step
+    8    -113.5101973162      3.33e-03      1.47e-03   Normal BFGS step
+    9    -113.5102238544      2.43e-03      5.68e-04   Normal BFGS step
+   10    -113.5102274540      1.27e-03      4.89e-04   Normal BFGS step
+   11    -113.5102279279      3.85e-04      1.41e-04   Normal BFGS step
+   12    -113.5102279494      1.03e-04      2.70e-05   Normal BFGS step
+   13    -113.5102279526      3.62e-05      1.19e-05   Normal BFGS step
+   14    -113.5102279527      7.30e-06      2.72e-06   Normal BFGS step
+   15    -113.5102279528      3.38e-06      2.51e-06   Normal BFGS step
+   16    -113.5102279528      4.48e-07      2.54e-07   Normal BFGS step
+   17    -113.5102279528      1.45e-07      6.67e-08   Normal BFGS step
+   18    -113.5102279528      3.12e-08      3.53e-08   Normal BFGS step
+   19    -113.5102279528      4.54e-08      3.71e-08   Normal BFGS step
+   20    -113.5102279528      5.14e-09      3.01e-09   Normal BFGS step
+   21    -113.5102279528      1.74e-09      4.47e-10   Normal BFGS step
+  gdm_simult::WARNING energy changes are now smaller than effective accuracy.
+  gdm_simult::        calculation will continue, but THRESH should be increased
+  gdm_simult::        or SCF_CONVERGENCE decreased. 
+  gdm_simult::        effective_thresh = 2.52e-09
+   22    -113.5102279528      4.00e-10      7.93e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5102279528
+ NEO SCF time:       CPU 513.38s  wall 26.20s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6434   -14.5110    -1.1796    -1.0368    -0.7683    -0.7683    -0.7370    -0.6500 
+   -0.6500    -0.4751 
+  -- Virtual --
+   -0.2041    -0.1468    -0.1312    -0.1312    -0.0976    -0.0976    -0.0920    -0.0609 
+   -0.0609    -0.0543    -0.0397    -0.0296    -0.0296    -0.0124    -0.0124    -0.0046 
+    0.0019     0.0242     0.0242     0.0420     0.0420     0.0443     0.1289     0.1366 
+    0.1366     0.1644     0.2157     0.2245     0.2245     0.2404     0.2533     0.2533 
+    0.2705     0.2749     0.2975     0.2975     0.3205     0.3242     0.3242     0.3542 
+    0.3754     0.3754     0.4193     0.4193     0.4707     0.4803     0.4803     0.5452 
+    0.5823     0.5823     0.6199     0.6199     0.6876     0.7158     0.7898     0.7898 
+    0.8044     0.8582     0.8890     0.8890     1.2869     1.3222     1.3222     1.3905 
+    1.4043     1.4154     1.4154     1.4739     1.4739     1.4826     1.6484     1.6484 
+    1.6569     1.7787     1.7787     1.8247     1.8509     1.8509     1.8874     1.8874 
+    1.9047     1.9126     1.9126     1.9735     1.9935     1.9935     2.0182     2.2501 
+    2.3523     2.3523     2.3893     2.3893     2.4105     2.6387     2.8613     2.8613 
+    2.9287     2.9720     2.9720 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6879 
+  -- Virtual --
+   -0.6816    -0.6816    -0.6808    -0.6770    -0.6763    -0.6763    -0.6756    -0.6756 
+   -0.6745    -0.6652    -0.6652    -0.6634    -0.6517    -0.6517    -0.6507    -0.6507 
+   -0.6501    -0.6472    -0.6394    -0.6394    -0.6369    -0.5696 
+ ---------------------------------------
+ Expectation value of proton 0 : 0.00000000 0.00000011 0.71804513
+ Protonic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000003 Dz: 1.8251027
+ Electronic dipole moment: 
+ Dx: -0.0000000 DY: 0.0000007 Dz: 4.4027852
+ Total dipole moment: 
+ Dx: 0.0000000 DY: 0.0000001 Dz: 3.3000265 Total 3.3000265
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.385056
+      2                    0.209202
+      3                    0.117740
+      4                    0.117740
+      5                    0.117740
+      6                    0.042104
+      7                    0.003473
+      8                    0.003473
+      9                    0.003473
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000  -0.0012694 
+ 2   0.0000000  -0.0000001   0.0149447 
+ 3   0.0000000  -0.0031973  -0.0000412 
+ 4  -0.0027693   0.0015987  -0.0000415 
+ 5   0.0027693   0.0015987  -0.0000415 
+ 6   0.0000000   0.0000001  -0.0183862 
+ 7  -0.0000000   0.0097636   0.0016113 
+ 8  -0.0084561  -0.0048819   0.0016119 
+ 9   0.0084561  -0.0048819   0.0016119 
+
+ Max gradient component =       1.839E-02
+ RMS gradient           =       5.733E-03
+
+ NEO GRAD time:       CPU 52.15s  wall 2.51s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   5
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000840    0.3938237863
+      2  N         0.0000000000   -0.0000000088    1.5007720267
+      3  H         0.0000000000   -0.9686120564    1.8432278178
+      4  H        -0.8388426397    0.4843060150    1.8432278178
+      5  H         0.8388426397    0.4843060150    1.8432278178
+      6  N         0.0000000000   -0.0000000088   -1.5617279733
+      7  H         0.0000000000    0.9686120388   -1.9041837644
+      8  H        -0.8388426397   -0.4843060326   -1.9041837644
+      9  H         0.8388426397   -0.4843060326   -1.9041837644
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.510227953
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.133102    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00001211
+ Step Taken.  Stepsize is  0.009536
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.001269      0.000300      NO
+         Displacement       0.008477      0.001200      NO
+         Energy change     -0.000454      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000645     0.3983095086
+    2      N       0.0000000000    -0.0000000088     1.5002113114
+    3      H       0.0000000000    -0.9686120564     1.8426671025
+    4      H      -0.8388426397     0.4843060150     1.8426671025
+    5      H       0.8388426397     0.4843060150     1.8426671025
+    6      N       0.0000000000    -0.0000000088    -1.5622886886
+    7      H       0.0000000000     0.9686120388    -1.9047444797
+    8      H      -0.8388426397    -0.4843060326    -1.9047444797
+    9      H       0.8388426397    -0.4843060326    -1.9047444797
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          46.26695037 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 7.36E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5139828461      6.52e-04   Normal BFGS step
+    2    -113.5139900180      2.91e-04   Normal BFGS step
+    3    -113.5139901886      2.04e-04   Normal BFGS step
+    4    -113.5139904071      2.88e-05   Normal BFGS step
+    5    -113.5139904148      1.94e-05   Normal BFGS step
+    6    -113.5139904173      6.70e-06   Normal BFGS step
+    7    -113.5139904173      5.58e-06   Normal BFGS step
+    8    -113.5139904176      2.74e-07   Normal BFGS step
+    9    -113.5139904176      9.77e-08   Normal BFGS step
+   10    -113.5139904176      3.28e-09   Normal BFGS step
+   11    -113.5139904176      5.37e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 87.93s  wall 5.00s 
+ SCF   energy =  -113.51399042
+ Total energy =  -113.51399042
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000180585
+   Relative error      =     0.0000009029 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4845805611      1.14e-03      8.16e-04  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4994418500      8.62e-02      4.16e-02   Normal BFGS step
+    2    -113.5053665976      3.03e-02      3.28e-02   Normal BFGS step
+    3    -113.5082178305      3.05e-02      1.87e-02   Normal BFGS step
+    4    -113.5091699442      2.42e-02      3.31e-03   Normal BFGS step
+    5    -113.5098857937      1.73e-02      4.12e-03   Normal BFGS step
+    6    -113.5101572226      6.39e-03      5.65e-03   Normal BFGS step
+    7    -113.5102224568      4.75e-03      2.03e-03   Normal BFGS step
+    8    -113.5102345407      1.39e-03      1.12e-03   Normal BFGS step
+    9    -113.5102352480      5.18e-04      3.03e-04   Normal BFGS step
+   10    -113.5102353084      2.13e-04      8.74e-05   Normal BFGS step
+   11    -113.5102353457      4.48e-05      5.39e-05   Normal BFGS step
+   12    -113.5102353484      4.54e-05      7.42e-06   Normal BFGS step
+   13    -113.5102353498      1.38e-05      1.15e-05   Normal BFGS step
+   14    -113.5102353500      4.74e-06      3.32e-06   Normal BFGS step
+   15    -113.5102353500      1.59e-06      1.22e-06   Normal BFGS step
+   16    -113.5102353500      5.81e-07      2.31e-07   Normal BFGS step
+   17    -113.5102353500      2.48e-07      5.23e-08   Normal BFGS step
+   18    -113.5102353500      3.03e-08      1.99e-08   Normal BFGS step
+   19    -113.5102353500      5.57e-09      6.48e-09   Normal BFGS step
+   20    -113.5102353500      3.59e-09      4.14e-09   Normal BFGS step
+   21    -113.5102353500      9.47e-10      1.67e-09   Normal BFGS step
+   22    -113.5102353500      3.95e-10      4.12e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5102353500
+ NEO SCF time:       CPU 506.54s  wall 25.93s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6437   -14.5106    -1.1803    -1.0364    -0.7687    -0.7687    -0.7379    -0.6497 
+   -0.6497    -0.4747 
+  -- Virtual --
+   -0.2042    -0.1467    -0.1314    -0.1314    -0.0976    -0.0976    -0.0921    -0.0609 
+   -0.0609    -0.0539    -0.0397    -0.0296    -0.0296    -0.0125    -0.0125    -0.0043 
+    0.0019     0.0243     0.0243     0.0420     0.0420     0.0443     0.1290     0.1366 
+    0.1366     0.1645     0.2156     0.2245     0.2245     0.2405     0.2532     0.2532 
+    0.2706     0.2748     0.2975     0.2975     0.3206     0.3242     0.3242     0.3542 
+    0.3756     0.3756     0.4192     0.4192     0.4702     0.4801     0.4801     0.5450 
+    0.5826     0.5826     0.6195     0.6195     0.6878     0.7161     0.7901     0.7901 
+    0.8041     0.8584     0.8891     0.8891     1.2879     1.3221     1.3221     1.3902 
+    1.4035     1.4157     1.4157     1.4739     1.4739     1.4829     1.6489     1.6489 
+    1.6588     1.7784     1.7784     1.8250     1.8506     1.8506     1.8877     1.8877 
+    1.9060     1.9132     1.9132     1.9764     1.9934     1.9934     2.0171     2.2502 
+    2.3538     2.3538     2.3897     2.3897     2.4112     2.6391     2.8611     2.8611 
+    2.9327     2.9721     2.9721 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6880 
+  -- Virtual --
+   -0.6817    -0.6817    -0.6809    -0.6772    -0.6765    -0.6765    -0.6757    -0.6757 
+   -0.6745    -0.6653    -0.6653    -0.6635    -0.6518    -0.6518    -0.6507    -0.6507 
+   -0.6501    -0.6473    -0.6395    -0.6395    -0.6366    -0.5686 
+ ---------------------------------------
+ Expectation value of proton 0 : -0.00000000 0.00000008 0.72261403
+ Protonic dipole moment: 
+ Dx: -0.0000000 DY: 0.0000002 Dz: 1.8367158
+ Electronic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000008 Dz: 4.4620885
+ Total dipole moment: 
+ Dx: 0.0000000 DY: 0.0000001 Dz: 3.3170779 Total 3.3170779
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.379102
+      2                    0.212657
+      3                    0.118576
+      4                    0.118575
+      5                    0.118575
+      6                    0.042076
+      7                    0.003480
+      8                    0.003480
+      9                    0.003480
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1  -0.0000000   0.0000000  -0.0002781 
+ 2   0.0000000  -0.0000001   0.0138665 
+ 3  -0.0000000  -0.0031814  -0.0000608 
+ 4  -0.0027555   0.0015907  -0.0000611 
+ 5   0.0027555   0.0015907  -0.0000611 
+ 6   0.0000000   0.0000001  -0.0182771 
+ 7   0.0000000   0.0097785   0.0016236 
+ 8  -0.0084690  -0.0048893   0.0016241 
+ 9   0.0084690  -0.0048893   0.0016241 
+
+ Max gradient component =       1.828E-02
+ RMS gradient           =       5.616E-03
+
+ NEO GRAD time:       CPU 51.67s  wall 2.48s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   6
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000645    0.3983095086
+      2  N         0.0000000000   -0.0000000088    1.5002113114
+      3  H         0.0000000000   -0.9686120564    1.8426671025
+      4  H        -0.8388426397    0.4843060150    1.8426671025
+      5  H         0.8388426397    0.4843060150    1.8426671025
+      6  N         0.0000000000   -0.0000000088   -1.5622886886
+      7  H         0.0000000000    0.9686120388   -1.9047444797
+      8  H        -0.8388426397   -0.4843060326   -1.9047444797
+      9  H         0.8388426397   -0.4843060326   -1.9047444797
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.510235350
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.116943    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00000066
+ Step Taken.  Stepsize is  0.002378
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.000278      0.000300     YES
+         Displacement       0.002114      0.001200      NO
+         Energy change     -0.000007      0.000001      NO
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000384     0.3994281992
+    2      N       0.0000000000    -0.0000000088     1.5000714751
+    3      H       0.0000000000    -0.9686120564     1.8425272662
+    4      H      -0.8388426397     0.4843060150     1.8425272662
+    5      H       0.8388426397     0.4843060150     1.8425272662
+    6      N       0.0000000000    -0.0000000088    -1.5624285249
+    7      H       0.0000000000     0.9686120388    -1.9048843160
+    8      H      -0.8388426397    -0.4843060326    -1.9048843160
+    9      H       0.8388426397    -0.4843060326    -1.9048843160
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          46.26983627 hartrees
+ There are       10 alpha and       10 beta electrons
+ Applying Cartesian multipole field
+    Component          Value
+    ---------          -----
+     (2,0,0)        1.00000E-11
+     (0,2,0)        2.00000E-11
+     (0,0,2)       -3.00000E-11
+ Nucleus-field energy     =    -0.0000000055 hartrees
+ Requested basis set is aug-cc-pVDZ
+ There are 53 shells and 109 basis functions
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Requested basis set is non-standard
+ There are 9 shells and 23 basis functions
+ Smallest overlap matrix eigenvalue = 7.35E-04
+ Guess MOs from SCF MO coefficient file
+ Constructing Nucl. Initial Guess for NEO Calculation: TIGHT
+ NEO centers: 1 
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ A restricted SCF calculation will be
+ performed using GDM
+ SCF converges when RMS gradient is below 1.0e-09
+ User-specified cutoff of 10e-14
+ used for neglect of 2-electron integrals.
+ A cutoff of 10e-14
+ used for neglect of overlap integrals.
+ Incremental Fock algorithm is on at the start.
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    -113.5140077749      1.67e-04   Normal BFGS step
+    2    -113.5140082227      7.30e-05   Normal BFGS step
+    3    -113.5140082334      5.21e-05   Normal BFGS step
+    4    -113.5140082475      7.20e-06   Normal BFGS step
+    5    -113.5140082480      5.08e-06   Normal BFGS step
+    6    -113.5140082482      1.79e-06   Normal BFGS step
+    7    -113.5140082482      1.37e-06   Normal BFGS step
+    8    -113.5140082482      7.45e-08   Normal BFGS step
+    9    -113.5140082482      2.50e-08   Normal BFGS step
+   10    -113.5140082482      9.71e-10  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 81.78s  wall 5.00s 
+ SCF   energy =  -113.51400825
+ Total energy =  -113.51400825
+ Integrated density by DFT XC:
+   Number of electrons = 20
+   Numerical integral  =    20.000000181496
+   Relative error      =     0.0000009075 %
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ This NEO calculation uses deuterons
+ A cutoff of  1.0D-14 yielded   1431 shell pairs
+ There are      6095 function pairs (      6561 Cartesian)
+ Electronic basis set linear dependency threshold: 10E-6.00
+ Nuclear basis set linear dependency threshold: 10E-5.00
+ 2 particle integral threshold: 10E-14
+ NEO centers: 1 
+ There are 1 number of quantum nuclei
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ Number of electronic ao: 109  Number of electronic mo: 109
+ Number of nuclear ao: 23  Number of nuclear mo: 23
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Grid/integral threshold: 10E-14
+ Read electronic and protonic density from previous NEO-SCF 
+ NEO-SCF calculation will be performed using GDM
+ Simultaneous Nuc./Elec. Block
+ -----------------------------------------------------
+  Cycle       Energy          [N] DIIS      [E] DIIS
+                                error         error
+ -----------------------------------------------------
+    1    -113.4799277052      1.55e-03      1.05e-03  Roothaan Step
+ -----------------------------------------------------
+  Cycle       Energy          [N] RMS       [E] RMS  
+                              Gradient      Gradient
+ -----------------------------------------------------
+    1    -113.4965146868      7.80e-02      4.61e-02   Normal BFGS step
+    2    -113.5039980338      2.97e-02      3.97e-02   Normal BFGS step
+    3    -113.5075743881      3.39e-02      2.09e-02   Normal BFGS step
+    4    -113.5085949867      3.20e-02      4.15e-03   Normal BFGS step
+    5    -113.5097149511      3.17e-02      7.09e-03   Normal BFGS step
+    6    -113.5100851872      1.08e-02      4.89e-03   Normal BFGS step
+    7    -113.5101959399      7.10e-03      2.96e-03   Normal BFGS step
+    8    -113.5102335798      3.03e-03      1.87e-03   Normal BFGS step
+    9    -113.5102354738      6.71e-04      5.26e-04   Normal BFGS step
+   10    -113.5102356870      2.74e-04      1.53e-04   Normal BFGS step
+   11    -113.5102357116      8.20e-05      2.52e-05   Normal BFGS step
+   12    -113.5102357134      9.61e-06      1.32e-05   Normal BFGS step
+   13    -113.5102357134      7.48e-06      8.20e-07   Normal BFGS step
+   14    -113.5102357135      2.89e-06      1.49e-06   Normal BFGS step
+   15    -113.5102357135      1.29e-06      1.92e-07   Normal BFGS step
+   16    -113.5102357135      2.20e-07      1.80e-07   Normal BFGS step
+   17    -113.5102357135      7.43e-08      3.67e-08   Normal BFGS step
+   18    -113.5102357135      2.92e-08      2.58e-08   Normal BFGS step
+   19    -113.5102357135      5.18e-09      6.57e-09   Normal BFGS step
+   20    -113.5102357135      3.05e-09      8.37e-09   Normal BFGS step
+   21    -113.5102357135      3.03e-10      1.37e-10   Normal BFGS step  Convergence criterion met
+ -----------------------------------------------------
+
+ E(NEO-SCF) = -113.5102357135
+ NEO SCF time:       CPU 486.92s  wall 25.19s 
+ Saving densities directly to file in cwd...
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+  -14.6438   -14.5105    -1.1804    -1.0363    -0.7688    -0.7688    -0.7382    -0.6496 
+   -0.6496    -0.4746 
+  -- Virtual --
+   -0.2042    -0.1467    -0.1314    -0.1314    -0.0976    -0.0976    -0.0921    -0.0609 
+   -0.0609    -0.0538    -0.0397    -0.0296    -0.0296    -0.0125    -0.0125    -0.0042 
+    0.0019     0.0243     0.0243     0.0420     0.0420     0.0443     0.1290     0.1366 
+    0.1366     0.1645     0.2156     0.2245     0.2245     0.2405     0.2532     0.2532 
+    0.2707     0.2748     0.2975     0.2975     0.3207     0.3242     0.3242     0.3542 
+    0.3756     0.3756     0.4192     0.4192     0.4700     0.4801     0.4801     0.5449 
+    0.5826     0.5826     0.6194     0.6194     0.6878     0.7162     0.7901     0.7901 
+    0.8040     0.8584     0.8891     0.8891     1.2882     1.3221     1.3221     1.3901 
+    1.4033     1.4158     1.4158     1.4739     1.4739     1.4829     1.6491     1.6491 
+    1.6593     1.7783     1.7783     1.8251     1.8506     1.8506     1.8878     1.8878 
+    1.9063     1.9133     1.9133     1.9771     1.9934     1.9934     2.0168     2.2502 
+    2.3541     2.3541     2.3898     2.3898     2.4113     2.6393     2.8610     2.8610 
+    2.9338     2.9721     2.9721 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.6880 
+  -- Virtual --
+   -0.6818    -0.6818    -0.6810    -0.6772    -0.6765    -0.6765    -0.6757    -0.6757 
+   -0.6745    -0.6654    -0.6654    -0.6635    -0.6518    -0.6518    -0.6507    -0.6507 
+   -0.6501    -0.6473    -0.6395    -0.6395    -0.6365    -0.5683 
+ ---------------------------------------
+ Expectation value of proton 0 : 0.00000000 0.00000004 0.72374690
+ Protonic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000001 Dz: 1.8395953
+ Electronic dipole moment: 
+ Dx: 0.0000000 DY: 0.0000009 Dz: 4.4768515
+ Total dipole moment: 
+ Dx: 0.0000000 DY: 0.0000001 Dz: 3.3212870 Total 3.3212870
+
+ Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1                    0.377634
+      2                    0.213507
+      3                    0.118783
+      4                    0.118783
+      5                    0.118783
+      6                    0.042067
+      7                    0.003481
+      8                    0.003481
+      9                    0.003481
+  ----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+ Write electronic and protonic density for the next scf
+
+ Analytic NEO-SCF gradients calculation
+
+ NEO-SCF Analytic gradient: 
+       x          y          z
+ 1   0.0000000   0.0000000  -0.0000273 
+ 2   0.0000000  -0.0000001   0.0135945 
+ 3  -0.0000000  -0.0031775  -0.0000658 
+ 4  -0.0027521   0.0015888  -0.0000661 
+ 5   0.0027521   0.0015888  -0.0000661 
+ 6  -0.0000000   0.0000001  -0.0182502 
+ 7   0.0000000   0.0097822   0.0016266 
+ 8  -0.0084722  -0.0048912   0.0016272 
+ 9   0.0084722  -0.0048912   0.0016272 
+
+ Max gradient component =       1.825E-02
+ RMS gradient           =       5.588E-03
+
+ NEO GRAD time:       CPU 51.86s  wall 2.48s 
+ Calculating analytic gradient of the SCF energy
+ Geometry Optimization Parameters
+   NAtoms,    NIC,     NZ,  NCons,   NDum,   NFix, NCnnct, MaxDiis
+        9      45       0       0       0       8       0       0
+
+ Cartesian Hessian Update
+ Hessian updated using BFGS update
+
+
+** GEOMETRY OPTIMIZATION IN CARTESIAN COORDINATES **
+   Searching for a Minimum
+
+   Optimization Cycle:   7
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000384    0.3994281992
+      2  N         0.0000000000   -0.0000000088    1.5000714751
+      3  H         0.0000000000   -0.9686120564    1.8425272662
+      4  H        -0.8388426397    0.4843060150    1.8425272662
+      5  H         0.8388426397    0.4843060150    1.8425272662
+      6  N         0.0000000000   -0.0000000088   -1.5624285249
+      7  H         0.0000000000    0.9686120388   -1.9048843160
+      8  H        -0.8388426397   -0.4843060326   -1.9048843160
+      9  H         0.8388426397   -0.4843060326   -1.9048843160
+   Point Group: c1    Number of degrees of freedom:    21
+
+
+   Energy is   -113.510235713
+
+            Atoms with "Fixed" Coordinates
+                Atom    Coordinates
+                     2        X  Y  Z
+                     3        X  Y  Z
+                     4        X  Y  Z
+                     5        X  Y  Z
+                     6        X  Y  Z
+                     7        X  Y  Z
+                     8        X  Y  Z
+                     9        X  Y  Z
+
+  2 Hessian modes will be used to form the next step
+  Hessian Eigenvalues:
+     0.118650    1.000000
+
+ Minimum search - taking simple RFO step
+ Searching for Lamda that Minimizes Along All modes
+ Value Taken    Lamda =  -0.00000001
+ Step Taken.  Stepsize is  0.000230
+
+                             Maximum     Tolerance    Cnvgd?
+         Gradient           0.000027      0.000300     YES
+         Displacement       0.000205      0.001200     YES
+         Energy change     -0.000000      0.000001     YES
+
+
+                       Distance Matrix (Angstroms)
+             H (  1)   N (  2)   H (  3)   H (  4)   H (  5)   N (  6)
+   N (  2)  1.100643
+   H (  3)  1.738029  1.027368
+   H (  4)  1.738029  1.027368  1.677685
+   H (  5)  1.738029  1.027368  1.677685  1.677685
+   N (  6)  1.961857  3.062500  3.540047  3.540047  3.540047
+   H (  7)  2.499613  3.540047  4.218522  3.870569  3.870569  1.027368
+   H (  8)  2.499613  3.540047  3.870569  3.870569  4.218522  1.027368
+   H (  9)  2.499613  3.540047  3.870569  4.218522  3.870569  1.027368
+             H (  7)   H (  8)
+   H (  8)  1.677685
+   H (  9)  1.677685  1.677685
+
+ Final energy is   -113.51023571345506     
+
+
+ ******************************
+ **  OPTIMIZATION CONVERGED  **
+ ******************************
+
+                       Coordinates (Angstroms)
+     ATOM                X               Y               Z
+      1  H         0.0000000000    0.0000000384    0.3994281992
+      2  N         0.0000000000   -0.0000000088    1.5000714751
+      3  H         0.0000000000   -0.9686120564    1.8425272662
+      4  H        -0.8388426397    0.4843060150    1.8425272662
+      5  H         0.8388426397    0.4843060150    1.8425272662
+      6  N         0.0000000000   -0.0000000088   -1.5624285249
+      7  H         0.0000000000    0.9686120388   -1.9048843160
+      8  H        -0.8388426397   -0.4843060326   -1.9048843160
+      9  H         0.8388426397   -0.4843060326   -1.9048843160
+
+Z-matrix Print:
+$molecule
+1 1
+N 
+H  1 1.027368
+H  1 1.027368 2 109.471235
+H  1 1.027368 2 109.471235 3 -120.000036 0
+H  1 1.100643 2 109.471208 3 119.999982 0
+N  5 1.961857 1 179.999996 2 -10.959174 0
+H  6 1.027368 5 109.471204 1 -nan 0
+H  6 1.027368 5 109.471206 1 -60.000000 0
+H  6 1.027368 5 109.471206 1 60.000000 0
+$end
+
+ Total job time:  247.56s(wall), 4709.45s(cpu) 
+ Tue Oct 13 11:09:31 2026
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

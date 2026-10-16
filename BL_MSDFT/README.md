@@ -57,3 +57,15 @@ calcs/   PB4-D FHF⁻ OPT + MSDFT jobs (inputs + opt/msdft outs)
 
 **Excluded:** H @ 2.65 Å (unstable NEO-DFT basis-center opt). No PB5-G jobs or
 exploratory archives — those remain under `DEBUG/BL_IMPLEMENT_TESTING/BL_PARAM_FIT`.
+
+## Transferability benchmark (`../test/`)
+
+[`../test/`](../test/) is an NH₃ transferability benchmark that applies the **fitted**
+overlap-correction parameters ($\alpha=0.56$, $\beta_{\mathrm{H}}=1.10$,
+$\beta_{\mathrm{D}}=0.98$) outside the FHF⁻ fitting set. Layout mirrors `calcs/`
+(`nn_*_ang/{proton,deuteron}/` with `msdft.in` / `msdft.out` and OPT inputs/outs).
+
+## Reference regular MSDFT (`../non_bl_msdft/`)
+
+[`../non_bl_msdft/`](../non_bl_msdft/) will hold **uncorrected** (regular) NEO-MSDFT
+reference jobs for the same systems/geometries as the BL-MSDFT benchmark 

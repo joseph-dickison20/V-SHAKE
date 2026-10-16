@@ -1,0 +1,210 @@
+$molecule
+1 1
+H    0.0000000000   0.0000000000   0.1500000000
+N    0.0000000000   0.0000000000   1.4437500000
+H   -0.0000000000  -0.9686120476   1.7862057911
+H   -0.8388426397   0.4843060238   1.7862057911
+H    0.8388426397   0.4843060238   1.7862057911
+N    0.0000000000  -0.0000000000  -1.4437500000
+H   -0.0000000000   0.9686120476  -1.7862057911
+H   -0.8388426397  -0.4843060238  -1.7862057911
+H    0.8388426397  -0.4843060238  -1.7862057911
+$end
+
+$rem
+IDERIV                      1
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+SCF_ALGORITHM               GDM
+MAX_SCF_CYCLES              1000
+NEO                         TRUE
+NEO_BL_MSDFT_DIABAT_IDX     1
+NEO_EPC                     EPC172
+NEO_PURECART                1111
+NEO_VPP                     FALSE
+NEO_SIMULTANEOUS_SCF        TRUE
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+NEO_N_HARTREE_PROD          TRUE
+THRESH                      14
+SKIP_SCFMAN                 TRUE
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+$end
+
+$neo_basis
+H    1
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+$end
+
+@@@
+
+$molecule
+1 1
+H    0.0000000000   0.0000000000  -0.1500000000
+N    0.0000000000   0.0000000000   1.4437500000
+H   -0.0000000000  -0.9686120476   1.7862057911
+H   -0.8388426397   0.4843060238   1.7862057911
+H    0.8388426397   0.4843060238   1.7862057911
+N    0.0000000000  -0.0000000000  -1.4437500000
+H   -0.0000000000   0.9686120476  -1.7862057911
+H   -0.8388426397  -0.4843060238  -1.7862057911
+H    0.8388426397  -0.4843060238  -1.7862057911
+$end
+
+$rem
+IDERIV                      1
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+SCF_ALGORITHM               GDM
+MAX_SCF_CYCLES              1000
+NEO                         TRUE
+NEO_BL_MSDFT_DIABAT_IDX     2
+NEO_EPC                     EPC172
+NEO_PURECART                1111
+NEO_VPP                     FALSE
+NEO_SIMULTANEOUS_SCF        TRUE
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+NEO_N_HARTREE_PROD          TRUE
+THRESH                      14
+SKIP_SCFMAN                 TRUE
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+$end
+
+$neo_basis
+H    1
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+$end
+
+@@@
+
+$molecule
+1 1
+H    0.0000000000   0.0000000000   0.1500000000
+@H   0.0000000000   0.0000000000  -0.1500000000
+N    0.0000000000   0.0000000000   1.4437500000
+H   -0.0000000000  -0.9686120476   1.7862057911
+H   -0.8388426397   0.4843060238   1.7862057911
+H    0.8388426397   0.4843060238   1.7862057911
+N    0.0000000000  -0.0000000000  -1.4437500000
+H   -0.0000000000   0.9686120476  -1.7862057911
+H   -0.8388426397  -0.4843060238  -1.7862057911
+H    0.8388426397  -0.4843060238  -1.7862057911
+$end
+
+$rem
+IDERIV                      1
+SYM_IGNORE                  TRUE
+INPUT_BOHR                  FALSE
+METHOD                      B3LYP
+BASIS                       aug-cc-pVDZ
+SCF_ALGORITHM               GDM
+MAX_SCF_CYCLES              1000
+NEO                         TRUE
+NEO_BL_MSDFT                TRUE
+NEO_EPC                     EPC172
+NEO_PURECART                1111
+NEO_VPP                     FALSE
+NEO_SIMULTANEOUS_SCF        TRUE
+SCF_CONVERGENCE             9
+NEO_E_CONV                  9
+NEO_N_SCF_CONVERGENCE       9
+NEO_N_HARTREE_PROD          TRUE
+SKIP_SCFMAN                 TRUE
+THRESH                      14
+MEM_TOTAL                   5000
+XC_GRID                     000099000590
+$end
+
+$neo_msdft
+alpha = 0.56
+beta = 1.10
+gamma = 1.00
+$end
+
+$neo_basis
+H    1
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+H    2
+S   1   1.000
+1.957   1.000
+S   1   1.000
+8.734   1.000
+S   1   1.000
+16.010  1.000
+S   1   1.000
+31.997  1.000
+P   1   1.000
+9.438   1.000
+P   1   1.000
+13.795  1.000
+P   1   1.000
+24.028  1.000
+D   1   1.000
+10.524  1.000
+D   1   1.000
+19.016  1.000
+****
+$end
