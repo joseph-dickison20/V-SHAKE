@@ -64,8 +64,3 @@ exploratory archives — those remain under `DEBUG/BL_IMPLEMENT_TESTING/BL_PARAM
 overlap-correction parameters ($\alpha=0.56$, $\beta_{\mathrm{H}}=1.10$,
 $\beta_{\mathrm{D}}=0.98$) outside the FHF⁻ fitting set. Layout mirrors `calcs/`
 (`nn_*_ang/{proton,deuteron}/` with `msdft.in` / `msdft.out` and OPT inputs/outs).
-
-## Reference regular MSDFT (`../non_bl_msdft/`)
-
-[`../non_bl_msdft/`](../non_bl_msdft/) will hold **uncorrected** (regular) NEO-MSDFT
-reference jobs for the same systems/geometries as the BL-MSDFT benchmark 
